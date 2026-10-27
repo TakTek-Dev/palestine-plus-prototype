@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Palestine+ | Every story, one layer deeper</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&amp;family=Sora:wght@300;400;600;700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
+<style>
+body{margin:0}
+
+:root{
+  --paper:#F4F1EA;
+  --l1:#ECE7DB;
+  --l2:#E3DCCB;
+  --l3:#D8CFBA;
+  --ink:#15171A;
+  --ink2:#3A3D42;
+  --mute:#4F5257;
+  --rule:#CFC8B8;
+  --plus:#C2361F;
+  --plus-d:#9E2814;
+  --plus-on-dark:#F0705A;
+  --deep:#16181C;
+  --on-deep:#E6E2D8;
+  --on-deep-mute:#ABA79D;
+  --sora:"Sora",system-ui,sans-serif;
+  --serif:"Crimson Pro",Georgia,serif;
+  --wrap:1296px;
+  --gut:32px;
+  --col:32px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.5;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+ul,ol{list-style:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.g12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--col)}
+.s5{grid-column:span 5}
+.s7{grid-column:span 7}
+.pl{color:var(--plus-d);font-family:var(--sora);font-weight:700}
+.tag{font-family:var(--sora);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--plus-d)}
+.cap{font-family:var(--sora);font-size:13px;color:var(--mute);padding-top:8px;line-height:1.45}
+.cap b{color:var(--ink2);font-weight:600}
+
+/* ---------- top bar ---------- */
+.topbar{border-bottom:1px solid var(--rule)}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:var(--sora);font-size:12px;color:var(--mute)}
+.topbar .tb-r{display:flex;gap:22px}
+.topbar a{display:inline-flex;align-items:center;min-height:44px}
+.topbar a:hover{color:var(--ink)}
+
+/* ---------- masthead ---------- */
+.mast > .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding-top:22px;padding-bottom:20px}
+.mast-l{font-family:var(--sora);font-size:13px;color:var(--mute);line-height:1.45}
+.mast-l b{display:block;color:var(--ink);font-weight:600}
+.logo{display:flex;align-items:center;gap:7px}
+.logo-word{font-family:var(--sora);font-weight:700;font-size:44px;letter-spacing:-.045em;line-height:1}
+.logo svg{width:38px;height:35px;flex:none;margin-top:2px}
+.mast-r{display:flex;justify-content:flex-end;align-items:center;gap:10px}
+.btn{font-family:var(--sora);font-size:13px;font-weight:600;padding:0 16px;min-height:44px;border-radius:2px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ghost{border:1px solid var(--ink)}
+.btn svg{width:15px;height:15px}
+.nav{border-top:2px solid var(--ink);border-bottom:1px solid var(--ink)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.nav ul{display:flex;flex-wrap:wrap}
+.nav li a{display:flex;align-items:center;min-height:46px;padding:0 18px;font-family:var(--sora);font-size:14px;font-weight:600;white-space:nowrap}
+.nav li:first-child a{padding-left:0}
+.nav li a:hover{color:var(--plus-d)}
+.nav .nav-search{display:flex;align-items:center;gap:8px;min-height:44px;font-family:var(--sora);font-size:13px;color:var(--mute)}
+.nav .nav-search svg{width:16px;height:16px}
+
+/* ---------- depth legend ---------- */
+.legend{padding:16px 0 0}
+.legend .wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-family:var(--sora);font-size:12px}
+.legend b{font-weight:700;font-size:13px}
+.legend ol{display:flex;gap:22px;flex-wrap:wrap}
+.legend li{display:flex;align-items:center;gap:7px;color:var(--ink2);font-weight:600}
+.legend li i{display:block;width:18px;height:10px;border:1px solid var(--rule)}
+.legend li:nth-child(1) i{background:#fff}
+.legend li:nth-child(2) i{background:var(--l1)}
+.legend li:nth-child(3) i{background:var(--l2)}
+.legend li:nth-child(4) i{background:var(--l3)}
+.legend li:nth-child(5) i{background:var(--deep);border-color:var(--deep)}
+
+/* ---------- lead stack ---------- */
+.lead{padding:20px 0 56px}
+.lead-media figure{display:flex;flex-direction:column;height:100%}
+.lead-media img{width:100%;flex:1;min-height:0;height:100%;object-fit:cover;object-position:45% 50%}
+.lead-meta{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.when{font-family:var(--sora);font-size:13px;color:var(--mute)}
+.lead h1{font-family:var(--sora);font-weight:700;font-size:42px;line-height:1.05;letter-spacing:-.035em;margin-bottom:18px}
+.ly{padding:11px 16px 12px;margin-left:calc(var(--d) * 14px)}
+.ly-k{display:flex;gap:6px;align-items:baseline;font-family:var(--sora);font-size:12px;font-weight:600;line-height:1.3;margin-bottom:3px}
+.ly-k .pl{font-size:15px}
+.ly p{font-size:17px;line-height:1.4}
+.ly p small{font-family:var(--sora);font-size:12px;color:var(--ink2);margin-left:6px;white-space:nowrap}
+.ly0{--d:0;background:#fff}
+.ly0 p{font-size:20px;line-height:1.32;font-weight:500}
+.ly1{--d:1;background:var(--l1)}
+.ly2{--d:2;background:var(--l2)}
+.ly3{--d:3;background:var(--l3)}
+.ly4{--d:4;background:var(--deep);color:var(--on-deep)}
+.ly4 .pl{color:var(--plus-on-dark)}
+.ly4 p small{color:var(--on-deep-mute)}
+.ly .big{font-family:var(--sora);font-weight:700;font-size:26px;letter-spacing:-.03em;line-height:1;margin-right:8px}
+.lead-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:10px;font-family:var(--sora);font-size:13px;color:var(--mute)}
+.lead-foot a{color:var(--ink);font-weight:600;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+.lead-foot svg{width:14px;height:14px}
+
+/* ---------- section heads ---------- */
+.sec{padding:56px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:24px;border-top:2px solid var(--ink);padding-top:14px;margin-bottom:26px}
+.sh h2{font-family:var(--sora);font-weight:700;font-size:28px;letter-spacing:-.03em;line-height:1.1}
+.sh p{font-family:var(--sora);font-size:13px;color:var(--mute);max-width:560px;text-align:right}
+
+/* ---------- line one ---------- */
+.l1-list li{display:grid;grid-template-columns:1fr auto;gap:4px 14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--rule)}
+.l1-list li:first-child{border-top:1px solid var(--rule)}
+.l1-meta{grid-column:1 / -1;display:flex;gap:10px;align-items:baseline}
+.l1-meta time{font-family:var(--sora);font-size:12px;color:var(--mute)}
+.l1-list a{font-size:19px;line-height:1.3}
+.l1-list a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.depth{font-family:var(--sora);font-size:12px;font-weight:600;color:var(--ink);background:var(--l2);padding:3px 8px;border-radius:2px;white-space:nowrap}
+.l1-note{font-family:var(--sora);font-size:13px;color:var(--mute);margin-top:12px}
+.feature img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 70%}
+.feature-body{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:28px;padding-top:16px}
+.feature h3{font-family:var(--sora);font-weight:700;font-size:29px;line-height:1.08;letter-spacing:-.03em;margin:8px 0 12px}
+.feature-body .dek{font-size:19px;color:var(--ink2)}
+.mini-stack li{padding:10px 12px;font-size:16px;line-height:1.35}
+.mini-stack li b{display:block;font-family:var(--sora);font-size:12px;font-weight:600;margin-bottom:2px}
+.mini-stack li:nth-child(1){background:var(--l1)}
+.mini-stack li:nth-child(2){background:var(--l2);margin-left:10px}
+.mini-stack li:nth-child(3){background:var(--l3);margin-left:20px}
+
+/* ---------- layer table ---------- */
+.ltab{border-bottom:1px solid var(--ink)}
+.lt-head,.lt-row{display:grid;grid-template-columns:240px repeat(5,minmax(0,1fr))}
+.lt-head{font-family:var(--sora);font-size:12px;font-weight:600}
+.lt-head > div{padding:10px 14px}
+.lt-head > div:nth-child(2){background:#fff}
+.lt-head > div:nth-child(3){background:var(--l1)}
+.lt-head > div:nth-child(4){background:var(--l2)}
+.lt-head > div:nth-child(5){background:var(--l3)}
+.lt-head > div:nth-child(6){background:var(--deep);color:var(--paper)}
+.lt-head > div:nth-child(6) .pl{color:var(--plus-on-dark)}
+.lt-row{border-top:1px solid var(--ink)}
+.lt-story{padding:18px 22px 20px 0}
+.lt-story img{width:100%;aspect-ratio:16/9;object-fit:cover;margin-bottom:12px}
+.lt-story h3{font-family:var(--sora);font-weight:700;font-size:19px;line-height:1.15;letter-spacing:-.02em;margin-top:6px}
+.lt-cell{padding:18px 14px 20px;font-size:16px;line-height:1.4;color:var(--ink2)}
+.lt-cell:nth-child(2){background:#fff;color:var(--ink);font-size:17px}
+.lt-cell:nth-child(3){background:var(--l1)}
+.lt-cell:nth-child(4){background:var(--l2)}
+.lt-cell:nth-child(5){background:var(--l3)}
+.lt-cell:nth-child(6){background:var(--deep);color:var(--on-deep)}
+.lt-cell .n{display:block;font-family:var(--sora);font-weight:700;font-size:25px;color:var(--ink);letter-spacing:-.03em;line-height:1;margin-bottom:6px}
+.lt-cell .src{display:block;font-family:var(--sora);font-size:12px;color:var(--ink2);margin-top:8px}
+.lt-cell:nth-child(6) .src{color:var(--on-deep-mute)}
+.lt-cell .ph{display:block;margin-top:8px;font-family:var(--sora);font-size:12px;font-weight:600;color:var(--plus-d)}
+.lt-cell:nth-child(6) .ph{color:var(--plus-on-dark)}
+.lt-lab,.lt-more{display:none}
+
+/* ---------- numbers ---------- */
+.numbers{background:var(--deep);color:var(--paper);padding:56px 0 60px}
+.numbers .sh{border-top-color:var(--paper)}
+.numbers .sh p{color:var(--on-deep-mute)}
+.numbers .sh .pl{color:var(--plus-on-dark)}
+.num-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#3A3D42;border:1px solid #3A3D42}
+.num{background:var(--deep);padding:24px 24px 22px;display:flex;flex-direction:column;gap:10px}
+.num .v{font-family:var(--sora);font-weight:300;font-size:62px;letter-spacing:-.05em;line-height:.95}
+.num .d{font-size:19px;line-height:1.35;color:var(--on-deep)}
+.num .s{font-family:var(--sora);font-size:13px;color:var(--on-deep-mute);margin-top:auto;padding-top:10px;border-top:1px solid #34373C}
+
+/* ---------- explainers ---------- */
+.xsec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.xsec-media img{width:100%;height:100%;object-fit:cover;min-height:420px}
+.xsec-steps{background:#fff}
+.xsec-steps .x-top{padding:22px 24px 16px}
+.xsec-steps h3{font-family:var(--sora);font-weight:700;font-size:27px;line-height:1.08;letter-spacing:-.03em;margin:8px 0 0}
+.xsec-steps ol li{display:grid;grid-template-columns:34px 1fr;gap:10px;padding:13px 24px 14px;font-size:17px;line-height:1.38}
+.xsec-steps ol li:nth-child(1){background:var(--l1)}
+.xsec-steps ol li:nth-child(2){background:var(--l2)}
+.xsec-steps ol li:nth-child(3){background:var(--l3)}
+.xsec-steps ol li:nth-child(4){background:var(--deep);color:var(--on-deep)}
+.xsec-steps ol li:nth-child(4) .st{color:var(--plus-on-dark)}
+.st{font-family:var(--sora);font-weight:700;font-size:13px;color:var(--plus-d);padding-top:3px}
+.xlist li{padding:16px 0 18px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:56px 1fr;gap:16px}
+.xlist li:first-child{padding-top:0}
+.xlist .xn{font-family:var(--sora);font-weight:300;font-size:40px;letter-spacing:-.05em;line-height:1;color:var(--ink)}
+.xlist h4{font-family:var(--sora);font-weight:600;font-size:19px;line-height:1.2;letter-spacing:-.015em;margin:4px 0 4px}
+.xlist h4 a{display:block;padding:4px 0}
+.xlist p{font-size:17px;color:var(--ink2);line-height:1.4}
+.layers-ct{display:flex;gap:3px;align-items:center;margin-top:10px;font-family:var(--sora);font-size:12px;color:var(--mute)}
+.layers-ct i{display:block;width:16px;height:6px}
+.layers-ct i:nth-child(1){background:#fff;outline:1px solid var(--rule)}
+.layers-ct i:nth-child(2){background:var(--l1);outline:1px solid var(--rule)}
+.layers-ct i:nth-child(3){background:var(--l2)}
+.layers-ct i:nth-child(4){background:var(--l3)}
+.layers-ct i:nth-child(5){background:var(--deep)}
+.layers-ct span{margin-left:6px}
+
+/* ---------- video ---------- */
+.video{background:var(--deep);color:var(--paper);padding:56px 0 64px}
+.video .sh{border-top-color:var(--paper)}
+.v-main > a{position:relative;display:block}
+.v-main img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.play{position:absolute;left:20px;bottom:20px;display:flex;align-items:center;gap:12px;font-family:var(--sora);font-size:13px;font-weight:600}
+.play i{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--paper);color:var(--ink)}
+.play i svg{width:20px;height:20px;margin-left:3px}
+.play span{background:var(--deep);padding:6px 10px}
+.vk{display:block;margin-top:16px;font-family:var(--sora);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--plus-on-dark)}
+.v-main h3{font-family:var(--sora);font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.12;margin-top:8px}
+.v-main p{color:#C9C5BA;font-size:18px;margin-top:8px}
+.v-side li{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid #34373C}
+.v-side li:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.v-side .th{position:relative;display:block}
+.v-side img{width:100%;aspect-ratio:16/8;object-fit:cover}
+.v-side .dur{position:absolute;left:10px;bottom:10px;font-family:var(--sora);font-size:12px;font-weight:600;background:var(--deep);padding:3px 8px}
+.v-side .vk{margin-top:12px}
+.v-side h4{font-family:var(--sora);font-size:18px;font-weight:600;line-height:1.25;letter-spacing:-.015em;margin-top:4px}
+.v-side h4 a{display:block;padding:4px 0}
+
+/* ---------- world ---------- */
+.w-lead img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 60%}
+.w-lead h3{font-family:var(--sora);font-size:27px;font-weight:700;line-height:1.1;letter-spacing:-.03em;margin:8px 0 14px}
+.w-stack li{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:11px 14px;font-size:17px;line-height:1.38}
+.w-stack li b{font-family:var(--sora);font-size:12px;font-weight:600;padding-top:3px}
+.w-stack small{display:block;font-family:var(--sora);font-size:12px;color:var(--ink2);margin-top:4px}
+.w-stack li:nth-child(1){background:#fff}
+.w-stack li:nth-child(2){background:var(--l1);margin-left:14px}
+.w-stack li:nth-child(3){background:var(--l2);margin-left:28px}
+.w-stack li:nth-child(4){background:var(--deep);color:var(--on-deep);margin-left:42px}
+.w-stack li:nth-child(4) .pl{color:var(--plus-on-dark)}
+.w-stack li:nth-child(4) small{color:var(--on-deep-mute)}
+.w-side article{padding:0 0 22px;margin-bottom:22px;border-bottom:1px solid var(--rule)}
+.w-side article:last-child{border-bottom:0}
+.w-all{display:flex;align-items:center;gap:6px;min-height:44px;font-family:var(--sora);font-size:13px;font-weight:600;border-top:2px solid var(--ink)}
+.w-all svg{width:14px;height:14px}
+.w-side h3{font-family:var(--sora);font-size:21px;font-weight:700;line-height:1.15;letter-spacing:-.025em;margin:8px 0 10px}
+.w-side p{font-size:17px;color:var(--ink2);line-height:1.42}
+.w-plus{margin-top:12px;padding:10px 12px;background:var(--l1);font-size:16px;line-height:1.4;display:grid;grid-template-columns:84px 1fr;gap:10px}
+.w-plus b{font-family:var(--sora);font-size:12px;font-weight:600;padding-top:2px}
+.w-plus small{display:block;font-family:var(--sora);font-size:12px;color:var(--ink2);margin-top:4px}
+
+/* ---------- newsletter ---------- */
+.nl{padding:8px 0 64px}
+.nl .box{border:2px solid var(--ink);column-gap:0}
+.nl-l{padding:34px 36px}
+.nl-l h2{font-family:var(--sora);font-weight:700;font-size:38px;letter-spacing:-.04em;line-height:1.02;margin:10px 0 12px}
+.nl-l p{font-size:19px;color:var(--ink2);max-width:460px}
+.nl-form{display:flex;margin-top:22px;max-width:480px}
+.nl-form input{flex:1;min-width:0;min-height:44px;font-family:var(--sora);font-size:14px;padding:0 14px;border:1px solid var(--ink);border-right:0;background:#fff;border-radius:0;color:var(--ink)}
+.nl-r{display:flex;flex-direction:column}
+.nl-r div{flex:1;padding:13px 26px;display:grid;grid-template-columns:100px 1fr;gap:14px;align-items:center;font-size:17px;line-height:1.35}
+.nl-r div b{font-family:var(--sora);font-size:12px;font-weight:600}
+.nl-r div:nth-child(1){background:#fff}
+.nl-r div:nth-child(2){background:var(--l1)}
+.nl-r div:nth-child(3){background:var(--l2)}
+.nl-r div:nth-child(4){background:var(--l3)}
+.nl-r div:nth-child(5){background:var(--deep);color:var(--on-deep)}
+.nl-r div:nth-child(5) .pl{color:var(--plus-on-dark)}
+
+/* ---------- footer ---------- */
+.foot{background:var(--ink);color:#D9D5CB;padding:52px 0 28px;font-family:var(--sora)}
+.foot .grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:40px}
+.foot .logo-word{color:var(--paper);font-size:34px}
+.foot .logo svg{width:32px;height:30px}
+.foot .about{font-family:var(--serif);font-size:18px;color:#BDB8AD;margin-top:16px;max-width:380px;line-height:1.45}
+.foot-h{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9C988F;margin-bottom:8px}
+.foot li a{display:inline-flex;align-items:center;min-height:36px;font-size:14px}
+.foot li a:hover{color:#fff}
+.foot .social{display:flex;gap:8px;margin-top:20px}
+.foot .social a{width:44px;height:44px;border:1px solid #4A4D52;display:flex;align-items:center;justify-content:center;border-radius:50%}
+.foot .social svg{width:17px;height:17px}
+.foot .base{display:flex;justify-content:space-between;gap:20px;margin-top:40px;padding-top:18px;border-top:1px solid #34373C;font-size:12px;color:#9C988F}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .lt-head,.lt-row{grid-template-columns:190px repeat(5,minmax(0,1fr))}
+  .lead h1{font-size:36px}
+}
+@media (max-width:1000px){
+  :root{--gut:24px}
+  .s5,.s7{grid-column:1 / -1}
+  .g12{row-gap:36px}
+  .lead-media img{height:auto;flex:none;aspect-ratio:4/3}
+  .num-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lt-head{display:none}
+  .lt-row{grid-template-columns:1fr 1fr}
+  .lt-story{grid-column:1 / -1;display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;padding:18px 0 14px}
+  .lt-story img{margin:0}
+  .lt-lab{display:flex;gap:5px;align-items:baseline;font-family:var(--sora);font-size:12px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+  .lt-cell:nth-child(6) .lt-lab{color:var(--paper)}
+  .lt-cell:nth-child(6) .lt-lab .pl{color:var(--plus-on-dark)}
+  .lt-cell:nth-child(2),.lt-cell:nth-child(6){grid-column:1 / -1}
+  .nl .box{grid-template-columns:1fr}
+  .foot .grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  :root{--gut:16px}
+  body{font-size:18px}
+  .topbar .tb-r a:not(:first-child){display:none}
+  .mast > .wrap{grid-template-columns:1fr auto;padding-top:14px;padding-bottom:12px}
+  .mast-l{display:none}
+  .logo-word{font-size:32px}
+  .logo svg{width:30px;height:28px}
+  .mast-r .btn-ghost{display:none}
+  .btn{padding:0 12px;font-size:13px}
+  .nav .nav-search{display:none}
+  .nav ul{margin-right:-8px}
+  .nav li a{padding:0 14px 0 0;font-size:13px;min-height:44px}
+  .nav li:first-child a{padding-left:0}
+  .legend .wrap{gap:8px}
+  .legend ol{gap:6px 14px}
+  .lead{padding:14px 0 40px}
+  .lead h1{font-size:30px;line-height:1.08}
+  .lead-media img{aspect-ratio:16/9;object-position:45% 72%}
+  .ly{padding:11px 13px 12px;margin-left:calc(var(--d) * 5px)}
+  .ly0 p{font-size:19px}
+  .ly p{font-size:17px}
+  .ly p small{display:block;margin:4px 0 0;white-space:normal}
+  .lead-foot{flex-direction:column;align-items:flex-start;gap:0}
+  .sec{padding:40px 0}
+  .sh{flex-direction:column;align-items:flex-start;gap:6px}
+  .sh h2{font-size:24px}
+  .sh p{text-align:left}
+  .l1-list a{font-size:18px}
+  .feature-body{grid-template-columns:1fr;gap:16px}
+  .feature h3{font-size:25px}
+  .lt-row{grid-template-columns:1fr}
+  .lt-story{grid-template-columns:96px 1fr;gap:14px}
+  .lt-story h3{font-size:18px}
+  .lt-cell{padding:13px 13px 14px}
+  .lt-cell:nth-child(n+3){display:none}
+  .lt-more{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:10px 13px;background:var(--l2);margin-left:5px;font-family:var(--sora);font-size:12px;font-weight:600;color:var(--ink);min-height:44px}
+  .lt-more span{font-weight:400;color:var(--ink2)}
+  .lt-row{padding-bottom:18px}
+  .num-grid{grid-template-columns:1fr 1fr}
+  .num{padding:16px 14px 14px;gap:8px}
+  .num .v{font-size:34px}
+  .num .d{font-size:16px}
+  .num .s{font-size:12px}
+  .xsec{grid-template-columns:1fr}
+  .xsec-media img{min-height:0;aspect-ratio:3/2;height:auto}
+  .xsec-steps h3{font-size:24px}
+  .xsec-steps ol li{padding:12px 16px}
+  .xsec-steps .x-top{padding:18px 16px 14px}
+  .xlist li{grid-template-columns:44px 1fr;gap:12px}
+  .xlist .xn{font-size:32px}
+  .v-main h3{font-size:22px}
+  .play i{width:46px;height:46px}
+  .w-stack li{grid-template-columns:1fr;gap:2px;padding:10px 12px}
+  .w-stack li:nth-child(2),.w-stack li:nth-child(3){display:none}
+  .w-stack li:nth-child(4){margin-left:5px}
+  .w-lead h3{font-size:24px}
+  .nl-l{padding:24px 18px}
+  .nl-l h2{font-size:30px}
+  .nl-r div{grid-template-columns:84px 1fr;padding:12px 18px;font-size:16px}
+  .foot .grid{grid-template-columns:1fr 1fr;gap:28px}
+  .foot .grid > div:first-child{grid-column:1 / -1}
+  .foot .base{flex-direction:column}
+}
+
+</style>
+</helmet>
+<div class="dc-root" lang="en">
+<div class="topbar">
+  <div class="wrap">
+    <span>Tuesday, 6 October 2026</span>
+    <div class="tb-r">
+      <a href="#">How the layers work</a>
+      <a href="#">Corrections</a>
+      <a href="#">Newsletters</a>
+      <a href="#">Sign in</a>
+    </div>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-l"><b>News from Palestine, in layers.</b>Line one for the skim. Go down for the rest.</div>
+    <a href="#" class="logo" aria-label="Palestine+ home">
+      <span class="logo-word">Palestine</span>
+      <svg viewBox="0 0 44 40" aria-hidden="true">
+        <rect x="8.5" y="0" width="23" height="6" fill="#15171A"/>
+        <rect x="1" y="8.5" width="40" height="6" fill="#15171A"/>
+        <rect x="2" y="17" width="40" height="6" fill="#C2361F"/>
+        <rect x="3" y="25.5" width="40" height="6" fill="#15171A"/>
+        <rect x="12.5" y="34" width="23" height="6" fill="#15171A"/>
+      </svg>
+    </a>
+    <div class="mast-r">
+      <a href="#" class="btn btn-ghost">Explainers</a>
+      <a href="#" class="btn btn-ink">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 2v12M2 8h12"/></svg>
+        Get the daily +1
+      </a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="Sections">
+    <div class="wrap">
+      <ul>
+        <li><a href="#">Gaza</a></li>
+        <li><a href="#">West Bank</a></li>
+        <li><a href="#">Jerusalem</a></li>
+        <li><a href="#">Diaspora &amp; World</a></li>
+        <li><a href="#">Explainers</a></li>
+        <li><a href="#">Video</a></li>
+        <li><a href="#">+Numbers</a></li>
+      </ul>
+      <a href="#" class="nav-search">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="5"/><path d="M11 11l3.5 3.5"/></svg>
+        Search
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="legend" aria-label="How to read Palestine+">
+  <div class="wrap">
+    <b>Five layers to every story</b>
+    <ol>
+      <li><i></i>The fact</li>
+      <li><i></i>+ Context</li>
+      <li><i></i>+ Numbers</li>
+      <li><i></i>+ Voices</li>
+      <li><i></i>+ What next</li>
+    </ol>
+  </div>
+</section>
+
+<!-- LEAD: the stack -->
+<section class="lead">
+  <div class="wrap g12">
+    <div class="lead-media s5">
+      <figure>
+        <img src="/_blob/205740ab2fc3cc157907636db6abb52c" width="1240" height="1349" alt="People carrying bundles walk along a dirt road between destroyed buildings in the Gaza Strip">
+        <figcaption class="cap"><b>Gaza Strip.</b> Families on foot between ruined blocks. Photo: Jaber Jehad Badwan / CC BY-SA 4.0</figcaption>
+      </figure>
+    </div>
+    <article class="s7">
+      <div class="lead-meta"><span class="tag">Gaza</span><span class="when">Updated 09:40 GMT &middot; 5 layers &middot; 4 min deep</span></div>
+      <h1><a href="#">A year into Gaza&rsquo;s ceasefire, its first phase is still unfinished</a></h1>
+      <ol class="stack">
+        <li class="ly ly0">
+          <span class="ly-k"><span class="pl">&#9632;</span>The fact</span>
+          <p>A year after the US-brokered plan took effect, Israeli forces still hold about half of the Strip and phase two has not begun.</p>
+        </li>
+        <li class="ly ly1">
+          <span class="ly-k"><span class="pl">+</span>Context</span>
+          <p>The &ldquo;yellow line&rdquo; marks the half Israel may hold until phase one is done.<small>Security Council Report</small></p>
+        </li>
+        <li class="ly ly2">
+          <span class="ly-k"><span class="pl">+</span>Numbers</span>
+          <p><span class="big">1,431</span>Palestinians killed since the truce took effect.<small>Palestinian health authorities, via Al Jazeera</small></p>
+        </li>
+        <li class="ly ly3">
+          <span class="ly-k"><span class="pl">+</span>Voices</span>
+          <p>Civilians &ldquo;cannot wait for a more convenient diplomatic moment,&rdquo; UN relief chief Tom Fletcher told the Council.<small>OCHA, 18 June briefing</small></p>
+        </li>
+        <li class="ly ly4">
+          <span class="ly-k"><span class="pl">+</span>What next</span>
+          <p>The Council takes up Gaza in its October programme, phase one first.<small>Security Council Report</small></p>
+        </li>
+      </ol>
+      <div class="lead-foot">
+        <span>Gathered by the newsroom engine &middot; every layer checked by an editor</span>
+        <a href="#">Read the full story
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- LINE ONE: skim -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap g12">
+    <div class="s5">
+      <div class="sh"><h2>Line one</h2></div>
+      <ul class="l1-list">
+        <li><span class="l1-meta"><span class="tag">Gaza</span><time datetime="2026-10-04">4 Oct</time></span><a href="#">Six killed, four of them women, as a strike hits a Gaza City apartment block</a><span class="depth">+3</span></li>
+        <li><span class="l1-meta"><span class="tag">Gaza</span><time datetime="2026-10-05">5 Oct</time></span><a href="#">Drone strike in Khan Younis kills one and wounds a woman and her two children</a><span class="depth">+2</span></li>
+        <li><span class="l1-meta"><span class="tag">West Bank</span><time datetime="2026-10-05">5 Oct</time></span><a href="#">One Palestinian killed, two seriously hurt as troops fire on a car near Bani Naim, east of Hebron</a><span class="depth">+3</span></li>
+        <li><span class="l1-meta"><span class="tag">Jerusalem</span><time datetime="2026-10-04">4 Oct</time></span><a href="#">A Silwan family is made to demolish its own home to avoid municipal fines</a><span class="depth">+4</span></li>
+        <li><span class="l1-meta"><span class="tag">West Bank</span><time datetime="2026-10-05">5 Oct</time></span><a href="#">Settlers injure three Palestinians in Imriha, southwest of Jenin</a><span class="depth">+2</span></li>
+      </ul>
+      <p class="l1-note">The badge counts the layers under each line.</p>
+    </div>
+    <article class="feature s7">
+      <img src="/_blob/9e6edba3b12593d2078b6e7033c8c7aa" width="960" height="960" alt="A wide sandy road through a low-rise district of the Gaza Strip">
+      <div class="feature-body">
+        <div>
+          <span class="tag">Gaza &middot; The yellow line</span>
+          <h3><a href="#">Behind the yellow line, the homes families still cannot go back to</a></h3>
+          <p class="dek">The line splits the Strip roughly in half. East of it, Israeli forces stay until they pull back under the plan, and families who lived there wait on the other side.</p>
+          <p class="cap"><b>Photo:</b> A road in the Gaza Strip. Hla.bashbash / CC BY-SA 4.0</p>
+        </div>
+        <ol class="mini-stack">
+          <li><b><span class="pl">+</span> Context</b>Pulling back from the line is tied to phase two.</li>
+          <li><b><span class="pl">+</span> Numbers</b>[number] families displaced from areas beyond the line.</li>
+          <li><b><span class="pl">+</span> What next</b>No date has been set for phase two to begin.</li>
+        </ol>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- LAYER TABLE -->
+<section class="sec" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sh"><h2>Read across, go deeper</h2><p>Three of today&rsquo;s stories, opened out layer by layer</p></div>
+    <div class="ltab">
+      <div class="lt-head" aria-hidden="true">
+        <div>Story</div>
+        <div><span class="pl">&#9632;</span> The fact</div>
+        <div><span class="pl">+</span> Context</div>
+        <div><span class="pl">+</span> Numbers</div>
+        <div><span class="pl">+</span> Voices</div>
+        <div><span class="pl">+</span> What next</div>
+      </div>
+
+      <article class="lt-row">
+        <div class="lt-story">
+          <img src="/_blob/7e93176aaa03f06676ee828a2867368b" width="400" height="267" alt="Lions' Gate in the walls of Jerusalem's Old City, the gate nearest Al-Aqsa">
+          <div><span class="tag">Jerusalem</span><h3><a href="#">Barred from Al-Aqsa: about 900 orders this year</a></h3></div>
+        </div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">&#9632;</span> The fact</span>The Jerusalem Governorate has counted about 900 orders barring Palestinians from Al-Aqsa since January.<span class="src">Jerusalem Governorate</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Context</span>The orders keep worshippers out of the compound for days or months, and peak around Jewish holidays.</div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Numbers</span><span class="n">27,830</span>settler entries into the compound in the third quarter.<span class="src">Jerusalem Governorate, Q3</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Voices</span>Worshippers describe growing fear and surveillance inside the mosque.<span class="src">The New Arab</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> What next</span>[number] orders are due to expire or be renewed before the year ends.<span class="ph">Awaiting the Governorate&rsquo;s figure</span></div>
+        <div class="lt-more"><span class="pl">+4 layers</span> Context &middot; Numbers &middot; Voices &middot; What next</div>
+      </article>
+
+      <article class="lt-row">
+        <div class="lt-story">
+          <img src="/_blob/b781263e856e5e340837aaac4bed4932" width="400" height="267" alt="Pallets of humanitarian aid stacked at a crossing point into Gaza">
+          <div><span class="tag">Gaza</span><h3><a href="#">Medicines and prosthetics held up at the crossings</a></h3></div>
+        </div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">&#9632;</span> The fact</span>The WHO says repeated delays are keeping lifesaving medicines and prosthetics out of Gaza.<span class="src">UN News, 2 Oct</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Context</span>Every medical shipment must clear Israeli inspection before it can cross into the Strip.</div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Numbers</span><span class="n">[number]</span>medical trucks waiting for clearance this week.<span class="ph">Awaiting a sourced figure</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Voices</span>The delays risk &ldquo;devastating consequences&rdquo; for patients, the WHO said.<span class="src">WHO via UN News</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> What next</span>Aid access sits beside phase one on the Council&rsquo;s October agenda.<span class="src">Security Council Report</span></div>
+        <div class="lt-more"><span class="pl">+4 layers</span> Context &middot; Numbers &middot; Voices &middot; What next</div>
+      </article>
+
+      <article class="lt-row">
+        <div class="lt-story">
+          <img src="/_blob/142a9b4434915d2fd1600dbd4f1039d5" width="400" height="300" alt="Excavators demolishing structures on a hillside in Masafer Yatta, south of Hebron">
+          <div><span class="tag">West Bank</span><h3><a href="#">Settlers and bulldozers: a year of displacement</a></h3></div>
+        </div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">&#9632;</span> The fact</span>Settlers have killed 30 Palestinians since January, more than in any year since 2022.<span class="src">Palestinian authorities</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Context</span>Settler attacks and the access limits that follow are now the main reason families leave their homes.<span class="src">OCHA</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Numbers</span><span class="n">1,500</span>Palestinians displaced by demolitions in the West Bank this year.<span class="src">OCHA, Sept update</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> Voices</span>The UN rights office says the Masafer Yatta demolitions deepen fears of ethnic cleansing.<span class="src">UN Human Rights, OPT</span></div>
+        <div class="lt-cell"><span class="lt-lab"><span class="pl">+</span> What next</span>More demolition orders are pending in Masafer Yatta&rsquo;s declared firing zone.<span class="src">IMEMC</span></div>
+        <div class="lt-more"><span class="pl">+4 layers</span> Context &middot; Numbers &middot; Voices &middot; What next</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers">
+  <div class="wrap">
+    <div class="sh"><h2><span class="pl">+</span>Numbers</h2><p>Only figures with a named source. When we have none, we say so.</p></div>
+    <div class="num-grid">
+      <div class="num"><span class="v">4,300+</span><span class="d">Palestinians displaced in the West Bank this year by demolitions, evictions, settler attacks and closures</span><span class="s">OCHA &middot; September 2026</span></div>
+      <div class="num"><span class="v">60%+</span><span class="d">of them displaced after settler attacks and the access limits that follow</span><span class="s">OCHA &middot; September 2026</span></div>
+      <div class="num"><span class="v">1,700+</span><span class="d">Palestinians displaced in East Jerusalem and Area C in 2025, a record year</span><span class="s">Arab News, citing monitoring groups</span></div>
+      <div class="num"><span class="v">9,600+</span><span class="d">Palestinians held in Israeli prisons</span><span class="s">Prisoners&rsquo; Society, Addameer &amp; Detainees Commission &middot; April 2026</span></div>
+      <div class="num"><span class="v">1 in 2</span><span class="d">of them held without charge or trial</span><span class="s">Same institutions &middot; April 2026</span></div>
+      <div class="num"><span class="v">1,251</span><span class="d">Palestinians classed by Israel as &ldquo;unlawful combatants&rdquo;</span><span class="s">Same institutions &middot; April 2026</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLAINERS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh"><h2>Explainers</h2></div>
+    <div class="g12">
+      <article class="xsec s7">
+        <div class="xsec-media">
+          <img src="/_blob/07177926c3615ca33efc7af5c8e33c39" width="900" height="600" alt="The Rafah border crossing gate between Egypt and Gaza, with travellers in front">
+        </div>
+        <div class="xsec-steps">
+          <div class="x-top">
+            <span class="tag">Explainer &middot; Gaza</span>
+            <h3><a href="#">The Rafah crossing, layer by layer</a></h3>
+            <p class="cap">Rafah crossing. Photo: Gigi Ibrahim / Public domain</p>
+          </div>
+          <ol>
+            <li><span class="st">01</span><span>Rafah is Gaza&rsquo;s only crossing that does not lead into Israel. It opens onto Egypt.</span></li>
+            <li><span class="st">02</span><span>Aid trucks enter through its secondary gate, then route to Kerem Shalom for inspection.</span></li>
+            <li><span class="st">03</span><span>Egypt sends aid in numbered convoys and publishes each one through its State Information Service.</span></li>
+            <li><span class="st">04</span><span>What decides its opening next: the phase-one talks, and who runs the Gaza side.</span></li>
+          </ol>
+        </div>
+      </article>
+      <ul class="xlist s5">
+        <li>
+          <span class="xn">01</span>
+          <div><span class="tag">Gaza</span><h4><a href="#">Phase one, phase two: the Gaza plan, one year on</a></h4><p>What was agreed last October, what has been done, and what is still missing.</p>
+            <div class="layers-ct"><i></i><i></i><i></i><i></i><i></i><span>5 layers &middot; 8 min</span></div></div>
+        </li>
+        <li>
+          <span class="xn">02</span>
+          <div><span class="tag">West Bank</span><h4><a href="#">Masafer Yatta and the &ldquo;firing zone&rdquo;</a></h4><p>How a 1980s military order and a 2022 court ruling put 1,200 people in limbo.</p>
+            <div class="layers-ct"><i></i><i></i><i></i><i></i><i></i><span>5 layers &middot; 6 min</span></div></div>
+        </li>
+        <li>
+          <span class="xn">03</span>
+          <div><span class="tag">Gaza</span><h4><a href="#">How Gaza&rsquo;s death toll is counted</a></h4><p>Who keeps the figures, and how each death is verified before it is added.</p>
+            <div class="layers-ct"><i></i><i></i><i></i><i></i><i></i><span>5 layers &middot; 5 min</span></div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video">
+  <div class="wrap">
+    <div class="sh"><h2>Video</h2></div>
+    <div class="g12">
+      <article class="v-main s7">
+        <a href="#">
+          <img src="/_blob/a84e9e28b8c27ff81cabcc47b6badee6" width="1200" height="900" alt="A painted mural with flowers on the face of a collapsed building on Al Thawra Street, Gaza">
+          <span class="play"><i><svg viewBox="0 0 20 20" fill="currentColor"><path d="M5 3l12 7-12 7z"/></svg></i><span>3:42</span></span>
+        </a>
+        <span class="vk">Gaza City</span>
+        <h3><a href="#">A mural on the rubble of Al Thawra Street, and the people who painted it</a></h3>
+        <p>Artists turn a collapsed facade into a wall of flowers. Photo: Hla.bashbash / CC BY 4.0</p>
+      </article>
+      <ul class="v-side s5">
+        <li><a href="#" class="th"><img src="/_blob/0f57f2ac5d95bad8ba3b2f10371aaec5" width="800" height="533" alt="An aid convoy van among travellers at the Rafah crossing gate"><span class="dur">1:58</span></a>
+          <span class="vk">Rafah &middot; From the archive</span><h4><a href="#">Aid convoys at the Rafah gate, and what has changed since</a></h4></li>
+        <li><a href="#" class="th"><img src="/_blob/89cc2b872d2dd7cfce5da8c21bf597c9" width="800" height="600" alt="Two people seen from behind walking along Gaza's seafront road under power lines"><span class="dur">2:20</span></a>
+          <span class="vk">Gaza</span><h4><a href="#">A walk along Gaza&rsquo;s seafront, a year into the truce</a></h4></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DIASPORA & WORLD -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh"><h2>Diaspora &amp; World</h2></div>
+    <div class="g12">
+      <article class="w-lead s7">
+        <img src="/_blob/1368b825e58a987c3df684280e926c46" width="1000" height="750" alt="Sailing boats of the Gaza flotilla anchored off Ierapetra, Crete">
+        <p class="cap">Flotilla boats off Ierapetra, Crete, in May. Photo: C messier / CC BY-SA 4.0</p>
+        <span class="tag" style="display:block;margin-top:14px">At sea</span>
+        <h3><a href="#">The Freedom Flotilla sails again, with stops in Spain, Portugal and Italy</a></h3>
+        <ol class="w-stack">
+          <li><b><span class="pl">&#9632;</span> The fact</b><span>A new flotilla leaves Europe this month and will call at ports in Spain, Portugal and Italy before heading for Gaza.<small>Times of Israel</small></span></li>
+          <li><b><span class="pl">+</span> Context</b><span>It is the coalition&rsquo;s first attempt since Israel stopped its last voyage in international waters in May.</span></li>
+          <li><b><span class="pl">+</span> Numbers</b><span>430 activists were arrested across 50 ships in May.<small>Times of Israel</small></span></li>
+          <li><b><span class="pl">+</span> What next</b><span>No departure date, ship count or aid load has been announced.</span></li>
+        </ol>
+      </article>
+      <div class="w-side s5">
+        <article>
+          <span class="tag">Europe</span>
+          <h3><a href="#">Rights groups press the EU over crackdowns on solidarity protests</a></h3>
+          <p>FIDH and six other organisations ask the EU Council to act on the repression of peaceful rallies for Palestinians and the flotilla.</p>
+          <div class="w-plus"><b><span class="pl">+</span> Voices</b><span>The groups call the repression &ldquo;alarming&rdquo;.<small>FIDH</small></span></div>
+        </article>
+        <article>
+          <span class="tag">Northern Europe</span>
+          <h3><a href="#">Handala II and The Kate tour Nordic and Irish ports before the sailing</a></h3>
+          <p>One boat called in Norway, Sweden and Denmark; the other sailed from Bristol to Kinsale, raising funds and support on the way.</p>
+          <div class="w-plus"><b><span class="pl">+</span> What next</b><span>Both are due to join the rest of the flotilla this month.<small>Times of Israel</small></span></div>
+        </article>
+        <a href="#" class="w-all">All Diaspora &amp; World
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="nl">
+  <div class="wrap">
+    <div class="box g12">
+      <div class="nl-l s7">
+        <span class="tag">The daily +1</span>
+        <h2>One story a morning, with every layer.</h2>
+        <p>Five short layers in your inbox at 7 a.m. GMT. Read the first line on the way to work; read the rest when you have the time.</p>
+        <form class="nl-form" action="#">
+          <input type="email" placeholder="Your email address" aria-label="Email address">
+          <button type="submit" class="btn btn-ink">Subscribe</button>
+        </form>
+      </div>
+      <div class="nl-r s5" aria-hidden="true">
+        <div><b><span class="pl">&#9632;</span> 07:00</b><span>The fact you need today</span></div>
+        <div><b><span class="pl">+</span> Context</b><span>Why it is happening now</span></div>
+        <div><b><span class="pl">+</span> Numbers</b><span>The figures, each with a source</span></div>
+        <div><b><span class="pl">+</span> Voices</b><span>Who is saying what</span></div>
+        <div><b><span class="pl">+</span> What next</b><span>What to watch tomorrow</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a href="#" class="logo" aria-label="Palestine+ home">
+          <span class="logo-word">Palestine</span>
+          <svg viewBox="0 0 44 40" aria-hidden="true">
+        <rect x="8.5" y="0" width="23" height="6" fill="#F4F1EA"/>
+        <rect x="1" y="8.5" width="40" height="6" fill="#F4F1EA"/>
+        <rect x="2" y="17" width="40" height="6" fill="#E0503A"/>
+        <rect x="3" y="25.5" width="40" height="6" fill="#F4F1EA"/>
+        <rect x="12.5" y="34" width="23" height="6" fill="#F4F1EA"/>
+      </svg>
+        </a>
+        <p class="about">An English-language newsroom for Palestine. Our engine gathers; our editors check every layer before it goes up.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2" width="12" height="12" rx="3.5"/><circle cx="8" cy="8" r="2.8"/><circle cx="11.6" cy="4.4" r=".5" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 2.5l10 11M13 2.5l-10 11"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 2v8.5a2.5 2.5 0 1 1-2.5-2.5M9 2c.4 1.9 1.6 3 3.5 3.2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="3.5" width="13" height="9" rx="2.5"/><path d="M7 6l3 2-3 2z" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 2.5L1.8 7.3l4 1.4 1.5 4.6 2.3-2.6 3 2.3z"/></svg></a>
+        </div>
+      </div>
+      <div><p class="foot-h">Sections</p><ul><li><a href="#">Gaza</a></li><li><a href="#">West Bank</a></li><li><a href="#">Jerusalem</a></li><li><a href="#">Diaspora &amp; World</a></li><li><a href="#">Explainers</a></li><li><a href="#">Video</a></li></ul></div>
+      <div><p class="foot-h">The layers</p><ul><li><a href="#">How we build a story</a></li><li><a href="#">Our sources</a></li><li><a href="#">How we use AI</a></li><li><a href="#">Corrections</a></li></ul></div>
+      <div><p class="foot-h">Palestine+</p><ul><li><a href="#">About</a></li><li><a href="#">Newsletters</a></li><li><a href="#">Contact the desk</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="base"><span>&copy; 2026 Palestine+. Photos via Wikimedia Commons under the licences credited.</span><span>Built on Devlo by TakTek</span></div>
+  </div>
+</footer>
+
+<!--
+Image credits (all from Wikimedia Commons)
+img/walk-north.jpg    -> https://commons.wikimedia.org/wiki/File:Forced_Displacement_of_Gaza_Strip_Residents_During_the_Gaza-Israel_War_23-25.jpg | CC BY-SA 4.0 | Jaber Jehad Badwan (portrait crop)
+img/yellow-road.jpg   -> https://commons.wikimedia.org/wiki/File:Streets_of_Gaza_during_the_Gaza_war_2023-2025_-_12.jpg | CC BY-SA 4.0 | Hla.bashbash
+img/lions-gate.jpg    -> https://commons.wikimedia.org/wiki/File:Old_Jerusalem_Lions_Gate_morning.JPG | CC BY-SA 4.0 | Djampa
+img/aid-pallets.jpg   -> https://commons.wikimedia.org/wiki/File:Humanitarian_Aid_at_the_Kerem_Shalom_Crossing_Point_(9389531).jpg | Public domain | U.S. Army USARCENT, Sgt. 1st Class Malcolm Cohens-Ashley
+img/masafer-yatta.jpg -> https://commons.wikimedia.org/wiki/File:05_05_2025_Khallet_Athaba_03.jpg | CC0 | Mediterranea Saving Humans
+img/rafah-gate.jpg    -> https://commons.wikimedia.org/wiki/File:Egyptian_Convoy_to_Gaza,_Palestine.jpg | Public domain | Gigi Ibrahim
+img/mural-thawra.jpg  -> https://commons.wikimedia.org/wiki/File:A_mural_on_one_of_the_bombed_buildings_on_Al_Thawra_Street_in_Gaza_war.jpg | CC BY 4.0 | Hla.bashbash
+img/convoy-rafah.jpg  -> https://commons.wikimedia.org/wiki/File:Rafah_Crossing.jpg | CC BY-SA 2.0 | gloucester2gaza
+img/seafront.jpg      -> https://commons.wikimedia.org/wiki/File:Streets_of_Gaza_during_the_Gaza_war_2023-2025_-_10.jpg | CC BY-SA 4.0 | Hla.bashbash
+img/flotilla.jpg      -> https://commons.wikimedia.org/wiki/File:Ο_στολίσκος_για_τη_Γάζα_στην_Ιεράπετρα_202605033439.jpg | CC BY-SA 4.0 | C messier
+-->
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6686}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,2371 @@
+{
+ "date": "2026-10-27",
+ "updated": "07:40",
+ "lead": "westbank-hebron-operation-thousands-displaced",
+ "feature": "gaza-wfp-cuts-food-aid-half-million",
+ "stories": [
+  {
+   "id": "gaza-thirteen-killed-deir-al-balah-advance",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": null,
+   "place": "Deir al-Balah",
+   "region": "Gaza Strip",
+   "headline": "Thirteen killed in a day as Israeli tanks push west of the yellow line in Deir al-Balah",
+   "fact": "Gaza's civil defence said Israeli fire and air strikes killed at least 13 people and wounded about 60 in 24 hours, as Israeli armour advanced west of the yellow line in Deir al-Balah.",
+   "standfirst": "Residents of central Gaza say troop movements across the ceasefire line force them out of homes and shelters, only for some to return when the forces pull back. Israel says it is striking militants who violate the truce.",
+   "body": [
+    "Israeli tanks and military vehicles moved westward beyond the so-called yellow line in Deir al-Balah, in central Gaza, The New Arab reported on Monday. Residents fear the forces could reach Salah al-Din Street, the territory's main north-south road.",
+    "Mahmoud Bassal, spokesperson for Gaza's civil defence, said at least 13 people had been killed and around 60 wounded across the Strip over the previous 24 hours. Two of the dead were killed when a vehicle was struck in Deir al-Balah in the afternoon.",
+    "Hamas said two members of its security apparatus were killed on what it called a security mission in central Gaza. The Israeli military said separately that its strikes on Saturday and Sunday killed four operatives, including two Islamic Jihad members, whom it accused of acting in systematic violation of the ceasefire.",
+    "The New Arab put the overall death toll in Gaza since October 2023 at 74,555. Estimates cited by the outlet suggest Israel now controls nearly two-thirds of the territory.",
+    "A Gaza-based analyst linked the escalation to Israel's general election, held on Tuesday."
+   ],
+   "layers": {
+    "context": {
+     "text": "Under the October 2025 ceasefire, Israeli forces pulled back to the yellow line, which roughly splits the Strip into east and west. The UN says new yellow blocks have since been seen in Ash Shuja'iyyeh and parts of Deir al-Balah, and Israeli control has grown beyond the 53% the deal allowed.",
+     "source": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168672"
+    },
+    "numbers": [
+     {
+      "figure": "13",
+      "label": "people killed across Gaza in 24 hours, according to civil defence",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/israel-army-advances-beyond-gazas-yellow-line-15-killed"
+     },
+     {
+      "figure": "74,555",
+      "label": "Palestinians killed in Gaza since October 2023",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/israel-army-advances-beyond-gazas-yellow-line-15-killed"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "These movements have forced residents to flee their homes and shelters, only to return when the forces pull back.",
+      "who": "Osama al-Kahlout",
+      "role": "Deir al-Balah resident",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/israel-army-advances-beyond-gazas-yellow-line-15-killed"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "The New Arab",
+     "url": "https://www.newarab.com/news/israel-army-advances-beyond-gazas-yellow-line-15-killed",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "deir-al-balah-saladin-street-2025"
+  },
+  {
+   "id": "gaza-islamic-university-strikes",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": "15:40",
+   "place": "Islamic University, Gaza City",
+   "region": "Gaza Strip",
+   "headline": "Strikes on Islamic University campus kill three guards and wound seven students",
+   "fact": "An Israeli air strike on the Islamic University campus in Gaza City killed three security guards, hours after a drone strike there wounded seven female students.",
+   "standfirst": "The campus was hit twice on Sunday, a day on which at least eight Palestinians were killed across the Strip. Most university buildings had already been destroyed earlier in the war.",
+   "body": [
+    "A drone strike on the Islamic University in Gaza City on Sunday wounded seven female students with shrapnel, one of them seriously, Al Jazeera reported. A later air strike on the campus killed three security guards.",
+    "The university suspended academic and administrative work after the first attack. Al Jazeera's correspondent said most campus buildings were already in ruins before Sunday.",
+    "Elsewhere, two people were killed by shelling in al-Mawasi, Khan Younis, according to Nasser Medical Complex, and further deaths were reported east of Deir al-Balah, on al-Rashid Street in the north and in the Sheikh Nasser area of Khan Younis.",
+    "The Israeli military did not comment on the campus strikes in the reports reviewed."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "3",
+      "label": "security guards killed on campus",
+      "source": "Al Jazeera via Yahoo News",
+      "url": "https://www.yahoo.com/news/world/articles/seven-killed-gaza-israel-targets-154025482.html"
+     },
+     {
+      "figure": "95%",
+      "label": "of Gaza's higher education campuses destroyed or damaged since October 2023, per UNESCO",
+      "source": "Democracy Now!",
+      "url": "https://www.democracynow.org/2026/10/26/headlines/eight_palestinians_killed_in_israeli_attacks_across_the_gaza_strip"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "The war is ongoing. Israel claims there is a truce, but on the ground, what truce?",
+      "who": "Alaa Baroud",
+      "role": "brother of a man killed in a strike on Sunday",
+      "source": "Democracy Now!",
+      "url": "https://www.democracynow.org/2026/10/26/headlines/eight_palestinians_killed_in_israeli_attacks_across_the_gaza_strip"
+     },
+     {
+      "quote": "We could hear the hissing sound of flying shrapnel everywhere.",
+      "who": "Hani Mahmoud",
+      "role": "Al Jazeera correspondent, Gaza City",
+      "source": "Al Jazeera via Yahoo News",
+      "url": "https://www.yahoo.com/news/world/articles/seven-killed-gaza-israel-targets-154025482.html"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "Al Jazeera (republished by Yahoo News)",
+     "url": "https://www.yahoo.com/news/world/articles/seven-killed-gaza-israel-targets-154025482.html",
+     "date": "2026-10-25"
+    },
+    {
+     "name": "Democracy Now!",
+     "url": "https://www.democracynow.org/2026/10/26/headlines/eight_palestinians_killed_in_israeli_attacks_across_the_gaza_strip",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "gaza-city-rimal-2023"
+  },
+  {
+   "id": "gaza-khan-younis-mawasi-strike-girl",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "06:00",
+   "place": "al-Mawasi, Khan Younis",
+   "region": "Gaza Strip",
+   "headline": "Girl among three reported killed in strike on al-Mawasi displacement area",
+   "fact": "Hamas-affiliated media reported that an Israeli strike in al-Mawasi, Khan Younis, killed three people including a girl; Israel later said it hit three militants leaving a tunnel nearby.",
+   "standfirst": "The coastal area of al-Mawasi shelters large numbers of displaced families. The Times of Israel said it could not independently verify the casualty report.",
+   "body": [
+    "Three people, including a girl, were killed in an Israeli strike in al-Mawasi, west of Khan Younis, according to Hamas-affiliated media cited by The Times of Israel early on Monday. The Israeli military did not immediately comment.",
+    "Later the same day the military said it had struck three operatives who came out of a tunnel shaft west of the yellow line in Khan Younis, saying hits were identified but not confirming deaths.",
+    "The day before, two people were killed by shelling in al-Mawasi, according to Nasser Medical Complex."
+   ],
+   "layers": {
+    "context": {
+     "text": "The yellow line marks the positions Israeli forces withdrew to under the October 2025 ceasefire. Areas west of it, including al-Mawasi, are where most of Gaza's displaced population now lives.",
+     "source": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168672"
+    },
+    "numbers": [
+     {
+      "figure": "351",
+      "label": "children killed in Gaza since the ceasefire, per UNICEF (as of 22 October)",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "Al Jazeera (republished by Yahoo News)",
+     "url": "https://www.yahoo.com/news/world/articles/seven-killed-gaza-israel-targets-154025482.html",
+     "date": "2026-10-25"
+    }
+   ],
+   "photo": "khan-younis-main-street-2025"
+  },
+  {
+   "id": "gaza-wfp-cuts-food-aid-half-million",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-19",
+   "time": null,
+   "place": "Gaza Strip",
+   "region": "Gaza Strip",
+   "headline": "WFP cuts Gaza food aid by a third as funding runs short before winter",
+   "fact": "The World Food Programme said funding shortfalls had forced it to cut food assistance in Gaza by about a third, leaving half a million people without its support.",
+   "standfirst": "The agency now reaches 1.1 million people, down from 1.6 million a month earlier, and has halved rations for those it still serves. It says it needs $450 million to keep operating in Gaza and the West Bank until March.",
+   "body": [
+    "WFP said on 19 October that families still receiving food parcels will get one instead of two, along with a smaller bag of wheat flour.",
+    "Daily hot meals supported by the agency fell from 250,000 to 150,000, and the value of cash assistance to 75,000 families was reduced.",
+    "The agency said WFP's 2026 funding for Palestine is less than half the level of previous years. It warned that modest recent gains in food security remain fragile as winter approaches.",
+    "About 1.4 million people, or 67% of Gaza's population, are in IPC Phase 3 or worse, down from 1.6 million at the end of 2025, according to WFP."
+   ],
+   "layers": {
+    "context": {
+     "text": "OCHA says food security partners reached about 1.3 million people in September, down from 2.1 million in January, and expects monthly reach to fall below one million from October.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+    },
+    "numbers": [
+     {
+      "figure": "1.1 million",
+      "label": "people WFP now supports in Gaza, down from 1.6 million",
+      "source": "WFP",
+      "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+     },
+     {
+      "figure": "$450 million",
+      "label": "WFP requirement for Gaza and the West Bank, October 2026 to March 2027",
+      "source": "WFP",
+      "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+     },
+     {
+      "figure": "150,000",
+      "label": "daily hot meals, down from 250,000",
+      "source": "WFP",
+      "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "We spent a whole week without bread. This bag of flour means everything to me. It means life.",
+      "who": "Unnamed woman",
+      "role": "displaced resident of Al Saraya camp",
+      "source": "WFP",
+      "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+     }
+    ],
+    "next": {
+     "text": "WFP's appeal covers operations until the end of March 2027; without new money, further cuts are likely as the rainy season begins.",
+     "date": "2027-03-31",
+     "source": "WFP",
+     "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+    }
+   },
+   "sources": [
+    {
+     "name": "WFP",
+     "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza",
+     "date": "2026-10-19"
+    },
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261019-world-food-programme-to-end-aid-for-half-a-million-in-gaza-due-to-funding-shortfall",
+     "date": "2026-10-19"
+    }
+   ],
+   "photo": "kerem-shalom-aid-offload-2025"
+  },
+  {
+   "id": "gaza-food-aid-reach-trucks-ocha",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-22",
+   "time": null,
+   "place": "Kerem Shalom crossing",
+   "region": "Gaza Strip",
+   "headline": "UN aid trucks rise at Kerem Shalom while commercial deliveries fall by a quarter",
+   "fact": "OCHA said 702 UN and partner trucks were offloaded at Kerem Shalom in the week to 19 October, up 47%, while commercial truckloads fell 25% after a reported halt over a disputed fee.",
+   "standfirst": "Kerem Shalom is the only cargo crossing into Gaza still operating. Aid groups warn their monthly food reach will drop below one million people from October.",
+   "body": [
+    "Of 779 manifested UN and partner trucks, 702 were offloaded at Kerem Shalom between 13 and 19 October, a 47% increase on the week before, OCHA said in its 22 October report.",
+    "Commercial truckloads fell by a quarter to 315 between 12 and 18 October, following reports of a halt linked to a disputed fee.",
+    "Food security partners reached about 1.3 million people in September, compared with 2.1 million in January, and expect to reach fewer than one million a month from October.",
+    "About 60% of the $283 million the shelter cluster needs for the cold and rainy season is unfunded, and 11 water partners may have to stop trucking drinking water."
+   ],
+   "layers": {
+    "context": {
+     "text": "Kerem Shalom has been the only operating cargo crossing since Zikim closed on 24 May, according to OCHA.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026"
+    },
+    "numbers": [
+     {
+      "figure": "702",
+      "label": "UN and partner trucks offloaded at Kerem Shalom, 13 to 19 October",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     },
+     {
+      "figure": "315",
+      "label": "commercial truckloads, 12 to 18 October (down 25%)",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     },
+     {
+      "figure": "60%",
+      "label": "of the $283m winter shelter requirement unfunded",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    }
+   ],
+   "photo": "kerem-shalom-aid-truck-2025"
+  },
+  {
+   "id": "gaza-yellow-line-tents-burned-shujaiyyeh",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": null,
+   "place": "Ash Shuja'iyyeh, Gaza City",
+   "region": "Gaza Strip",
+   "headline": "Tents set alight along the yellow line as new markers appear in Shuja'iyyeh",
+   "fact": "The UN said tents were set on fire in Ash Shuja'iyyeh on Sunday night, leaving at least nine households without shelter, as new yellow blocks were seen there and in Deir al-Balah.",
+   "standfirst": "Aid agencies report continued arson along the ceasefire line, and a UN site in Deir al-Balah came under fire. An earlier fire displaced about 200 families.",
+   "body": [
+    "Reported arson attacks are continuing in areas along the yellow line, UN News said on 26 October, citing humanitarian partners.",
+    "New yellow blocks were seen in Ash Shuja'iyyeh, in eastern Gaza City, and in parts of Deir al-Balah. Tents burned in Ash Shuja'iyyeh on Sunday night left at least nine households without shelter.",
+    "A UN site in Deir al-Balah also came under fire, the UN said.",
+    "OCHA had reported on 15 October that Israeli forces moved yellow line markers westward near Ash Shuja'iyyeh on 11 October, raising fears of further displacement."
+   ],
+   "layers": {
+    "context": {
+     "text": "The yellow line marks where Israeli forces withdrew under the October 2025 ceasefire. Moving its markers westward shrinks the area where displaced Palestinians can live.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+    },
+    "numbers": [
+     {
+      "figure": "9",
+      "label": "households left without shelter by Sunday's fire",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168672"
+     },
+     {
+      "figure": "200",
+      "label": "families displaced by an earlier fire",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168672"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168672",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026",
+     "date": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "gaza-stabilisation-force-morocco-albania",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "11:17",
+   "place": "Gaza Strip",
+   "region": "Gaza Strip",
+   "headline": "Albania signs up to Gaza stabilisation force as planned base waits on Israel",
+   "fact": "Albania has finalised its agreement to join the International Stabilisation Force in Gaza, with liaison officers expected in November, while a planned ISF base near the yellow line remains on hold.",
+   "standfirst": "Up to 500 Moroccan personnel have trained for the force and Kosovo says its bomb disposal team is ready, but a Board of Peace official says Israeli obstruction has stalled the base meant to house them.",
+   "body": [
+    "Albania has completed its participation agreement with the International Stabilisation Force (ISF), and its liaison officers are expected in November, The Times of Israel reported on 26 October.",
+    "Kosovo's defence ministry said its explosive ordnance disposal team would deploy once the ISF is ready to receive it.",
+    "Up to 500 Moroccan personnel began ISF-led training in Morocco around late August, a Board of Peace official told The Times of Israel, as reported by The New Arab on 20 October. The official could not confirm the training was complete.",
+    "A proposed ISF base near the yellow line, intended for about 150 personnel, is on hold because of Israel, the official said.",
+    "Morocco said in February it would join the force, the first Arab country to do so publicly. Kazakhstan has also agreed to contribute."
+   ],
+   "layers": {
+    "context": {
+     "text": "The ISF is meant to keep order and secure Gaza's borders under the Board of Peace plan, working with a new Palestinian police force as Israel withdraws in stages tied to Hamas disarmament.",
+     "source": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/07/hamas-agrees-deal-disarmament-israels-withdrawal-gaza"
+    },
+    "numbers": [
+     {
+      "figure": "500",
+      "label": "Moroccan personnel trained for the ISF (up to)",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/hundreds-moroccan-personnel-trained-gaza-force-deployment"
+     },
+     {
+      "figure": "150",
+      "label": "personnel the stalled ISF base near the yellow line would house",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/hundreds-moroccan-personnel-trained-gaza-force-deployment"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "Kosovo's EOD team is ready and will deploy once ISF is prepared to receive it.",
+      "who": "Kosovo Ministry of Defence",
+      "role": "statement",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "next": {
+     "text": "Albanian liaison officers are expected in November; no date has been given for troops to enter Gaza.",
+     "date": null,
+     "source": "The Times of Israel",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The New Arab",
+     "url": "https://www.newarab.com/news/hundreds-moroccan-personnel-trained-gaza-force-deployment",
+     "date": "2026-10-20"
+    }
+   ],
+   "photo": "gaza-city-al-hassaina-mosque-sunset-2025"
+  },
+  {
+   "id": "gaza-hamas-threat-message-un-coordinator",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": "00:33",
+   "place": "Gaza City",
+   "region": "Gaza Strip",
+   "headline": "Hamas warned of a new October 7-style attack in message passed through UN official, Israel says",
+   "fact": "Israel's COGAT said Hamas used UN humanitarian coordinator Ramiz Alakbarov to relay an unusually blunt warning that it could carry out another attack like 7 October 2023.",
+   "standfirst": "Hamas reportedly blamed Israeli strikes, the shifting yellow line and the cancellation of Palestinian elections for eroding its position. Israel insists it will not withdraw until Hamas disarms.",
+   "body": [
+    "Senior Hamas officials met Alakbarov at his Gaza office and asked him to pass on the warning, Ynet reported. The UN official then met Maj Gen Yoram Halevy, head of Israel's Coordinator of Government Activities in the Territories (COGAT), on a Wednesday.",
+    "According to the report, Hamas cited Israeli operations in Gaza, moves of the yellow line and the Palestinian Authority's postponement of elections as reasons it was losing control on the ground.",
+    "Ynet also reported that Hamas needs about 90 million shekels a month to pay roughly 30,000 personnel, and that Israel is blocking entry to Gaza for the technocratic committee and Palestinian police force.",
+    "The account comes from Israeli officials and has not been independently verified."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "This is an unusual threat message, which hasn't been previously conveyed in this level of bluntness and directness.",
+      "who": "Maj Gen Yoram Halevy",
+      "role": "Head of COGAT",
+      "source": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/liveblog-october-25-2026/"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "30,000",
+      "label": "Hamas personnel on its payroll, according to Ynet",
+      "source": "Ynet",
+      "url": "https://www.ynetnews.com/article/rjfvohihfx"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://www.timesofisrael.com/liveblog-october-25-2026/",
+     "date": "2026-10-25"
+    },
+    {
+     "name": "Ynet",
+     "url": "https://www.ynetnews.com/article/rjfvohihfx",
+     "date": "2026-10-24"
+    }
+   ],
+   "photo": "gaza-city-central-street-2025"
+  },
+  {
+   "id": "gaza-bodies-under-rubble",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-23",
+   "time": "17:10",
+   "place": "Gaza Strip",
+   "region": "Gaza Strip",
+   "headline": "A year into the truce, up to 10,000 bodies are thought to remain under Gaza's rubble",
+   "fact": "Gaza civil defence officials say about 1,000 bodies have been recovered since the ceasefire, while an estimated 8,000 to 10,000 are still buried, about 3,000 of them in areas held by the Israeli army.",
+   "standfirst": "Recovery teams are digging by hand and with scarce machinery through the ruins. A large share of the missing lie beyond their reach, behind Israeli lines.",
+   "body": [
+    "France 24's Observers team reported on 23 October on efforts to recover bodies from beneath destroyed buildings a year after the ceasefire.",
+    "Civil defence officials say around 1,000 bodies have been recovered so far.",
+    "Between 8,000 and 10,000 bodies are believed to remain under the rubble, about 3,000 of them in areas under Israeli army control."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "1,000",
+      "label": "bodies recovered from rubble since the ceasefire (approx.)",
+      "source": "France 24",
+      "url": "https://france24.com/en/tv-shows/the-observers/20261023-gaza-digging-up-the-bodies-from-under-the-rubble"
+     },
+     {
+      "figure": "8,000–10,000",
+      "label": "bodies thought still buried",
+      "source": "France 24",
+      "url": "https://france24.com/en/tv-shows/the-observers/20261023-gaza-digging-up-the-bodies-from-under-the-rubble"
+     },
+     {
+      "figure": "3,000",
+      "label": "of the missing in Israeli-controlled areas",
+      "source": "France 24",
+      "url": "https://france24.com/en/tv-shows/the-observers/20261023-gaza-digging-up-the-bodies-from-under-the-rubble"
+     }
+    ],
+    "context": {
+     "text": "Israel was allowed to remain in 53% of Gaza under the ceasefire terms, but official accounts put its control at about 70%, according to AFP, which places many destroyed neighbourhoods out of reach.",
+     "source": "AFP via Oman Observer",
+     "url": "https://www.omanobserver.om/article/1197515/world/region/year-later-gaza-ceasefire-promises-mostly-unfulfilled"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://france24.com/en/tv-shows/the-observers/20261023-gaza-digging-up-the-bodies-from-under-the-rubble",
+     "date": "2026-10-23"
+    }
+   ],
+   "photo": "gaza-city-sheikh-radwan-2025"
+  },
+  {
+   "id": "gaza-flood-risk-winter-shelter",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-15",
+   "time": null,
+   "place": "Gaza Strip",
+   "region": "Gaza Strip",
+   "headline": "Nearly a million displaced Gazans live in sites at risk of flooding, UN says",
+   "fact": "OCHA said about 950,000 displaced people in Gaza live in sites at medium to high risk of flooding, more than 400,000 of them at high risk, with winter shelter needs 66% unfunded.",
+   "standfirst": "Supplies on hand could partly help only 18% of the 294,250 families needing winter shelter aid, and about 8,600 shelter kits remain blocked from entry.",
+   "body": [
+    "In its 15 October report, OCHA said around 950,000 displaced people were living in sites assessed as being at medium to high risk of flooding, including more than 400,000 at high risk.",
+    "Available stocks could partially assist only 18% of the 294,250 families who need winter shelter support. Shelter needs were 66% unfunded and roughly 8,600 emergency shelter kits were blocked from entering.",
+    "About 44,000 people live in more than 2,300 structurally unsafe buildings.",
+    "The report also said 44% of surveyed households had gone to bed hungry at least once in the previous 30 days."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "950,000",
+      "label": "displaced people in sites at medium to high flood risk",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+     },
+     {
+      "figure": "18%",
+      "label": "of families needing winter shelter aid that current stocks can partly cover",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+     },
+     {
+      "figure": "44,000",
+      "label": "people living in structurally unsafe buildings",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+     }
+    ],
+    "next": {
+     "text": "OCHA says response capacity will be strained once heavy rains begin, given shortages of equipment and supplies.",
+     "date": null,
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+    }
+   },
+   "sources": [
+    {
+     "name": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026",
+     "date": "2026-10-15"
+    }
+   ],
+   "photo": "gaza-displacement-camp-2024"
+  },
+  {
+   "id": "gaza-israel-says-killed-hamas-financiers",
+   "desk": "gaza",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": "08:47",
+   "place": "Gaza City and Nuseirat",
+   "region": "Gaza Strip",
+   "headline": "Israel says strikes killed two men it accuses of moving millions of shekels to Hamas",
+   "fact": "The Israeli military said strikes last week in Gaza City and Nuseirat killed a Hamas cell commander and an Islamic Jihad operative it accused of transferring millions of shekels to Hamas.",
+   "standfirst": "Israel describes such strikes as responses to ceasefire violations; Gaza's health ministry counts more than 1,500 people killed since the truce began.",
+   "body": [
+    "The military named the men as Alaa Ibrahim Nimer Arshi, a cell commander in Hamas's armed wing, killed in Gaza City on Wednesday, and Karam Riyad Hassan Abu Butaihan, of Palestinian Islamic Jihad, killed in Nuseirat on Tuesday.",
+    "It said it had also bombed three Hamas weapons depots in central Gaza on Thursday.",
+    "On 26 October the military said it had killed two more Hamas officers, Mohammed Halawa and Ahmed Zahir Fuad Abu-Odeh, accusing them of acting in systematic violation of the ceasefire."
+   ],
+   "layers": {
+    "context": {
+     "text": "Haaretz reported Israeli intelligence assessments that Hamas has no plans to disarm and is rebuilding its forces, The Times of Israel said on 22 October. Israel says it will not withdraw further until Hamas disarms.",
+     "source": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/liveblog-october-22-2026/"
+    },
+    "numbers": [
+     {
+      "figure": "1,522",
+      "label": "Palestinians killed since the ceasefire, Gaza health ministry (to 19 October)",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://www.timesofisrael.com/liveblog-october-25-2026/",
+     "date": "2026-10-25"
+    },
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "explainer-gaza-ceasefire-phases-yellow-line",
+   "desk": "gaza",
+   "explainer": true,
+   "date": "2026-10-26",
+   "time": null,
+   "place": "Gaza Strip",
+   "region": "Gaza Strip",
+   "headline": "The Gaza ceasefire, one year on: what phase two promised and why it has stalled",
+   "fact": "A year after the October 2025 truce, hostages are home and rockets have stopped, but Hamas has not disarmed, Israel has not withdrawn and Israeli control has grown from 53% of Gaza to around 70%.",
+   "standfirst": "Phase one swapped hostages for prisoners and drew the yellow line. Phase two was meant to move Gaza from Hamas rule to a technocratic committee, an international force and staged Israeli withdrawal tied to disarmament.",
+   "body": [
+    "Phase one: Hamas freed the 20 remaining living hostages within days of the October 2025 deal in exchange for Palestinian prisoners, and no rocket attacks have come from Gaza since, AFP reported on the anniversary. Israeli forces pulled back to the yellow line, which roughly divides the Strip east from west.",
+    "Phase two: under the Board of Peace roadmap Hamas accepted at the end of July, weapons would be stored under a Palestinian committee, the National Committee for the Administration of Gaza (NCAG) would take power in stages, and an International Stabilisation Force would work with a new Palestinian police. The board's envoy, Nickolay Mladenov, said withdrawal must move in lockstep with decommissioning.",
+    "Where it stands: Israel insists on full, verified disarmament first; Hamas has not begun to disarm. Israel has expanded its hold to about 70% of the Strip by official accounts. Albania, Kosovo, Kazakhstan and Morocco have committed to the ISF, but none has deployed.",
+    "Money: Trump promised $10 billion in January and donors pledged $17 billion in February, but AFP reported no reconstruction funds are known to have reached Gaza. The board proposed a $2.45 billion six-month recovery plan in September.",
+    "Cost: Gaza's health ministry, whose figures the UN considers reliable, counted 1,522 Palestinians killed between the truce and 19 October 2026."
+   ],
+   "layers": {
+    "context": {
+     "text": "The yellow line is marked by earthen berms, yellow-painted concrete blocks and military posts running about 65 km from Rafah to Beit Hanoun. Residents are barred from approaching it, and it cuts off most of Gaza's farmland.",
+     "source": "The New Arab",
+     "url": "https://www.newarab.com/news/israels-yellow-line-devours-gazas-food-basket"
+    },
+    "numbers": [
+     {
+      "figure": "53% → ~70%",
+      "label": "share of Gaza under Israeli control: allowed by the deal vs official accounts a year on",
+      "source": "AFP via Oman Observer",
+      "url": "https://www.omanobserver.om/article/1197515/world/region/year-later-gaza-ceasefire-promises-mostly-unfulfilled"
+     },
+     {
+      "figure": "$17bn",
+      "label": "pledged at the February 2026 donor conference, with only a tiny fraction transferred",
+      "source": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/board-of-peace-finalizing-plans-for-gaza-but-implementation-timeline-up-in-the-air/"
+     },
+     {
+      "figure": "1,522",
+      "label": "Palestinians killed since the truce (to 19 October)",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "Withdrawal must move in lockstep with decommissioning.",
+      "who": "Nickolay Mladenov",
+      "role": "Board of Peace High Representative for Gaza",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/hamas-agrees-deal-disarmament-israels-withdrawal-gaza"
+     },
+     {
+      "quote": "reduces the whole process to a single clause – disarmament",
+      "who": "Senior Hamas source",
+      "role": "speaking to CNN, April 2026",
+      "source": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/us-hamas-reportedly-hold-direct-talks-on-gaza-plan-first-since-ceasefire-began/"
+     }
+    ],
+    "next": {
+     "text": "Mediators had seen little chance of a breakthrough before Israel's 27 October election; the result, and whether the ISF begins to deploy from November, will shape what comes next.",
+     "date": "2026-10-27",
+     "source": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/board-of-peace-finalizing-plans-for-gaza-but-implementation-timeline-up-in-the-air/"
+    }
+   },
+   "sources": [
+    {
+     "name": "AFP via Oman Observer",
+     "url": "https://www.omanobserver.om/article/1197515/world/region/year-later-gaza-ceasefire-promises-mostly-unfulfilled",
+     "date": "2026-10-10"
+    },
+    {
+     "name": "Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/07/hamas-agrees-deal-disarmament-israels-withdrawal-gaza",
+     "date": "2026-07-30"
+    },
+    {
+     "name": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/board-of-peace-finalizing-plans-for-gaza-but-implementation-timeline-up-in-the-air/",
+     "date": "2026-06-29"
+    },
+    {
+     "name": "The New Arab",
+     "url": "https://www.newarab.com/news/israels-yellow-line-devours-gazas-food-basket",
+     "date": "2026-02-26"
+    },
+    {
+     "name": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    }
+   ],
+   "photo": "gaza-al-rasheed-road-return-north-2025"
+  },
+  {
+   "id": "westbank-hebron-operation-thousands-displaced",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": null,
+   "place": "Hebron",
+   "region": "West Bank",
+   "headline": "Nearly 4,000 Palestinians forced from their homes in Hebron after checkpoint attack",
+   "fact": "Israel's operation in Hebron, launched after two soldiers were killed at a checkpoint on 23 October, had displaced about 3,971 Palestinians by Monday, according to WAFA.",
+   "standfirst": "Israeli forces sealed the Ein Deir Baha and al-Jilda neighbourhoods, went house to house and began demolitions. The prime minister vowed to change the area completely.",
+   "body": [
+    "Two Palestinian gunmen opened fire on an Israeli military checkpoint near Hebron on Friday 23 October, killing two soldiers and wounding three. Both gunmen were killed.",
+    "Prime Minister Benjamin Netanyahu said Israel would lock down Hebron, search house to house and demolish homes. A Reuters reporter saw bulldozers begin demolishing homes near the shooting site; residents said the homes had no link to the attackers.",
+    "By Monday, WAFA counted about 3,971 people displaced, including around 200 children under two, 258 elderly people and 137 pregnant women. A local relief committee said 619 families were affected and 266 had no safe place to stay.",
+    "Hebron's governor said Israeli authorities had set up 128 gates and 120 checkpoints across the governorate. The Palestinian Prisoners' Club reported more than 80 arrests.",
+    "Defence Minister Israel Katz said residents would not return until Israel had finished dealing with Hamas in Hebron. Israel said it needed to demolish civilian infrastructure so militants could not use it."
+   ],
+   "layers": {
+    "context": {
+     "text": "Netanyahu and Katz compared the operation to the 2025 demolitions in northern West Bank refugee camps, which expelled tens of thousands of people and which Human Rights Watch said amounted to war crimes and crimes against humanity.",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261023-netanyahu-orders-army-to-prepare-for-full-west-bank-closure-after-attack"
+    },
+    "numbers": [
+     {
+      "figure": "3,971",
+      "label": "Palestinians displaced in Hebron by Monday, per WAFA",
+      "source": "The New Arab",
+      "url": "https://newarab.com/news/israels-hebron-raid-displaces-nearly-4000-palestinians"
+     },
+     {
+      "figure": "128 / 120",
+      "label": "gates and checkpoints set up across Hebron governorate",
+      "source": "The New Arab",
+      "url": "https://newarab.com/news/israels-hebron-raid-displaces-nearly-4000-palestinians"
+     },
+     {
+      "figure": "500+",
+      "label": "buildings scanned by Israeli troops, per the IDF",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "We will act to destroy this place, to change it completely.",
+      "who": "Benjamin Netanyahu",
+      "role": "Israeli prime minister",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261023-netanyahu-orders-army-to-prepare-for-full-west-bank-closure-after-attack"
+     },
+     {
+      "quote": "raise grave concerns about ethnic cleansing and collective punishment",
+      "who": "Medical Aid for Palestinians",
+      "role": "UK charity",
+      "source": "The New Arab",
+      "url": "https://newarab.com/news/israels-hebron-raid-displaces-nearly-4000-palestinians"
+     }
+    ],
+    "next": {
+     "text": "The IDF said the operation would last several days; Israel has given no date for residents to return.",
+     "date": null,
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261024-israel-to-close-all-land-crossings-with-west-bank-on-election-day"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261023-netanyahu-orders-army-to-prepare-for-full-west-bank-closure-after-attack",
+     "date": "2026-10-23"
+    },
+    {
+     "name": "The New Arab",
+     "url": "https://newarab.com/news/israels-hebron-raid-displaces-nearly-4000-palestinians",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168672",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "hebron-shuhada-street-2022"
+  },
+  {
+   "id": "westbank-hebron-army-chief-netanyahu-split",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "14:18",
+   "place": "Hebron",
+   "region": "West Bank",
+   "headline": "Army chief saw no reason to continue Hebron raid, but Netanyahu ordered it on",
+   "fact": "Israel's public broadcaster Kan reported that army chief Eyal Zamir told Netanyahu there was no operational justification to continue the Hebron operation, and the prime minister ordered it to continue.",
+   "standfirst": "The military had wanted to announce a wind-down as early as Saturday night, according to Kan. The disagreement surfaced a day before Israel's general election.",
+   "body": [
+    "Zamir recommended on Sunday that the operation end because its objectives had been met, Kan reported, as cited by The New Arab. Netanyahu rejected the advice.",
+    "Soldiers quoted in Israeli media complained that they were wasting time; one said some had not been home for 28 days.",
+    "Channel 12 reported that Netanyahu cancelled a Likud faction meeting, citing security matters.",
+    "The IDF said troops had found a tunnel about 15 metres deep near a gunman's home, scanned more than 500 buildings and detained about 50 suspects."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "Right now, we're just wasting time.",
+      "who": "Unnamed Israeli soldier",
+      "role": "serving in Hebron, quoted by Israeli media",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "3,189",
+      "label": "people forced from their homes, per Hebron municipality (26 October)",
+      "source": "The Times of Israel / AFP",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The New Arab",
+     "url": "https://newarab.com/news/israels-hebron-raid-displaces-nearly-4000-palestinians",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "hebron-old-city-2025"
+  },
+  {
+   "id": "westbank-election-day-closure-workers-ban",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-24",
+   "time": "13:52",
+   "place": "West Bank crossings",
+   "region": "West Bank",
+   "headline": "Israel seals all West Bank land crossings for election day",
+   "fact": "Israel said it would close all land crossings with the West Bank on 27 October, election day, and barred Palestinian workers from settlements from 25 October.",
+   "standfirst": "About 9,000 Palestinians hold permits to work in settlements. The closures follow the Hebron attack and come alongside a wider lockdown of the territory.",
+   "body": [
+    "All land crossings with the West Bank will close on election day, France 24 reported, citing AFP.",
+    "From Sunday the army barred Palestinian workers from entering Israeli communities and restricted their movement across the West Bank, including to industrial zones.",
+    "The Times of Israel reported that about 9,000 Palestinians hold permits to work in settlements and that crossings would reopen after election day.",
+    "Over Friday and Saturday the army said it operated in 40 areas and detained about 40 suspects it linked to Hamas and Islamic Jihad."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "Anyone who messes with us will quickly understand that he will pay a painful price.",
+      "who": "Bezalel Smotrich",
+      "role": "Israeli finance minister, on X",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261024-israel-to-close-all-land-crossings-with-west-bank-on-election-day"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "9,000",
+      "label": "Palestinians with permits to work in settlements",
+      "source": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/liveblog-october-25-2026/"
+     }
+    ],
+    "next": {
+     "text": "Crossings are due to reopen after the vote.",
+     "date": "2026-10-28",
+     "source": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/liveblog-october-25-2026/"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24 / AFP",
+     "url": "https://www.france24.com/en/middle-east/20261024-israel-to-close-all-land-crossings-with-west-bank-on-election-day",
+     "date": "2026-10-24"
+    },
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://www.timesofisrael.com/liveblog-october-25-2026/",
+     "date": "2026-10-25"
+    }
+   ],
+   "photo": "qalandiya-checkpoint-2019"
+  },
+  {
+   "id": "westbank-abu-falah-attack-photojournalist",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-16",
+   "time": "15:01",
+   "place": "Abu Falah",
+   "region": "West Bank",
+   "headline": "Settlers burn olive trees in Abu Falah and beat a Washington Post photographer",
+   "fact": "About 80 settlers attacked olive pickers in Abu Falah, setting trees alight and throwing rocks; Washington Post photographer Heidi Levine was among those injured.",
+   "standfirst": "Levine suffered broken ribs and vertebrae and a nearly severed finger. A similar attack the same morning in Turmus Ayya ended with three cars burned.",
+   "body": [
+    "Some of the settlers carried gas canisters, France 24 reported. Israeli military jeeps arrived during the attack and soldiers fired tear gas; a Reuters photographer saw an armed settler fire a gun.",
+    "The army said troops fired warning shots and at one point fired towards a person they believed posed a threat.",
+    "Levine said she was pushed to the ground and kicked while wearing a flak jacket and helmet. AP later reported she suffered broken ribs and vertebrae, a nearly severed finger and stab-like wounds.",
+    "In nearby Turmus Ayya the same morning, settlers attacked farmers and burned three cars."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "The settlers want to attack us and force us from our homes.",
+      "who": "Moutaz Abdelhadi",
+      "role": "farmer, 42, Abu Falah",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261016-us-journalist-injured-during-israeli-settler-attack-on-west-bank-olive-harvest"
+     },
+     {
+      "quote": "despicable act of terror carried out by masked cowards",
+      "who": "Mike Huckabee",
+      "role": "US ambassador to Israel",
+      "source": "PBS NewsHour / AP",
+      "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "170",
+      "label": "settler attacks counted by Yesh Din since 27 September",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261016-us-journalist-injured-during-israeli-settler-attack-on-west-bank-olive-harvest"
+     }
+    ],
+    "context": {
+     "text": "Earlier in October settlers beat AFP photographer Jaafar Ashtiyeh, fracturing several of his ribs, France 24 reported.",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261017-israeli-settlers-attack-european-delegation-convoy-in-west-bank-beat-french-mayor"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261016-us-journalist-injured-during-israeli-settler-attack-on-west-bank-olive-harvest",
+     "date": "2026-10-16"
+    },
+    {
+     "name": "PBS NewsHour / AP",
+     "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "westbank-police-arrest-ten-settler-violence",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-19",
+   "time": null,
+   "place": "Abu Snin",
+   "region": "West Bank",
+   "headline": "Israeli police arrest 10 after weekend settler attacks on journalist and diplomats",
+   "fact": "Israeli police said they arrested 10 people on 19 October over a wave of settler violence that included attacks on a Washington Post photographer and European diplomats.",
+   "standfirst": "Police did not name the suspects or describe their roles. Rights groups say attackers are rarely arrested or punished.",
+   "body": [
+    "The Shin Bet, Border Police and military took part in the investigation, police said. The operation also targeted suspected breaches of a closed military zone order and illegal construction.",
+    "Heidi Levine said she was shocked and insulted that Netanyahu had described the attack on her as alleged.",
+    "The arrests followed condemnation from the United States and European governments."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "Impunity for violent settlers must end.",
+      "who": "Maxime Prévot",
+      "role": "Belgian foreign minister",
+      "source": "PBS NewsHour / AP",
+      "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats"
+     }
+    ],
+    "context": {
+     "text": "OCHA documented 2,159 settler attacks in 2026 up to 19 October, an average of 7.4 a day compared with five a day in 2025.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+    }
+   },
+   "sources": [
+    {
+     "name": "PBS NewsHour / AP",
+     "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "westbank-olive-theft-lubban-al-gharbi",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-22",
+   "time": null,
+   "place": "Lubban al-Gharbi",
+   "region": "West Bank",
+   "headline": "Settlers are picking and pressing Palestinian olives as harvest attacks grow, rights group says",
+   "fact": "Yesh Din recorded 125 physical attacks on Palestinian olive harvesters and 168 cases of crop theft in the first 24 days of the season, with Israeli forces present in at least a quarter.",
+   "standfirst": "In Lubban al-Gharbi a villager watched his olives taken. An Israeli government spokesperson said olives picked by a Jew in the Jewish ancestral homeland were not theft.",
+   "body": [
+    "Reuters reported from Lubban al-Gharbi, where villager Ahmed Salem's olives were taken by settlers.",
+    "Yesh Din's figures cover the first 24 days of the harvest. Palestinian authorities say three Palestinians have been killed in settler attacks this season.",
+    "Reuters said olive oil from Avichai Farm, a settler outpost with its own press, sells for about $20 a bottle. A rabbi from the Alon Shvut settlement condemned the theft.",
+    "An Israeli government spokesperson argued the picking was not theft while saying no one should take the law into their own hands. The military said it takes violence seriously."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "How would you feel if something that belonged to you was being violated, and you could do nothing about it?",
+      "who": "Ahmed Salem",
+      "role": "villager, Lubban al-Gharbi",
+      "source": "Reuters via Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-steal-palestinians-olives-attacks-harvest-grow-more-violent"
+     },
+     {
+      "quote": "We pay in blood for the olives.",
+      "who": "Samer Ben Shamsi",
+      "role": "farmer attacked in Beita on 9 October",
+      "source": "Reuters via Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-steal-palestinians-olives-attacks-harvest-grow-more-violent"
+     },
+     {
+      "quote": "part of a campaign of ethnic cleansing",
+      "who": "Ziv Stahl",
+      "role": "executive director, Yesh Din",
+      "source": "Reuters via Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-steal-palestinians-olives-attacks-harvest-grow-more-violent"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "125",
+      "label": "physical attacks on olive harvesters in 24 days",
+      "source": "Yesh Din via Reuters",
+      "url": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-steal-palestinians-olives-attacks-harvest-grow-more-violent"
+     },
+     {
+      "figure": "168",
+      "label": "incidents of crop theft in the same period",
+      "source": "Yesh Din via Reuters",
+      "url": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-steal-palestinians-olives-attacks-harvest-grow-more-violent"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "Reuters via Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/10/israeli-settlers-steal-palestinians-olives-attacks-harvest-grow-more-violent",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "westbank-ocha-record-olive-harvest-attacks",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-22",
+   "time": null,
+   "place": "West Bank",
+   "region": "West Bank",
+   "headline": "Harvest-season settler attacks already exceed the totals for 2024 and 2025, UN says",
+   "fact": "OCHA documented 272 olive-harvest-related settler attacks between 1 September and 19 October, more than in the whole 2024 (224) or 2025 (185) seasons.",
+   "standfirst": "The attacks killed one Palestinian, injured 200 and damaged more than 3,200 olive trees and saplings. The UN human rights office called it an ominous start to the season.",
+   "body": [
+    "OCHA's 22 October report recorded 83 settler attacks across 48 communities in the week of 13 to 19 October alone.",
+    "In the same week, 148 Palestinians were injured, 92 of them by Israeli forces and 56 by settlers, including six children.",
+    "The UN human rights office urged states and donors on 21 October to go beyond condemnation, calling for more diplomatic presence in high-risk communities.",
+    "UN figures show 286,000 olive trees were damaged in the West Bank between 2023 and the end of September 2026, including 100,000 this year before the harvest began."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "272",
+      "label": "harvest-related settler attacks, 1 Sept to 19 Oct",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     },
+     {
+      "figure": "200",
+      "label": "Palestinians injured in harvest-related attacks",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     },
+     {
+      "figure": "3,200+",
+      "label": "olive trees and saplings damaged",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "This is yet another tool of displacement and dispossession",
+      "who": "Ajith Sunghay",
+      "role": "head of the UN human rights office in the occupied Palestinian territory",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168644"
+     }
+    ],
+    "context": {
+     "text": "Areas where Palestinians need prior coordination with Israeli authorities to reach their land expanded to about 88,300 dunums this year, nearly 30% more than in 2025.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+    }
+   },
+   "sources": [
+    {
+     "name": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    },
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168644",
+     "date": "2026-10-21"
+    }
+   ],
+   "photo": "jenin-area-olive-harvest-2015"
+  },
+  {
+   "id": "westbank-settlers-in-keffiyehs",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-23",
+   "time": "17:21",
+   "place": "Hebron governorate and Birzeit",
+   "region": "West Bank",
+   "headline": "Farmers report settlers in keffiyehs among those attacking olive groves",
+   "fact": "Palestinian farmers told France 24 that some settlers attacking groves wore keffiyehs, as Israeli rights group B'Tselem said soldiers often stand by while settlers attack and steal.",
+   "standfirst": "Many families started picking two weeks early this year to reduce the risk of violence. The harvest officially runs from 15 October to the end of November.",
+   "body": [
+    "France 24's Observers spoke to farmers in the Hebron governorate and near Birzeit, who gave pseudonyms.",
+    "One said they had been barred from their orchard on the grounds it was now a military zone. Another said settlers wearing keffiyehs had come to attack them.",
+    "France 24 also found that a widely shared video of trees being ripped up was fake, while noting that real uprooting is well documented.",
+    "B'Tselem estimates the olive sector is worth about $170 million a year to Palestinians."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "We even saw colonists wearing keffiyeh come to attack us.",
+      "who": "Mohammed (pseudonym)",
+      "role": "Palestinian farmer",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves"
+     },
+     {
+      "quote": "Every year, for decades, we see an uptick in violence during this time of year.",
+      "who": "Yair Dvir",
+      "role": "spokesperson, B'Tselem",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "$170m",
+      "label": "annual value of the Palestinian olive sector, per B'Tselem",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "France 24 (The Observers)",
+     "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves",
+     "date": "2026-10-23"
+    },
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261023-yes-israeli-settlers-ripping-up-west-bank-olive-trees-%E2%80%93-but-this-video-fake",
+     "date": "2026-10-23"
+    }
+   ]
+  },
+  {
+   "id": "westbank-huwara-grove-closed-military-zone",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "14:52",
+   "place": "Huwara",
+   "region": "West Bank",
+   "headline": "Soldiers order harvesters and activists out of a grove near Huwara",
+   "fact": "Rabbis for Human Rights said Israeli soldiers used a closed military zone order signed the same day to remove its activists and Palestinian farmers from an olive grove near Huwara.",
+   "standfirst": "The same day, WAFA reported a 58-year-old woman beaten and injured in the chest in a settler attack near as-Samu, south of Hebron.",
+   "body": [
+    "Rabbis for Human Rights said the order expelling its volunteers and Palestinian pickers was signed on 26 October. The IDF had no immediate comment, The Times of Israel reported.",
+    "Near as-Samu, south of Hebron, two Palestinians were injured in a settler attack, WAFA said. One, 58-year-old Hakima Halaia, was hurt in the chest after being beaten.",
+    "On 27 October WAFA reported two Palestinians injured in a settler attack on olive pickers near Ramallah, and three vehicles set alight in the Ramallah area."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "An olive harvest is not a security threat.",
+      "who": "Rabbis for Human Rights",
+      "role": "Israeli rights group",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "context": {
+     "text": "On 21 October Israeli forces detained about 80 activists, including 33 US citizens, who were helping farmers harvest near Nahalin after declaring a closed military zone.",
+     "source": "NPR via KPBS",
+     "url": "https://www.kpbs.org/news/international/2026/10/21/israel-detains-dozens-of-americans-including-a-congressional-candidate-in-west-bank"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176244",
+     "date": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "id": "westbank-security-coordinator-house-arrest",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "17:29",
+   "place": "Gidonim Ridge area",
+   "region": "West Bank",
+   "headline": "Court sends settlement security officer accused of shooting Palestinian woman to house arrest",
+   "fact": "A Jerusalem court released settlement security coordinator Pinhas Shem Tov Ran to house arrest in the Golan Heights; he is accused of seriously wounding an 18-year-old Palestinian woman at an unauthorised roadblock.",
+   "standfirst": "The court cited conflicting accounts and a lack of footage. The prosecution had asked for him to stay in custody.",
+   "body": [
+    "The Jerusalem Magistrate's Court ruled on 26 October, The Times of Israel reported.",
+    "The woman's father told Kan that Ran fired 10 rounds. She was seriously wounded.",
+    "The incident took place at a roadblock that was not authorised, near the Gidonim Ridge, according to the report."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "10",
+      "label": "rounds the victim's father says were fired",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "context": {
+     "text": "Rights groups say attackers in settler violence cases are rarely arrested or punished, AP reported after police detained 10 people over attacks on a journalist and diplomats.",
+     "source": "PBS NewsHour / AP",
+     "url": "https://www.pbs.org/newshour/world/israeli-police-arrest-10-following-weekend-attacks-by-west-bank-settlers-on-journalist-and-diplomats"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "westbank-jalud-house-burned-outpost",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": "08:06",
+   "place": "Jalud",
+   "region": "West Bank",
+   "headline": "House near Jalud set on fire after settlers who took it over clash with soldiers",
+   "fact": "Settlers who had taken over a Palestinian-owned house near Jalud clashed with Israeli soldiers on Saturday, and the house was set on fire; the army said it was dealing with violent rioters at an illegal outpost.",
+   "standfirst": "Jalud's mayor says the house belongs to an East Jerusalem resident. Overnight, settlers also reportedly smashed several Palestinian cars in Sinjil.",
+   "body": [
+    "The IDF said the house sat within an illegal outpost in a closed military zone and described those involved as violent rioters, The Times of Israel reported.",
+    "Jalud mayor Raed al-Haj Mohammed said the property belongs to a resident of East Jerusalem.",
+    "In Sinjil, near Ramallah, settlers reportedly smashed several Palestinian cars overnight. No injuries were reported."
+   ],
+   "layers": {
+    "context": {
+     "text": "OCHA recorded 83 settler attacks across 48 communities in the single week of 13 to 19 October.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://www.timesofisrael.com/liveblog-october-25-2026/",
+     "date": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "id": "westbank-court-camps-return-timetable",
+   "desk": "westbank",
+   "explainer": false,
+   "date": "2026-10-12",
+   "time": null,
+   "place": "Jenin, Tulkarm and Nur Shams camps",
+   "region": "West Bank",
+   "headline": "High Court gives state until 23 November to set a timetable for camp residents' return",
+   "fact": "Israel's High Court ordered the state to give a timetable for the steps it says are needed before residents can return to the Jenin, Tulkarm and Nur Shams refugee camps, with a response due by 23 November.",
+   "standfirst": "The court stopped short of ordering an immediate return or an army withdrawal. The finance minister urged the military not to cooperate with the court.",
+   "body": [
+    "The petition was brought by six Palestinian residents and the Association for Civil Rights in Israel, The Jerusalem Post reported.",
+    "Justices Isaac Amit, Alex Stein and Khaled Kabub asked the state whether the work could be speeded up and to respond to claims of shortfalls in aid.",
+    "The state says security conditions for return have not been met, that the military did not order residents out and that most left before the operation began."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "not to cooperate with the court",
+      "who": "Bezalel Smotrich",
+      "role": "Israeli finance minister",
+      "source": "The Jerusalem Post",
+      "url": "https://www.jpost.com/israel-news/article-911386"
+     }
+    ],
+    "next": {
+     "text": "The state's response to the High Court is due.",
+     "date": "2026-11-23",
+     "source": "The Jerusalem Post",
+     "url": "https://www.jpost.com/israel-news/article-911386"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Jerusalem Post",
+     "url": "https://www.jpost.com/israel-news/article-911386",
+     "date": "2026-10-12"
+    }
+   ],
+   "photo": "tulkarm-nur-shams-damage-2024"
+  },
+  {
+   "id": "explainer-olive-harvest-2026",
+   "desk": "westbank",
+   "explainer": true,
+   "date": "2026-10-23",
+   "time": null,
+   "place": "West Bank",
+   "region": "West Bank",
+   "headline": "Why the olive harvest has become the West Bank's most dangerous season",
+   "fact": "The harvest runs from mid-October to the end of November and supports tens of thousands of families; in 2026 harvest-related settler attacks passed the full-season totals of the two previous years by mid-October.",
+   "standfirst": "Olives are income, inheritance and identity for Palestinian villages. Access permits, closed military zones, settler violence and theft now shape who can pick, and when.",
+   "body": [
+    "The season: the harvest officially began on 15 October and runs to the end of November, though many families started two weeks early this year to limit the risk of attack, France 24 reported.",
+    "The economy: in 2019 more than 10 million olive trees supported 80,000 to 100,000 families, according to OCHA figures cited by France 24. B'Tselem puts the sector's value at about $170 million a year.",
+    "Access: much land near settlements can be reached only with prior coordination with Israeli authorities. That zone grew to about 88,300 dunums in 2026, nearly 30% more than in 2025, OCHA says.",
+    "Violence: OCHA counted 272 harvest-related settler attacks between 1 September and 19 October, against 224 in all of 2024 and 185 in 2025. Yesh Din recorded 168 cases of crop theft in the first 24 days.",
+    "Losses: the Palestinian agriculture ministry estimates $157 million in losses since October 2023, and says 90% of Gaza's two million olive trees have been destroyed."
+   ],
+   "layers": {
+    "context": {
+     "text": "Israeli forces have uprooted or damaged more than 10,000 trees in 2026 and settler attacks have damaged more than 20,000 more, OCHA says.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+    },
+    "numbers": [
+     {
+      "figure": "272",
+      "label": "harvest-related settler attacks, 1 Sept–19 Oct 2026",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     },
+     {
+      "figure": "286,000",
+      "label": "West Bank olive trees damaged, 2023 to end of September 2026",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168644"
+     },
+     {
+      "figure": "$157m",
+      "label": "olive sector losses since October 2023, per the Palestinian agriculture ministry",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168644"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "Palestinians often say that olive trees are symbolic of their existence as a group and their connection to the land,",
+      "who": "Ajith Sunghay",
+      "role": "head of OHCHR in the occupied Palestinian territory",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168644"
+     }
+    ],
+    "next": {
+     "text": "The harvest season continues until the end of November.",
+     "date": "2026-11-30",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves",
+     "date": "2026-10-23"
+    },
+    {
+     "name": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    },
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168644",
+     "date": "2026-10-21"
+    }
+   ],
+   "photo": "ramallah-olive-hills-2016"
+  },
+  {
+   "id": "jerusalem-beit-hanina-forced-self-demolition",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": null,
+   "place": "Beit Hanina",
+   "region": "East Jerusalem",
+   "headline": "Family of seven forced to demolish their own home in Beit Hanina",
+   "fact": "Israeli authorities forced Fawaz al-Rajabi to demolish his family's 60-square-metre home in Beit Hanina, citing construction without a permit, WAFA reported.",
+   "standfirst": "The house, built about 15 years ago, was home to al-Rajabi, his wife and five children. The family had already been fined 60,000 shekels.",
+   "body": [
+    "The Wadi Hilweh Information Center said the family carried out the demolition on Sunday after receiving a written order, WAFA reported.",
+    "Authorities had earlier fined the family a total of 60,000 shekels for alleged unlicensed building.",
+    "Families often demolish their own homes to avoid the extra fees and penalties charged when municipal crews do it, according to OCHA, cited in the report."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "60,000",
+      "label": "shekels in fines imposed before the demolition",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/176249"
+     },
+     {
+      "figure": "668",
+      "label": "people displaced by demolitions in East Jerusalem in 2026 (to 19 October)",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ],
+    "context": {
+     "text": "Most demolitions in East Jerusalem and the West Bank cite a lack of Israeli building permits, which the UN says are rarely granted to Palestinians.",
+     "source": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168539"
+    }
+   },
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176249",
+     "date": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "id": "jerusalem-beit-hanina-graffiti",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": null,
+   "place": "Beit Hanina",
+   "region": "East Jerusalem",
+   "headline": "Graffiti calling for the killing of Palestinians sprayed on Beit Hanina homes",
+   "fact": "Israeli settlers spray-painted slogans calling for the killing of Palestinians on the walls of homes in Beit Hanina, north of Jerusalem, on Sunday morning, WAFA reported.",
+   "standfirst": "The agency did not give the full wording. It came on the same day a family in the neighbourhood was forced to demolish its home.",
+   "body": [
+    "WAFA described the slogans as racist and inciting and said they appeared on Sunday morning.",
+    "The report linked the incident to a wider rise in settler attacks on Palestinians and their property across the West Bank and Jerusalem.",
+    "No Israeli police response was included in the report."
+   ],
+   "layers": {
+    "context": {
+     "text": "OCHA documented 2,159 settler attacks across the West Bank, including East Jerusalem, between January and 19 October 2026.",
+     "source": "OCHA",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+    }
+   },
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176244",
+     "date": "2026-10-25"
+    }
+   ]
+  },
+  {
+   "id": "jerusalem-aqsa-entries-talmudic-prayers",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": null,
+   "place": "Al-Aqsa Mosque compound",
+   "region": "East Jerusalem",
+   "headline": "Settlers enter Al-Aqsa compound under police protection and pray",
+   "fact": "Dozens of Israeli settlers entered the Al-Aqsa Mosque compound through the Moroccan Gate on Sunday under Israeli police protection and performed prayers, WAFA reported.",
+   "standfirst": "Such visits have grown in size and openness, with Jewish prayer now tolerated on the eastern side of the site. Palestinians and Jordan regard it as a breach of the status quo.",
+   "body": [
+    "Local sources told WAFA the group entered through the Moroccan (Mughrabi) Gate and performed what the agency called Talmudic rituals and prayers.",
+    "Jerusalem Governorate figures cited by WAFA show 40,661 settlers entered the compound between January and the end of August 2026.",
+    "During Sukkot, Palestinian estimates put entries at more than 9,000, The New Arab reported."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "40,661",
+      "label": "settler entries to the compound, January to August 2026",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/176246"
+     },
+     {
+      "figure": "26",
+      "label": "incursions recorded at Al-Aqsa in September, per the Awqaf ministry",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/175560"
+     }
+    ],
+    "voices": [
+     {
+      "quote": "the settlers have more authority inside Al-Aqsa than the guards do.",
+      "who": "Al-Aqsa worker",
+      "role": "unnamed",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/inside-al-aqsa-israeli-restrictions-tighten-palestinians"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176246",
+     "date": "2026-10-25"
+    },
+    {
+     "name": "The New Arab",
+     "url": "https://www.newarab.com/news/inside-al-aqsa-israeli-restrictions-tighten-palestinians",
+     "date": "2026-10-05"
+    }
+   ],
+   "photo": "jerusalem-mughrabi-bridge-2025"
+  },
+  {
+   "id": "jerusalem-al-tur-sheikh-anbar-demolition",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-13",
+   "time": null,
+   "place": "Sheikh Anbar, al-Tur",
+   "region": "East Jerusalem",
+   "headline": "Israeli forces finish demolishing a home for 16 in al-Tur after family's self-demolition",
+   "fact": "Israeli forces with heavy machinery completed the demolition of the Abdullah family's 200-square-metre home in al-Tur's Sheikh Anbar area, which housed 16 people, after the family had begun knocking it down themselves.",
+   "standfirst": "Two days earlier, a woman in the same neighbourhood, Malouk Kazim Abdullah, was made to demolish her own home, WAFA reported.",
+   "body": [
+    "Local sources told WAFA a large force arrived with demolition machinery on Tuesday morning to complete the job.",
+    "The house had stood for 20 years.",
+    "A week earlier, on 6 October, a residential building in at-Tur was demolished, displacing 69 Palestinians, the most displaced by a single demolition in East Jerusalem since UN records began in 2009."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "16",
+      "label": "people who lived in the demolished house",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/175815"
+     },
+     {
+      "figure": "69",
+      "label": "people displaced by the 6 October at-Tur demolition, a UN record for East Jerusalem",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168539"
+     }
+    ],
+    "context": {
+     "text": "By early October, Israeli authorities had demolished, or forced owners to demolish, the homes of more than 1,800 Palestinians across the West Bank and East Jerusalem this year, mostly for lack of permits that are rarely granted.",
+     "source": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168539"
+    }
+   },
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175815",
+     "date": "2026-10-13"
+    },
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168539",
+     "date": "2026-10-06"
+    }
+   ]
+  },
+  {
+   "id": "jerusalem-silwan-wadi-rababa-gate",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-20",
+   "time": null,
+   "place": "Wadi al-Rababa, Silwan",
+   "region": "East Jerusalem",
+   "headline": "Settlers install iron gate sealing off Silwan's Wadi al-Rababa",
+   "fact": "Settlers, protected by Israeli police, installed an iron gate at the entrance to Silwan's Wadi al-Rababa neighbourhood, home to more than 1,000 Palestinians, blocking service vehicles, WAFA reported.",
+   "standfirst": "The neighbourhood lies south of Al-Aqsa Mosque, in an area where settler groups and archaeological projects have steadily expanded.",
+   "body": [
+    "Local sources said the gate went up on Tuesday morning and completely closed the neighbourhood to service and support vehicles.",
+    "More than 1,000 Palestinian Jerusalemites live in Wadi al-Rababa, according to WAFA.",
+    "No Israeli police comment was included in the report."
+   ],
+   "layers": {
+    "numbers": [
+     {
+      "figure": "1,000+",
+      "label": "residents of Wadi al-Rababa",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/176107"
+     }
+    ],
+    "context": {
+     "text": "The Palestinian Jerusalem Governorate says excavations and tunnels under Silwan, part of the Holy Basin between the Old City and the Mount of Olives, are damaging homes and serving a political narrative.",
+     "source": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176255"
+    }
+   },
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176107",
+     "date": "2026-10-20"
+    }
+   ],
+   "photo": "jerusalem-silwan-from-walls-2023"
+  },
+  {
+   "id": "jerusalem-silwan-excavations-tunnels",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-25",
+   "time": null,
+   "place": "Wadi Hilweh, Silwan",
+   "region": "East Jerusalem",
+   "headline": "Jerusalem governorate says tunnelling under Silwan is cracking homes",
+   "fact": "The Palestinian Jerusalem Governorate said excavations and tunnels beneath Silwan, especially Wadi Hilweh, were causing cracks, collapses and structural damage to homes above.",
+   "standfirst": "It accused Israeli authorities and settler organisations of using archaeology to advance a political narrative. No Israeli response was included in the report.",
+   "body": [
+    "The governorate's statement, carried by WAFA, said digging focuses on layers from the 10th century BCE while sidelining other periods.",
+    "It described work across the Holy Basin, between the Old City and the Mount of Olives, including al-Bustan and Wadi al-Rababa.",
+    "The claims come from the governorate and were not independently verified in the report."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "threaten not only the historical identity of the city but also the safety of Palestinian citizens",
+      "who": "Jerusalem Governorate",
+      "role": "Palestinian Authority body",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/176255"
+     }
+    ],
+    "context": {
+     "text": "Days earlier, settlers protected by police installed an iron gate sealing off Silwan's Wadi al-Rababa neighbourhood, home to more than 1,000 Palestinians.",
+     "source": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176107"
+    }
+   },
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176255",
+     "date": "2026-10-25"
+    }
+   ],
+   "photo": "jerusalem-silwan-valley-2023"
+  },
+  {
+   "id": "jerusalem-court-blocks-ateret-cohanim-funding",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-19",
+   "time": null,
+   "place": "Silwan",
+   "region": "East Jerusalem",
+   "headline": "Court blocks state money for settler group's planned heritage centre in Silwan",
+   "fact": "A Jerusalem court blocked the transfer of millions of shekels from Israel's Heritage Ministry to Ateret Cohanim for a planned Jewish heritage centre in Silwan, Haaretz reported.",
+   "standfirst": "The court found the settler organisation's aims conflicted with those of the endowment that owns the property, whose mission is helping the needy.",
+   "body": [
+    "Haaretz reported on 19 October that the ruling was issued the previous week.",
+    "Ateret Cohanim works to settle Jews in Palestinian neighbourhoods of East Jerusalem.",
+    "The report did not give the exact sum involved."
+   ],
+   "layers": {
+    "context": {
+     "text": "Silwan, just south of Al-Aqsa, has been a focus of settler organisations and state-backed archaeology projects, which Palestinian residents say are used to displace them.",
+     "source": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176255"
+    }
+   },
+   "sources": [
+    {
+     "name": "Haaretz",
+     "url": "https://www.haaretz.com/israel-news/2026-10-19/ty-article/.premium/court-blocks-state-funding-for-organization-seeking-to-judaize-east-jerusalem/000001a1-54d6-dc59-a7ad-f4d7038b0000",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "jerusalem-palestinians-no-vote-election",
+   "desk": "jerusalem",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "14:05",
+   "place": "Silwan",
+   "region": "East Jerusalem",
+   "headline": "East Jerusalem Palestinians cannot vote in Israel's election, but live with its results",
+   "fact": "Most Palestinian Jerusalemites hold residency rather than citizenship and cannot vote in Israel's national elections, though policies on housing and policing shape their lives, Haaretz reported.",
+   "standfirst": "Many also boycott municipal elections. In Silwan, one mother of three lives in a home the authorities say was built without a permit.",
+   "body": [
+    "Haaretz spoke to Manal Jalajel, a Silwan resident whose home received a municipal demolition notice about five years ago, written in Hebrew, which she could not read.",
+    "The paper said the consequences of Israeli politics, from housing to policing, are hard for Palestinian Jerusalemites to escape.",
+    "Israel votes on 27 October."
+   ],
+   "layers": {
+    "next": {
+     "text": "Israel holds its general election.",
+     "date": "2026-10-27",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261018-trump-endorses-embattled-israeli-pm-netanyahu-ahead-of-october-27-election"
+    },
+    "numbers": [
+     {
+      "figure": "668",
+      "label": "people displaced by demolitions in East Jerusalem in 2026 (to 19 October)",
+      "source": "OCHA",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "Haaretz",
+     "url": "https://www.haaretz.com/israel-news/elections/2026-10-26/ty-article-magazine/.premium/east-jerusalem-palestinians-cant-vote-in-israels-election-but-much-is-at-stake/000001a1-5993-d9b6-a9b1-79bbe6d80000",
+     "date": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "explainer-al-aqsa-status-quo",
+   "desk": "jerusalem",
+   "explainer": true,
+   "date": "2026-10-25",
+   "time": null,
+   "place": "Al-Aqsa Mosque compound / Temple Mount",
+   "region": "East Jerusalem",
+   "headline": "The Al-Aqsa status quo: an unwritten deal now being worn away",
+   "fact": "Under the long-standing status quo, Muslims pray at the compound while non-Muslims may visit only at set times through one gate and may not pray; police now in effect allow Jewish prayer on its eastern side.",
+   "standfirst": "Jordan's Waqf runs religious affairs, Israel controls security, and every shift in the rules is felt across the region.",
+   "body": [
+    "The arrangement: the status quo is vague and unwritten. Muslims can enter and pray with few restrictions. Non-Muslims, including Jews, may visit only in limited time slots through a single gate, and are not supposed to pray, The Times of Israel reports.",
+    "Who runs it: Israel captured the site in 1967 but left religious authority with the Islamic Waqf, administered by Jordan. In the 1994 peace treaty Israel recognised Jordan's special role in Muslim holy shrines in Jerusalem.",
+    "What has changed: police now de facto permit Jewish prayer on the eastern side, while arrests continue for prayer on the western side. National Security Minister Itamar Ben Gvir, who oversees the police, has prayed openly there; Netanyahu's office says the status quo remains in force.",
+    "Scale: the Jerusalem Governorate counted 40,661 settler entries between January and August 2026, and Palestinian estimates put Sukkot entries at more than 9,000.",
+    "For Palestinians, restrictions have tightened: Waqf guards say they can be barred for six months for looking at a settler, and worshippers report bans over social media posts."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "a flagrant violation of the historical and legal status quo",
+      "who": "Jordanian foreign ministry spokesman",
+      "role": "on Tisha B'Av visits, July 2026",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/thousands-of-jews-visit-temple-mount-for-tisha-bav-some-pray-openly/"
+     },
+     {
+      "quote": "Al-Aqsa is my soul.",
+      "who": "Alia Abu Ghannam Abu Subaitan",
+      "role": "worshipper",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/inside-al-aqsa-israeli-restrictions-tighten-palestinians"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "40,661",
+      "label": "settler entries to the compound, January–August 2026",
+      "source": "WAFA",
+      "url": "https://english.wafa.ps/Pages/Details/176246"
+     },
+     {
+      "figure": "9,000+",
+      "label": "entries during Sukkot 2026, Palestinian estimate",
+      "source": "The New Arab",
+      "url": "https://www.newarab.com/news/inside-al-aqsa-israeli-restrictions-tighten-palestinians"
+     }
+    ],
+    "context": {
+     "text": "On Tisha B'Av in July 2026 about 3,000 Jews had entered by midday, according to the advocacy group Beyadenu, and about a dozen were arrested for praying on the western side.",
+     "source": "The Times of Israel",
+     "url": "https://timesofisrael.com/thousands-of-jews-visit-temple-mount-for-tisha-bav-some-pray-openly/"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel",
+     "url": "https://timesofisrael.com/thousands-of-jews-visit-temple-mount-for-tisha-bav-some-pray-openly/",
+     "date": "2026-07-23"
+    },
+    {
+     "name": "The New Arab",
+     "url": "https://www.newarab.com/news/inside-al-aqsa-israeli-restrictions-tighten-palestinians",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176246",
+     "date": "2026-10-25"
+    }
+   ],
+   "photo": "jerusalem-dome-of-the-rock-rain-2023"
+  },
+  {
+   "id": "world-un-inquiry-genocide-gaza-report",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": null,
+   "place": "UN General Assembly, New York",
+   "region": "International",
+   "headline": "UN inquiry tells General Assembly Israel continues to commit genocide in Gaza",
+   "fact": "The UN Commission of Inquiry, chaired by Srinivasan Muralidhar, reported to the General Assembly that Israel has committed war crimes and crimes against humanity and continues to commit genocide in Gaza.",
+   "standfirst": "The commission said Israel's expanding control in Gaza keeps killing civilians near the yellow line. Israel rejected the findings as misinformation.",
+   "body": [
+    "The report was presented to the UN General Assembly, UN News said on 26 October. The commission was set up by the Human Rights Council in 2021.",
+    "It found that Israel continues to commit genocide in Gaza and has committed war crimes and crimes against humanity in the occupied Palestinian territory.",
+    "Israel's permanent mission in Geneva dismissed the report as part of a campaign to demonise Israel.",
+    "Separately, UN special rapporteur Francesca Albanese issued a report titled 'Truth under the rubble: media in the time of genocide' on the killing of Palestinian journalists and restrictions on media."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "form part of a broader strategy to exterminate and displace Palestinians",
+      "who": "Srinivasan Muralidhar",
+      "role": "chair, UN Commission of Inquiry",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168672"
+     },
+     {
+      "quote": "yet another manifestation of its misinformation campaign to demonise the State of Israel",
+      "who": "Israel's permanent mission in Geneva",
+      "role": "statement",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168672"
+     }
+    ],
+    "context": {
+     "text": "In June 2026 the same commission told the Human Rights Council that Israeli forces had deliberately targeted Palestinian children.",
+     "source": "UN News",
+     "url": "https://news.un.org/en/story/2026/06/1167790"
+    }
+   },
+   "sources": [
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168672",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "un-general-assembly-hall-2024"
+  },
+  {
+   "id": "world-turk-guterres-hebron-ethnic-cleansing",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "17:46",
+   "place": "Geneva and Cairo",
+   "region": "International",
+   "headline": "UN rights chief warns Hebron operation raises concerns of ethnic cleansing",
+   "fact": "UN human rights chief Volker Türk said Israel's Hebron operation, which had forced more than 3,000 people from their homes, raised serious concerns of ethnic cleansing and amounted to collective punishment.",
+   "standfirst": "Speaking in Cairo, Secretary-General António Guterres described an increasingly coercive environment for Palestinians. Türk called for the displaced to be allowed home and compensated.",
+   "body": [
+    "Türk said the operation had demolished homes and commercial property and restricted residents' movement, UN News reported.",
+    "He warned of unnecessary and disproportionate use of force and called for the return of displaced residents, with compensation and reparation.",
+    "Guterres, in Cairo, warned that the threat of ethnic cleansing was growing.",
+    "The Israeli military said the operation would last several days and was limited to the area the attackers came from."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "Collective punishment is a grave violation of international law.",
+      "who": "Volker Türk",
+      "role": "UN High Commissioner for Human Rights",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168672"
+     },
+     {
+      "quote": "We are seeing an increasingly coercive environment, with the specter of ethnic cleansing looming ever larger.",
+      "who": "António Guterres",
+      "role": "UN Secretary-General, in Cairo",
+      "source": "The Times of Israel / AFP",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "3,000+",
+      "label": "Palestinians forced from their homes in Hebron, per Türk",
+      "source": "UN News",
+      "url": "https://news.un.org/en/story/2026/10/1168672"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "UN News",
+     "url": "https://news.un.org/en/story/2026/10/1168672",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "France 24",
+     "url": "https://france24.com/en/middle-east/20261026-un-cites-ethnic-cleansing-concerns-around-israel-palestinian-displacement-operation-hebron",
+     "date": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "world-european-diplomats-attacked-taybeh",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-17",
+   "time": "14:58",
+   "place": "Taybeh",
+   "region": "West Bank",
+   "headline": "Settlers attack European diplomats' convoy in Taybeh and beat a French mayor",
+   "fact": "Masked settlers attacked a convoy carrying Belgian, French and Polish diplomats and Catholic representatives in the Christian village of Taybeh, beating 78-year-old French mayor Bernard Baudoux with iron bars.",
+   "standfirst": "The group had come to help Palestinian farmers with the olive harvest. Belgium and France demanded accountability; Netanyahu said the visit should have been coordinated with the army.",
+   "body": [
+    "Baudoux, mayor of Aulnoye-Aymeries, was kicked and struck but not hospitalised. A local priest said one person needed stitches and an older woman was also beaten, France 24 reported.",
+    "France's foreign minister, Jean-Noël Barrot, called the attack appalling and said Israel must urgently halt the violence. Belgium's Maxime Prévot said a Belgian vehicle was damaged.",
+    "Netanyahu's office urged caution before drawing conclusions and he later called the episode a smear against settlers. Israel's foreign ministry condemned the incident and police opened an investigation.",
+    "Opposition leader Gadi Eisenkot described the violence as Jewish terrorism under the auspices of the government."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "I was struck with metal bars and kicked before being thrown to the ground.",
+      "who": "Bernard Baudoux",
+      "role": "mayor of Aulnoye-Aymeries, France",
+      "source": "PBS NewsHour / AP",
+      "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+     },
+     {
+      "quote": "a handful of criminals is burning up the last shreds of legitimacy left to the state of Israel",
+      "who": "Gadi Eisenkot",
+      "role": "Israeli opposition leader",
+      "source": "PBS NewsHour / AP",
+      "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "4",
+      "label": "Palestinians killed since the harvest began, per the Palestinian health ministry (as of 17 October)",
+      "source": "PBS NewsHour / AP",
+      "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+     }
+    ],
+    "context": {
+     "text": "The attack came a day after settlers beat Washington Post photographer Heidi Levine in Abu Falah, and earlier in October AFP photographer Jaafar Ashtiyeh had several ribs fractured. France 24 noted Britain is leading economic sanctions over West Bank violence.",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261017-israeli-settlers-attack-european-delegation-convoy-in-west-bank-beat-french-mayor"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261017-israeli-settlers-attack-european-delegation-convoy-in-west-bank-beat-french-mayor",
+     "date": "2026-10-17"
+    },
+    {
+     "name": "PBS NewsHour / AP",
+     "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank",
+     "date": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "id": "world-us-activists-detained-nahalin",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-21",
+   "time": "13:28",
+   "place": "Nahalin",
+   "region": "West Bank",
+   "headline": "Israel detains about 80 olive-harvest volunteers, including a US congressional candidate",
+   "fact": "Israeli forces detained US congressional candidate Brad Lander and about 80 American and Israeli rabbis and activists helping farmers near Nahalin, the largest such detention in a decade, lawyers said.",
+   "standfirst": "Thirty-three of those held were US citizens. Most were released the same day; four activists were to be deported for what Israel called anti-Israel activity.",
+   "body": [
+    "Forces declared a closed military zone near Nahalin, close to the Beitar Illit settlement, and took the volunteers to a police station, NPR reported.",
+    "The army said harvesting in the area required prior coordination, which Palestinians had not requested. Israel's foreign ministry called Lander's visit a political stunt.",
+    "The New Israel Fund said about 90 volunteers from its Protect the Harvest initiative had been released by Wednesday night. The Times of Israel reported four would be deported.",
+    "The US State Department said it was tracking the situation."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "There's no obligation to coordinate with the Israeli military",
+      "who": "Brad Lander",
+      "role": "former New York City comptroller, congressional candidate",
+      "source": "NPR via KPBS",
+      "url": "https://www.kpbs.org/news/international/2026/10/21/israel-detains-dozens-of-americans-including-a-congressional-candidate-in-west-bank"
+     },
+     {
+      "quote": "For three years we have not harvested any olives.",
+      "who": "Fahimeh",
+      "role": "Palestinian farmer, 77",
+      "source": "NPR via KPBS",
+      "url": "https://www.kpbs.org/news/international/2026/10/21/israel-detains-dozens-of-americans-including-a-congressional-candidate-in-west-bank"
+     }
+    ],
+    "numbers": [
+     {
+      "figure": "33",
+      "label": "US citizens among those detained",
+      "source": "NPR via KPBS",
+      "url": "https://www.kpbs.org/news/international/2026/10/21/israel-detains-dozens-of-americans-including-a-congressional-candidate-in-west-bank"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "NPR via KPBS",
+     "url": "https://www.kpbs.org/news/international/2026/10/21/israel-detains-dozens-of-americans-including-a-congressional-candidate-in-west-bank",
+     "date": "2026-10-21"
+    }
+   ]
+  },
+  {
+   "id": "world-albanese-indonesia-board-of-peace",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-22",
+   "time": null,
+   "place": "Jakarta",
+   "region": "International",
+   "headline": "UN rapporteur urges Indonesia to rethink joining Trump's Board of Peace",
+   "fact": "UN special rapporteur Francesca Albanese told Reuters in Jakarta that Indonesia should reconsider its role in Trump's Board of Peace, arguing the rules are set by Israel and Palestinians lack a voice.",
+   "standfirst": "Indonesia has pledged troops to the Gaza stabilisation force. Its foreign ministry says board discussions remain on hold.",
+   "body": [
+    "Albanese recommended Jakarta work instead with the Hague Group, which includes South Africa and Malaysia.",
+    "A board official rejected the claim that Palestinians are excluded, pointing to the National Committee for the Administration of Gaza led by Ali Shaath.",
+    "President Prabowo Subianto has reportedly vowed to quit the board if it does not benefit Palestinians."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "Naming a few bureaucrats here and there is tokenism.",
+      "who": "Francesca Albanese",
+      "role": "UN special rapporteur on the occupied Palestinian territory",
+      "source": "Reuters via Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/10/un-expert-urges-indonesia-reconsider-involvement-trumps-gaza-board"
+     },
+     {
+      "quote": "Palestinian leadership and ownership remain central to the process.",
+      "who": "Board of Peace official",
+      "role": "unnamed",
+      "source": "Reuters via Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/10/un-expert-urges-indonesia-reconsider-involvement-trumps-gaza-board"
+     }
+    ],
+    "context": {
+     "text": "Trump announced the Board of Peace in January to handle conflicts usually left to the UN, and Israel is a member. Indonesia has pledged troops to the Gaza stabilisation force.",
+     "source": "Reuters via Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/10/un-expert-urges-indonesia-reconsider-involvement-trumps-gaza-board"
+    }
+   },
+   "sources": [
+    {
+     "name": "Reuters via Al-Monitor",
+     "url": "https://www.al-monitor.com/originals/2026/10/un-expert-urges-indonesia-reconsider-involvement-trumps-gaza-board",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "world-ben-gvir-ai-videos-france",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-22",
+   "time": "19:38",
+   "place": "Paris and Jerusalem",
+   "region": "International",
+   "headline": "France rebuffs Ben-Gvir after AI videos mocking Gazans",
+   "fact": "Israeli minister Itamar Ben-Gvir shared AI-generated campaign videos mocking Gazans, including one sending a Palestinian to Paris; France's foreign ministry replied that even magic could not lift his entry ban.",
+   "standfirst": "France barred Ben-Gvir in May over his treatment of activists on a Gaza-bound flotilla. Israel's election rules require AI campaign content to be labelled.",
+   "body": [
+    "One video showed a ruined Gaza in 2030 with a donkey and the message that only a donkey would stay in Gaza, France 24's Truth or Fake team reported.",
+    "In another, an elderly Palestinian rubs a magic lamp, summons Ben-Gvir and is sent to Paris.",
+    "France's 'French Response' account on X answered with a jibe about his ban, and Ben-Gvir replied with an AI video of himself speaking French.",
+    "Deutsche Welle found Likud used AI in about a quarter of the campaign content it analysed."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "Even magic can't lift his ban from entering France.",
+      "who": "French foreign ministry ('French Response' account)",
+      "role": "on X",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261022-israel-s-ben-gvir-shares-ai-videos-mocking-gazans-as-donkeys-and-sending-them-to-paris"
+     }
+    ],
+    "context": {
+     "text": "France barred Ben-Gvir in May over his treatment of activists on a Gaza-bound aid flotilla. Israel's Election Commission requires AI-made or AI-altered campaign material to be labelled.",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261022-israel-s-ben-gvir-shares-ai-videos-mocking-gazans-as-donkeys-and-sending-them-to-paris"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261022-israel-s-ben-gvir-shares-ai-videos-mocking-gazans-as-donkeys-and-sending-them-to-paris",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "world-israel-election-palestinian-citizens",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-26",
+   "time": "12:13",
+   "place": "Israel",
+   "region": "Israel",
+   "headline": "Israel votes in an election seen as a referendum on Netanyahu, with Arab voters pivotal",
+   "fact": "Israelis vote on 27 October in an election framed as a referendum on Benjamin Netanyahu, and France 24 reports that turnout among Palestinian citizens of Israel could decide the outcome.",
+   "standfirst": "Arab turnout has traditionally lagged, but some voters say casting a ballot feels more of a duty than ever. Trump has twice urged Israelis to back Netanyahu.",
+   "body": [
+    "France 24 reported that Arab Israeli votes could be crucial to Netanyahu's fate, and that some Arab citizens now see voting as an obligation because of his policies and wars.",
+    "Trump endorsed Netanyahu ahead of the vote and, on 26 October, urged Israelis to vote for him so the two could finish the job, The Times of Israel reported.",
+    "Netanyahu's main rival, Gadi Eisenkot, has pledged to unite the country. Opponents accuse Netanyahu of stoking tension with Iran before the vote, which his office denies.",
+    "Most Palestinians in East Jerusalem, who hold residency rather than citizenship, cannot vote."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "It's Israel's democracy and Israel's constitution, and that's what counts for me.",
+      "who": "Isaac Herzog",
+      "role": "Israeli president",
+      "source": "The Times of Israel",
+      "url": "https://timesofisrael.com/liveblog-october-26-2026"
+     }
+    ],
+    "next": {
+     "text": "Polls open across Israel; all West Bank land crossings are closed for the day.",
+     "date": "2026-10-27",
+     "source": "France 24",
+     "url": "https://www.france24.com/en/middle-east/20261024-israel-to-close-all-land-crossings-with-west-bank-on-election-day"
+    }
+   },
+   "sources": [
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/israel-arab-israeli-voters-could-prove-decisive-in-the-upcoming-elections",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The Times of Israel (live blog)",
+     "url": "https://timesofisrael.com/liveblog-october-26-2026",
+     "date": "2026-10-26"
+    }
+   ]
+  },
+  {
+   "id": "world-abbas-postpones-palestinian-elections",
+   "desk": "world",
+   "explainer": false,
+   "date": "2026-10-10",
+   "time": "14:14",
+   "place": "Ramallah",
+   "region": "West Bank",
+   "headline": "Abbas postpones Palestinian elections to September 2027",
+   "fact": "Palestinian President Mahmoud Abbas cancelled legislative elections due in November and set 11 September 2027 for both presidential and legislative votes, blaming Israeli measures and conditions in Gaza.",
+   "standfirst": "Palestinians have not voted nationally since 2005–06. France, which pressed for the vote as part of its recognition of Palestine, said it was essential the elections take place.",
+   "body": [
+    "The decree cited Israeli military operations, settlement expansion, settler violence, movement restrictions and Israel's withholding of Palestinian tax revenues, The Times of Israel and Reuters reported.",
+    "It also pointed to conditions in Gaza, the incomplete Israeli withdrawal, slow reconstruction and the absence of international stabilisation forces.",
+    "Hamas and Islamic Jihad backed the delay. Israel's foreign minister accused Abbas of deceiving the international community.",
+    "Palestinian activist Samer Sinijlawi told France 24 on 15 October the delay was a terrible disappointment."
+   ],
+   "layers": {
+    "voices": [
+     {
+      "quote": "will enable the Palestinian leadership to champion its people's legitimate aspirations",
+      "who": "Pascal Confavreux",
+      "role": "French foreign ministry spokesperson",
+      "source": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027/"
+     },
+     {
+      "quote": "ridiculous lie designed to evade responsibility and accountability",
+      "who": "Gideon Sa'ar",
+      "role": "Israeli foreign minister",
+      "source": "The Times of Israel",
+      "url": "https://www.timesofisrael.com/abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027/"
+     }
+    ],
+    "next": {
+     "text": "New date for presidential and legislative elections.",
+     "date": "2027-09-11",
+     "source": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027/"
+    }
+   },
+   "sources": [
+    {
+     "name": "The Times of Israel / Reuters",
+     "url": "https://www.timesofisrael.com/abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027/",
+     "date": "2026-10-10"
+    },
+    {
+     "name": "France 24",
+     "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261015-election-delay-a-terrible-disappointment-palestinian-activist-samer-sinijlawi-says",
+     "date": "2026-10-15"
+    }
+   ],
+   "photo": "ramallah-al-manara-square-2023"
+  }
+ ],
+ "figures": [
+  {
+   "figure": "1,522",
+   "label": "Palestinians killed in Gaza since the October 2025 ceasefire (Gaza Ministry of Health)",
+   "as_of": "2026-10-19",
+   "source": "OCHA",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "figure": "351",
+   "label": "children killed in Gaza since the ceasefire (UNICEF)",
+   "as_of": "2026-10-22",
+   "source": "OCHA",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "figure": "74,555",
+   "label": "Palestinians killed in Gaza since October 2023",
+   "as_of": "2026-10-26",
+   "source": "The New Arab",
+   "url": "https://www.newarab.com/news/israel-army-advances-beyond-gazas-yellow-line-15-killed"
+  },
+  {
+   "figure": "702",
+   "label": "UN and partner aid trucks offloaded at Kerem Shalom in one week (13–19 October)",
+   "as_of": "2026-10-19",
+   "source": "OCHA",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "figure": "1.1 million",
+   "label": "people WFP still feeds in Gaza after cutting half a million",
+   "as_of": "2026-10-19",
+   "source": "WFP",
+   "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+  },
+  {
+   "figure": "272",
+   "label": "olive-harvest settler attacks since 1 September, more than any full season on record",
+   "as_of": "2026-10-19",
+   "source": "OCHA",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "figure": "2,159",
+   "label": "settler attacks in the West Bank in 2026, an average of 7.4 a day",
+   "as_of": "2026-10-19",
+   "source": "OCHA",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "figure": "3,971",
+   "label": "Palestinians displaced by Israel's Hebron operation (WAFA count)",
+   "as_of": "2026-10-26",
+   "source": "The New Arab",
+   "url": "https://newarab.com/news/israels-hebron-raid-displaces-nearly-4000-palestinians"
+  },
+  {
+   "figure": "1,790",
+   "label": "Palestinians displaced by demolitions in the West Bank in 2026, 668 of them in East Jerusalem",
+   "as_of": "2026-10-19",
+   "source": "OCHA",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "figure": "8,000–10,000",
+   "label": "bodies believed still buried under Gaza's rubble",
+   "as_of": "2026-10-23",
+   "source": "France 24",
+   "url": "https://france24.com/en/tv-shows/the-observers/20261023-gaza-digging-up-the-bodies-from-under-the-rubble"
+  }
+ ],
+ "ahead": [
+  {
+   "date": "2026-10-27",
+   "what": "Israel's general election; all West Bank land crossings closed and Palestinian workers barred from settlements",
+   "source": "France 24",
+   "url": "https://www.france24.com/en/middle-east/20261024-israel-to-close-all-land-crossings-with-west-bank-on-election-day"
+  },
+  {
+   "date": "2026-11-04",
+   "what": "UK Supreme Court due to hear Huda Ammori's appeal against the proscription of Palestine Action (scheduled 4–5 November)",
+   "source": "The Jerusalem Post",
+   "url": "https://jpost.com/diaspora/article-904698"
+  },
+  {
+   "date": "2026-11-01",
+   "what": "Albanian liaison officers for the International Stabilisation Force expected in Gaza (month only)",
+   "source": "The Times of Israel",
+   "url": "https://timesofisrael.com/liveblog-october-26-2026",
+   "approx": true
+  },
+  {
+   "date": "2026-11-23",
+   "what": "Deadline for the Israeli state to give the High Court a timetable for residents' return to the Jenin, Tulkarm and Nur Shams camps",
+   "source": "The Jerusalem Post",
+   "url": "https://www.jpost.com/israel-news/article-911386"
+  },
+  {
+   "date": "2026-11-30",
+   "what": "West Bank olive harvest season runs until the end of November",
+   "source": "France 24",
+   "url": "https://www.france24.com/en/middle-east/20261023-how-israeli-settlers-wearing-keffiyehs-are-attacking-west-bank-olive-groves"
+  },
+  {
+   "date": "2027-03-31",
+   "what": "End of the six-month period covered by WFP's $450m appeal for Gaza and the West Bank",
+   "source": "WFP",
+   "url": "https://www.wfp.org/news/funding-cuts-force-wfp-drastically-reduce-lifesaving-assistance-gaza"
+  },
+  {
+   "date": "2027-09-11",
+   "what": "Rescheduled Palestinian presidential and legislative elections",
+   "source": "The Times of Israel",
+   "url": "https://www.timesofisrael.com/abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027/"
+  }
+ ]
+}

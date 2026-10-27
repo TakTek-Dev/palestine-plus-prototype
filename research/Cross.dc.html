@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Palestine+ — Gaza, West Bank, Jerusalem, the World</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&amp;family=Unbounded:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+
+:root{
+  --paper:#F3F1EC;
+  --paper-2:#E9E6DF;
+  --ink:#121212;
+  --ink-2:#3B3A37;
+  --ink-3:#575550;
+  --rule:#CFCAC0;
+  --red:#C8331A;
+  --red-ink:#A62A14;
+  --red-on-ink:#F26A50;
+  --on-ink:#ECEAE4;
+  --on-ink-2:#ADAAA4;
+  --line-ink:#34332F;
+  --wrap:1320px;
+  --gut:40px;
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:96px;
+  --display:"Unbounded",system-ui,sans-serif;
+  --text:"Epilogue",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-size:16px;line-height:1.5;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+img{display:block;max-width:100%}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+time{font-variant-numeric:tabular-nums}
+
+/* ---------- locator: four corners + arms, one corner lit ---------- */
+.mx{width:22px;height:22px;flex:none;display:block}
+.mx .c{fill:var(--rule)}
+.mx .a{fill:var(--ink)}
+.mx .on{fill:var(--red)}
+.inv .mx .c{fill:#4A4844}
+.inv .mx .a{fill:var(--on-ink)}
+
+/* ---------- utility bar ---------- */
+.util{border-bottom:1px solid var(--rule);font-size:13px;color:var(--ink-2)}
+.util .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:40px}
+.util-l,.util-r{display:flex;gap:var(--s5);align-items:center}
+.util b{font-weight:600;color:var(--ink)}
+.live{display:inline-flex;align-items:center;gap:var(--s2);font-weight:600;color:var(--red-ink)}
+.live i{width:8px;height:8px;background:var(--red);display:block}
+
+/* ---------- masthead ---------- */
+.mast{border-bottom:4px solid var(--ink)}
+.mast .wrap{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:var(--s6);padding-top:var(--s5);padding-bottom:var(--s5)}
+.logo{display:inline-flex;flex-direction:column;gap:6px}
+.logo:hover{text-decoration:none}
+.logo-row{display:flex;align-items:center;gap:9px}
+.logo-word{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:-0.025em;line-height:1}
+.logo-mark{width:28px;height:28px;flex:none}
+.logo-tag{display:block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.nav{display:flex;justify-content:flex-end;flex-wrap:wrap}
+.nav a{display:flex;align-items:center;min-height:44px;padding:0 12px;font-weight:600;font-size:15px;white-space:nowrap}
+.nav a:hover{text-decoration:none;background:var(--paper-2)}
+.nav .sep{width:1px;background:var(--rule);margin:10px 6px}
+.mast-act{display:flex;gap:var(--s2)}
+.btn-ic{width:44px;height:44px;display:grid;place-items:center;border:1.5px solid var(--ink);background:transparent;cursor:pointer}
+.btn-ic svg{width:18px;height:18px}
+.btn-sub{height:44px;padding:0 18px;background:var(--ink);color:var(--paper);border:0;font-weight:700;font-size:14px;cursor:pointer}
+
+/* ---------- day line ---------- */
+.dayline .wrap{display:flex;justify-content:space-between;align-items:center;gap:var(--s4);padding-top:var(--s4);padding-bottom:var(--s4)}
+.dayline .lab{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.legend{font-size:13px;color:var(--ink-2);font-weight:500}
+
+/* ---------- THE CROSS ---------- */
+.cross{display:grid;grid-template-columns:1fr minmax(0,1.3fr) 1fr;grid-template-areas:"nw n ne" "w c e" "sw s se";border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.q{padding:var(--s5) var(--s6) var(--s5) 0;display:flex;flex-direction:column}
+.q.ne,.q.se{padding:var(--s5) 0 var(--s5) var(--s6)}
+.q.nw{grid-area:nw}.q.ne{grid-area:ne}.q.sw{grid-area:sw}.q.se{grid-area:se}
+.q-head{display:flex;align-items:center;gap:10px;margin-bottom:var(--s4)}
+.q-num{font-family:var(--display);font-weight:700;font-size:12px;color:var(--red-ink)}
+.q-name{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.q-more{margin-left:auto;font-size:13px;font-weight:600;color:var(--ink-2);display:flex;gap:4px;align-items:center;min-height:32px}
+.q-more svg{width:14px;height:14px}
+.q h2{font-family:var(--text);font-weight:700;font-size:23px;line-height:1.17;letter-spacing:-0.015em}
+.q .dek{margin-top:var(--s2);font-size:15px;color:var(--ink-2);line-height:1.45}
+.q ul{list-style:none;margin-top:auto;padding-top:var(--s4)}
+.q li{border-top:1px solid var(--rule)}
+.q li a{display:grid;grid-template-columns:50px 1fr;gap:var(--s2);padding:10px 0;font-size:15px;line-height:1.35;font-weight:500;min-height:44px}
+.q li:last-child a{padding-bottom:0}
+.q time{font-size:13px;font-weight:600;color:var(--ink-3);padding-top:1px}
+
+.arm{background:var(--ink);color:var(--on-ink)}
+.arm-n{grid-area:n;position:relative;min-height:330px;overflow:hidden;margin:0}
+.arm-n img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 45%}
+.arm-n figcaption{position:absolute;left:0;bottom:0;background:var(--ink);color:var(--on-ink);font-size:13px;padding:6px 10px;max-width:92%}
+.arm-w{grid-area:w}.arm-e{grid-area:e}.arm-s{grid-area:s}
+.arm-w,.arm-e{display:grid;grid-template-rows:1fr 1fr}
+.half{padding:var(--s5) var(--s6)}
+.half + .half{border-top:1px solid var(--line-ink)}
+.arm-lab{display:flex;align-items:center;gap:var(--s2);font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-on-ink);margin-bottom:var(--s3)}
+.half p{font-size:15px;line-height:1.5;color:var(--on-ink)}
+.src{display:block;margin-top:6px;font-size:13px;color:var(--on-ink-2)}
+.center{grid-area:c;background:var(--red);color:#fff;padding:var(--s6);display:flex;flex-direction:column;justify-content:space-between;gap:var(--s5)}
+.center .kick{display:flex;justify-content:space-between;gap:var(--s3);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.center h1{font-family:var(--display);font-weight:700;font-size:31px;line-height:1.14;letter-spacing:-0.025em}
+.center p{font-size:17px;line-height:1.5;color:#fff}
+.center .by{font-size:13px;font-weight:600;display:flex;gap:var(--s4);color:#fff;border-top:1px solid rgba(255,255,255,.4);padding-top:var(--s3)}
+.arm-s{padding:var(--s5) var(--s6)}
+.dates{list-style:none}
+.dates li{display:grid;grid-template-columns:96px 1fr;gap:var(--s3);padding:10px 0;border-top:1px solid var(--line-ink);font-size:15px;line-height:1.4;font-weight:500}
+.dates li:first-child{border-top:0;padding-top:0}
+.dates time{font-family:var(--display);font-size:12px;font-weight:700;color:var(--red-on-ink);padding-top:3px;letter-spacing:.02em}
+.dates small{display:block;font-size:13px;color:var(--on-ink-2);font-weight:400;margin-top:2px}
+
+/* ---------- section heads ---------- */
+.sec{padding-top:var(--s9)}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--s5);border-bottom:4px solid var(--ink);padding-bottom:var(--s4);margin-bottom:var(--s6)}
+.sec-h h2{font-family:var(--display);font-weight:700;font-size:40px;letter-spacing:-0.03em;line-height:1}
+.sec-h p{font-size:15px;color:var(--ink-2);max-width:440px;text-align:right}
+
+/* ---------- four lanes ---------- */
+.lanes{display:grid;grid-template-columns:repeat(4,1fr);border-left:1px solid var(--rule)}
+.lane{border-right:1px solid var(--rule);padding:0 var(--s5);display:flex;flex-direction:column}
+.lane-h{display:flex;align-items:center;gap:10px;padding-bottom:var(--s4);margin-bottom:var(--s4);border-bottom:1px solid var(--ink)}
+.lane-h .n{font-family:var(--display);font-weight:800;font-size:28px;letter-spacing:-0.03em;line-height:1}
+.lane-h .t{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase;line-height:1.2;white-space:nowrap}
+.lane-h .mx{margin-left:auto}
+.lane figure{margin:0}
+.lane .ph{aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.lane .ph img{width:100%;height:100%;object-fit:cover}
+.lane figcaption{font-size:13px;color:var(--ink-3);margin-top:6px;line-height:1.35}
+.lane h3{font-weight:700;font-size:19px;line-height:1.22;letter-spacing:-0.01em;margin-top:var(--s4)}
+.lane .dek{font-size:14.5px;color:var(--ink-2);margin-top:var(--s2)}
+.lane ul{list-style:none;margin-top:var(--s4)}
+.lane li{border-top:1px solid var(--rule)}
+.lane li a{display:block;padding:10px 0;min-height:44px}
+.lane li time{display:block;font-size:13px;font-weight:600;color:var(--ink-3);margin-bottom:2px}
+.lane li span{display:block;font-size:15px;font-weight:600;line-height:1.3}
+.all{margin-top:auto;display:flex;justify-content:space-between;align-items:center;min-height:48px;border-top:2px solid var(--ink);font-weight:700;font-size:14px}
+.all svg{width:16px;height:16px}
+.lane ul{margin-bottom:var(--s4)}
+.status{aspect-ratio:4/3;background:var(--ink);color:var(--on-ink);padding:var(--s4);display:flex;flex-direction:column}
+.status .arm-lab{margin-bottom:var(--s2)}
+.status dl{margin-top:auto}
+.status div{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s3);padding:7px 0;border-top:1px solid var(--line-ink);font-size:13px}
+.status dt{color:var(--on-ink-2)}
+.status dd{font-family:var(--display);font-weight:700;font-size:15px;color:#fff;text-align:right}
+.status .big{font-family:var(--display);font-weight:700;font-size:16px;line-height:1.2;letter-spacing:-0.01em;color:#fff}
+.status-src{font-size:13px;color:var(--ink-3);margin-top:6px;line-height:1.35}
+
+/* ---------- explainers ---------- */
+.expl{display:grid;grid-template-columns:repeat(4,1fr)}
+.ex{padding:var(--s2) var(--s5) var(--s4) 0;border-right:1px solid var(--rule)}
+.ex + .ex{padding-left:var(--s5)}
+.ex:last-child{border-right:0}
+.ex-loc{display:flex;align-items:center;gap:12px}
+.ex-loc .mx{width:44px;height:44px}
+.ex-loc span{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-ink);line-height:1.3}
+.ex-loc b{display:block;font-size:22px;letter-spacing:-0.02em;color:var(--ink)}
+.ex h3{font-family:var(--display);font-weight:600;font-size:18px;line-height:1.28;letter-spacing:-0.02em;margin-top:var(--s5)}
+.ex p{font-size:15px;color:var(--ink-2);margin-top:var(--s3)}
+.ex .meta{margin-top:var(--s4);font-size:12px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+
+/* ---------- video ---------- */
+.vid{background:var(--ink);color:var(--on-ink);margin-top:var(--s9);padding:var(--s8) 0}
+.vid .sec-h{border-color:var(--on-ink)}
+.vgrid{display:grid;grid-template-columns:2fr 1.1fr;gap:var(--s6);align-items:start}
+.vbig figure,.vsm figure{position:relative;overflow:hidden;background:#222;margin:0}
+.vbig figure{aspect-ratio:16/10}
+.vbig img,.vsm img{width:100%;height:100%;object-fit:cover}
+.play{position:absolute;left:0;bottom:0;display:flex;align-items:center;gap:8px;background:var(--red);color:#fff;padding:9px 13px;font-weight:700;font-size:13px;font-variant-numeric:tabular-nums}
+.play svg{width:13px;height:13px}
+.vbig h3{font-family:var(--display);font-weight:600;font-size:25px;line-height:1.2;letter-spacing:-0.02em;margin-top:var(--s4);color:#fff}
+.vbig p{color:var(--on-ink-2);margin-top:var(--s2);font-size:15px;max-width:620px}
+.vside .k{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-on-ink);margin-bottom:var(--s3)}
+.vlist{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.vsm figure{aspect-ratio:9/16;margin-bottom:var(--s3)}
+.vk2{margin-top:var(--s6)}
+.vmore{list-style:none;border-top:1px solid var(--line-ink)}
+.vmore a{display:grid;grid-template-columns:1fr auto;gap:2px var(--s4);padding:12px 0;border-bottom:1px solid var(--line-ink);font-size:15px;font-weight:600;color:#fff;line-height:1.3;min-height:44px}
+.vmore span{grid-column:1 / -1;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red-on-ink)}
+.vmore time{font-size:13px;color:var(--on-ink-2);font-weight:600}
+.vsm .play{padding:5px 8px;font-size:12px}
+.vsm .tag{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red-on-ink)}
+.vsm h3{font-size:15px;font-weight:700;line-height:1.3;margin-top:4px;color:#fff;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ---------- photo essay ---------- */
+.essay{display:grid;grid-template-columns:2fr 1fr;gap:var(--s6);align-items:start}
+.essay figure{overflow:hidden;margin:0}
+.essay .e1{aspect-ratio:16/10}
+.essay .e2{aspect-ratio:4/3}
+.essay img{width:100%;height:100%;object-fit:cover}
+.essay-txt .loc{display:flex;align-items:center;gap:var(--s2);margin-top:var(--s5);font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red-ink)}
+.essay-txt h3{font-family:var(--display);font-weight:700;font-size:25px;line-height:1.16;letter-spacing:-0.03em;margin-top:var(--s3)}
+.essay-txt p{font-size:15px;color:var(--ink-2);margin-top:var(--s3)}
+.essay-txt .cap{font-size:13px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:var(--s3);margin-top:var(--s4)}
+.essay-txt .cap b{color:var(--ink);font-weight:600}
+
+/* ---------- how we work ---------- */
+.how{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;border:1px solid var(--ink)}
+.how-step{padding:var(--s6)}
+.how-step h3{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-0.02em;line-height:1.2}
+.how-step p{font-size:15px;color:var(--ink-2);margin-top:var(--s2)}
+.how-step .k{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red-ink);margin-bottom:var(--s3)}
+.how-plus{width:56px;display:grid;place-items:center;border-left:1px solid var(--ink);border-right:1px solid var(--ink);background:var(--paper-2)}
+.how-plus svg{width:22px;height:22px}
+
+/* ---------- newsletter / social ---------- */
+.join{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s7);align-items:start}
+.join h2{font-family:var(--display);font-weight:700;font-size:34px;letter-spacing:-0.03em;line-height:1.1}
+.join p{color:var(--ink-2);margin-top:var(--s3);font-size:16px;max-width:520px}
+.form{display:flex;margin-top:var(--s5);max-width:520px}
+.form input{flex:1;min-width:0;height:52px;border:1.5px solid var(--ink);border-right:0;background:#fff;padding:0 16px;font-size:15px}
+.form button{height:52px;padding:0 22px;border:0;background:var(--red);color:#fff;font-weight:700;font-size:15px;cursor:pointer}
+.social{list-style:none;border-top:1px solid var(--ink)}
+.social li a{display:grid;grid-template-columns:120px 1fr 20px;gap:var(--s4);align-items:center;min-height:52px;border-bottom:1px solid var(--rule);font-size:15px}
+.social b{font-family:var(--display);font-weight:600;font-size:14px}
+.social span{color:var(--ink-3);font-size:14px}
+.social svg{width:18px;height:18px}
+
+/* ---------- footer ---------- */
+.foot{background:var(--ink);color:var(--on-ink);margin-top:var(--s9);padding:var(--s8) 0 var(--s6)}
+.foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--s6);padding-bottom:var(--s7);border-bottom:1px solid var(--line-ink)}
+.foot .logo-word{color:#fff}
+.foot .logo-tag{color:var(--on-ink-2)}
+.foot-about{font-size:14px;color:var(--on-ink-2);margin-top:var(--s5);max-width:340px}
+.foot-h{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red-on-ink);margin-bottom:var(--s2)}
+.foot ul{list-style:none}
+.foot li a{display:flex;align-items:center;gap:10px;padding:10px 0;font-size:15px}
+.foot-bot{display:flex;justify-content:space-between;gap:var(--s4);padding-top:var(--s5);font-size:13px;color:var(--on-ink-2)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1320px){
+  .logo-tag{display:none}
+}
+@media (max-width:1180px){
+  .logo-tag{display:block}
+  .mast .wrap{grid-template-columns:auto 1fr;gap:var(--s4)}
+  .nav{grid-column:1 / -1;grid-row:2;justify-content:flex-start;border-top:1px solid var(--rule);padding-top:var(--s2)}
+  .nav a:first-child{padding-left:0}
+  .mast-act{justify-self:end}
+  .cross{grid-template-columns:1fr 1fr;grid-template-areas:"n n" "c c" "w e" "s s" "nw ne" "sw se"}
+  .q,.q.ne,.q.se{padding:var(--s5)}
+  .q.nw,.q.sw{padding-left:0}.q.ne,.q.se{padding-right:0}
+  .q.sw,.q.se{border-top:1px solid var(--rule)}
+  .lanes{grid-template-columns:repeat(2,1fr)}
+  .lane{padding-bottom:var(--s5)}
+  .lane:nth-child(n+3){border-top:1px solid var(--rule);padding-top:var(--s5)}
+  .expl{grid-template-columns:repeat(2,1fr)}
+  .ex:nth-child(2){border-right:0}
+  .ex:nth-child(3){padding-left:0}
+  .ex:nth-child(n+3){border-top:1px solid var(--rule);padding-top:var(--s5)}
+  .vgrid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  :root{--gut:16px}
+  .hide-s{display:none}
+  .mast .wrap{padding-top:var(--s4);padding-bottom:var(--s2);gap:var(--s2)}
+  .logo-word{font-size:24px}
+  .logo-mark{width:22px;height:22px}
+  .btn-sub{display:none}
+  .nav{padding-top:var(--s1)}
+  .nav a{font-size:14px;padding:0 18px 0 0;min-height:44px}
+  .nav a:first-child{padding-left:0}
+  .nav .sep{display:none}
+  .dayline .wrap{padding-top:var(--s3);padding-bottom:var(--s3)}
+  .dayline .lab{display:none}
+  .legend{font-size:13px}
+  .cross{grid-template-columns:1fr 1fr;grid-template-areas:"n n" "c c" "w w" "e e" "s s" "nw ne" "sw se";margin:0 calc(var(--gut) * -1);border-top:0}
+  .arm-n{min-height:230px}
+  .arm-n img{object-position:40% 45%}
+  .center,.arm-s{padding:var(--s5) var(--gut)}
+  .half{padding:var(--s4) var(--gut)}
+  .arm-w,.arm-e{grid-template-rows:auto auto}
+  .arm-e{border-top:1px solid var(--line-ink)}
+  .center h1{font-size:25px}
+  .center p{font-size:16px}
+  .dates li{grid-template-columns:84px 1fr}
+  .q,.q.ne,.q.se,.q.nw,.q.sw{padding:var(--s4) 14px var(--s5);border-top:0;min-width:0}
+  .q.nw,.q.ne{padding-top:var(--s5)}
+  .q.nw{border-right:6px solid var(--ink);border-bottom:6px solid var(--ink);position:relative;z-index:2}
+  .q.ne{border-bottom:6px solid var(--ink)}
+  .q.sw{border-right:6px solid var(--ink)}
+  .q.nw::after{content:"";position:absolute;right:-14px;bottom:-14px;width:22px;height:22px;background:var(--red);border:3px solid var(--paper)}
+  .q .dek,.q ul,.q-head .mx{display:none}
+  .q-head{margin-bottom:var(--s2);gap:6px;flex-wrap:wrap}
+  .q-num,.q-name{font-size:12px;letter-spacing:.02em}
+  .q-more{margin-left:0;width:100%;order:3;min-height:0;font-size:13px;display:none}
+  .q h2{font-size:16px;line-height:1.24;letter-spacing:0}
+  .sec{padding-top:var(--s8)}
+  .sec-h{flex-direction:column;align-items:flex-start;gap:var(--s2)}
+  .sec-h h2{font-size:26px}
+  .sec-h p{text-align:left}
+  .lanes{grid-template-columns:1fr;border-left:0}
+  .lane{border-right:0;padding:0 0 var(--s6)}
+  .lane:nth-child(n+2){border-top:0;padding-top:var(--s4)}
+  .lane .ph{aspect-ratio:16/9}
+  .status{aspect-ratio:auto}
+  .expl{grid-template-columns:1fr}
+  .ex,.ex + .ex,.ex:nth-child(3),.ex:nth-child(n+3){padding:var(--s5) 0;border-right:0;border-top:1px solid var(--rule)}
+  .ex:first-child{border-top:0;padding-top:0}
+  .ex h3{margin-top:var(--s4)}
+  .vid{padding:var(--s7) 0}
+  .vbig h3{font-size:20px}
+  .vlist{grid-template-columns:1fr;gap:0}
+  .vsm{display:grid;grid-template-columns:96px 1fr;gap:var(--s4);align-items:start;padding:var(--s4) 0;border-top:1px solid var(--line-ink)}
+  .vsm figure{margin-bottom:0}
+  .essay{grid-template-columns:1fr;gap:var(--s4)}
+  .essay .e1{aspect-ratio:3/2}
+  .essay-txt h3{font-size:22px}
+  .how{grid-template-columns:1fr}
+  .how-step{padding:var(--s5)}
+  .how-plus{width:auto;height:44px;border:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  .join{grid-template-columns:1fr;gap:var(--s6)}
+  .join h2{font-size:25px}
+  .social li a{grid-template-columns:96px 1fr 20px}
+  .foot-top{grid-template-columns:1fr 1fr;gap:var(--s5) var(--s4)}
+  .foot-top > div:first-child{grid-column:1 / -1}
+  .foot-bot{flex-direction:column}
+}
+@media (max-width:400px){
+  .mast .logo-tag{display:none}
+}
+
+</style>
+</helmet>
+<div class="dc-root" lang="en">
+<div class="util">
+  <div class="wrap">
+    <div class="util-l">
+      <span><b><span class="hide-s">Tuesday </span>6 October 2026</b></span>
+      <span class="live"><i></i>Updated 14:20 GMT</span>
+      <span class="hide-s">Global edition</span>
+    </div>
+    <div class="util-r">
+      <a class="hide-s" href="#">How we work</a>
+      <a class="hide-s" href="#">The Daily Plus</a>
+      <a class="hide-s" href="#">Sign in</a>
+    </div>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Palestine+ home">
+      <span class="logo-row">
+        <span class="logo-word">Palestine</span>
+        <svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true">
+          <rect x="12" y="0" width="10" height="10" fill="#121212"/>
+          <rect x="0" y="12" width="10" height="10" fill="#121212"/>
+          <rect x="12" y="12" width="10" height="10" fill="#C8331A"/>
+          <rect x="24" y="12" width="10" height="10" fill="#121212"/>
+          <rect x="12" y="24" width="10" height="10" fill="#121212"/>
+        </svg>
+      </span>
+      <span class="logo-tag">Four places and the story between them</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#gaza">Gaza</a>
+      <a href="#westbank">West Bank</a>
+      <a href="#jerusalem">Jerusalem</a>
+      <a href="#world">Diaspora &amp; World</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a href="#explainers">Explainers</a>
+      <a href="#video">Video</a>
+    </nav>
+    <div class="mast-act">
+      <button class="btn-ic" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button>
+      <button class="btn-sub" type="button">Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<div class="dayline">
+  <div class="wrap">
+    <p class="lab">The day at the centre</p>
+    <p class="legend">Centre: the day's story, with an arm into each place · Corners: the four places we cover</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="cross">
+
+    <!-- CENTRE: top story (first in reading order) -->
+    <article class="center">
+      <div class="kick"><span>Top story · All four places</span><span>Tomorrow</span></div>
+      <h1><a href="#">Three years after 7 October, crossings shut and the world marches</a></h1>
+      <p>Israel closes the crossings into Gaza and the West Bank for tomorrow's commemorations. The UN Secretary-General says nothing can justify the atrocities, and that "it is time for the ceasefire to become permanent".</p>
+      <div class="by"><span>By the Palestine+ desks</span><span>5 min read</span></div>
+    </article>
+
+    <!-- N arm: the centre story's own picture -->
+    <figure class="arm arm-n">
+      <img src="/_blob/921456560b000c3d2a68b0f9598c4416" width="1456" height="1067" alt="Marchers in keffiyehs carrying large symbolic keys of return at a national march for Palestine in London">
+      <figcaption>Keys of return at a national march in London. Clarisse Clemes / CC BY 4.0</figcaption>
+    </figure>
+
+    <!-- W arm: towards Gaza (top) and Jerusalem (bottom) -->
+    <aside class="arm arm-w inv" aria-label="The anniversary in Gaza and in Jerusalem">
+      <div class="half">
+        <div class="arm-lab"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c on" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>In Gaza</div>
+        <p>No aid enters through the crossings tomorrow. Collection on the Gaza side of Kerem Shalom "will continue as usual", COGAT says.<span class="src">Source: COGAT, via Times of Israel</span></p>
+      </div>
+      <div class="half">
+        <div class="arm-lab"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c on" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>In Jerusalem</div>
+        <p>The anniversary closes a holiday season in which ministers and rabbis led public rituals inside the Al&#8209;Aqsa compound.<span class="src">Source: Anadolu · figures in 03 Jerusalem</span></p>
+      </div>
+    </aside>
+
+    <!-- E arm: towards the West Bank (top) and the world (bottom) -->
+    <aside class="arm arm-e inv" aria-label="The anniversary in the West Bank and around the world">
+      <div class="half">
+        <div class="arm-lab"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c on" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>In the West Bank</div>
+        <p>A general closure: Palestinians are barred from crossing, except medical and humanitarian cases approved by COGAT.<span class="src">Source: COGAT, via Jerusalem Post</span></p>
+      </div>
+      <div class="half">
+        <div class="arm-lab"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c on" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>Around the world</div>
+        <p>262 solidarity events are planned in 37 countries around the anniversary, 29% of them on the day itself.<span class="src">Source: Israel's Diaspora Affairs Ministry count, via Arutz Sheva</span></p>
+      </div>
+    </aside>
+
+    <!-- S arm: the dates ahead -->
+    <aside class="arm arm-s" aria-label="Dates ahead">
+      <div class="arm-lab">Dates ahead</div>
+      <ol class="dates">
+        <li><time datetime="2026-10-07">Wed 7 Oct</time><a href="#">Crossings into Gaza and the West Bank closed all day<small>COGAT</small></a></li>
+        <li><time datetime="2026-10-07T12:00">Wed 12:00</time><a href="#">London student march, King's College to UCL, despite a Met request to move it<small>ITV News</small></a></li>
+        <li><time datetime="2026-10-10T12:00">Sat 10 Oct</time><a href="#">National March for Palestine, Victoria Embankment, London<small>Palestine Solidarity Campaign</small></a></li>
+      </ol>
+    </aside>
+
+    <!-- NW: Gaza -->
+    <article class="q nw" id="gaza">
+      <div class="q-head">
+        <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c on" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>
+        <span class="q-num">01</span><span class="q-name">Gaza</span>
+        <a class="q-more" href="#lane-gaza">All Gaza<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+      </div>
+      <h2><a href="#">Gaza City buries the remains of 105 people killed in a single 2023 strike</a></h2>
+      <p class="dek">Hundreds attended the mass funeral as families finally recovered what was left of their relatives.</p>
+      <ul>
+        <li><a href="#"><time>Sat</time><span>Strike on a Gaza City apartment kills at least five, four of them women</span></a></li>
+        <li><a href="#"><time>Fri</time><span>Army says a brigade commander it killed had held at least 15 hostages</span></a></li>
+      </ul>
+    </article>
+
+    <!-- NE: West Bank -->
+    <article class="q ne" id="westbank">
+      <div class="q-head">
+        <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c on" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>
+        <span class="q-num">02</span><span class="q-name">West Bank</span>
+        <a class="q-more" href="#lane-westbank">All West Bank<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+      </div>
+      <h2><a href="#">Settlers torch structures in a Bedouin hamlet near Jaba', north of Jerusalem</a></h2>
+      <p class="dek">Residents say women and children were among those beaten in the attack on Monday.</p>
+      <ul>
+        <li><a href="#"><time>10:40</time><span>Settlers keep a Palestinian family from returning to its home in the south</span></a></li>
+        <li><a href="#"><time>Mon</time><span>Israeli forces demolish a student memorial at Birzeit University</span></a></li>
+      </ul>
+    </article>
+
+    <!-- SW: Jerusalem -->
+    <article class="q sw" id="jerusalem">
+      <div class="q-head">
+        <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c on" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>
+        <span class="q-num">03</span><span class="q-name">Jerusalem</span>
+        <a class="q-more" href="#lane-jerusalem">All Jerusalem<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+      </div>
+      <h2><a href="#">26 incursions in a month: Al&#8209;Aqsa's September, by the Awqaf Ministry's count</a></h2>
+      <p class="dek">11,409 Israelis entered the compound between 12 September and 1 October, Palestinian authorities say (Anadolu).</p>
+      <ul>
+        <li><a href="#"><time>Mon</time><span>145 settlers enter through the Mughrabi Gate under police escort</span></a></li>
+        <li><a href="#"><time>Fri</time><span>Thousands reach Friday prayers despite tightened restrictions</span></a></li>
+      </ul>
+    </article>
+
+    <!-- SE: Diaspora & World -->
+    <article class="q se" id="world">
+      <div class="q-head">
+        <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c on" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>
+        <span class="q-num">04</span><span class="q-name"><span class="hide-s">Diaspora &amp; </span>World</span>
+        <a class="q-more" href="#lane-world">All World<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+      </div>
+      <h2><a href="#">A 28 November vote is promised. Palestinians abroad ask for a say</a></h2>
+      <p class="dek">More than 1,000 signatories call for an elected National Council with diaspora seats (Middle East Monitor).</p>
+      <ul>
+        <li><a href="#"><time>Fri</time><span>US sanctions a Hamas financing network, naming two France-based fundraisers</span></a></li>
+        <li><a href="#"><time>21 Oct</time><span>Protests planned at Elbit sites in Bristol and Shenstone</span></a></li>
+      </ul>
+    </article>
+
+  </div>
+</div>
+
+<!-- FOUR LANES -->
+<section class="sec" aria-labelledby="lanes-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="lanes-h">The four lanes</h2>
+      <p>The rest of the week in each place, newest first. Nothing here repeats the cross.</p>
+    </div>
+    <div class="lanes">
+
+      <section class="lane" id="lane-gaza" aria-labelledby="lg">
+        <div class="lane-h"><span class="n">01</span><span class="t" id="lg">Gaza</span>
+          <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c on" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg></div>
+        <div class="status inv">
+          <p class="big">The war's toll, as UN agencies count it</p>
+          <dl>
+            <div><dt>Killed</dt><dd>70,000+</dd></div>
+            <div><dt>Of them children</dt><dd>20,000+</dd></div>
+            <div><dt>Wounded</dt><dd>100,000+</dd></div>
+          </dl>
+        </div>
+        <p class="status-src">Source: UN agencies, cited by the Secretary-General, UN News, 6 October</p>
+        <h3><a href="#">Three killed in Deir al-Balah and Khan Younis since Sunday, hospitals say</a></h3>
+        <p class="dek">One man died in a drone strike north-west of Khan Younis, according to WAFA.</p>
+        <ul>
+          <li><a href="#"><time>Sat</time><span>Displaced families gather to watch a friendly football match in Khan Younis</span></a></li>
+          <li><a href="#"><time>Sat</time><span>Ahead of a 28 November vote, Gaza weighs rebuilding against ballots</span></a></li>
+          <li><a href="#"><time>Week</time><span>UNRWA keeps 70 mobile medical teams running at 28 points</span></a></li>
+        </ul>
+        <a class="all" href="#">All Gaza<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a>
+      </section>
+
+      <section class="lane" id="lane-westbank" aria-labelledby="lw">
+        <div class="lane-h"><span class="n">02</span><span class="t" id="lw">West Bank</span>
+          <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c on" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg></div>
+        <figure><div class="ph"><img src="/_blob/76aafe1f9d7ac7bcac7b0278bc25c0a5" width="400" height="262" alt="A man walking between olive trees on a hillside near Asira"></div>
+        <figcaption>Hillside near Asira, north of Nablus. Amr Palestine.voyager / CC BY-SA 3.0</figcaption></figure>
+        <h3><a href="#">Khallet al-Deirat: a home sheltering two families demolished in 25 minutes</a></h3>
+        <p class="dek">Palestinian figures count 341 demolition operations in the first half of 2026.</p>
+        <ul>
+          <li><a href="#"><time>Mon</time><span>12 arrested in raids from Tubas to Bethlehem, three of them children</span></a></li>
+          <li><a href="#"><time>Mon</time><span>Umm Safa: olives taken and trees damaged north-west of Ramallah</span></a></li>
+          <li><a href="#"><time>29 Sep</time><span>Jalud: homes set alight in a settler attack</span></a></li>
+        </ul>
+        <a class="all" href="#">All West Bank<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a>
+      </section>
+
+      <section class="lane" id="lane-jerusalem" aria-labelledby="lj">
+        <div class="lane-h"><span class="n">03</span><span class="t" id="lj">Jerusalem</span>
+          <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c on" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg></div>
+        <figure><div class="ph"><img src="/_blob/0d860927dd33840759427bd3d898bb3c" width="400" height="266" alt="Rooftops of the Old City of Jerusalem with the Dome of the Rock in the distance" style="object-position:70% 60%"></div>
+        <figcaption>Old City rooftops. Jorge Láscar / CC BY 2.0</figcaption></figure>
+        <h3><a href="#">Ras al-Amud: a family made to demolish its own home in Silwan</a></h3>
+        <p class="dek">Monitors counted 400 demolitions in and around East Jerusalem in 2025 (Palinfo).</p>
+        <ul>
+          <li><a href="#"><time>Fri</time><span>Three months in Jerusalem: six Palestinians killed, a Palinfo tally says</span></a></li>
+          <li><a href="#"><time>Week</time><span>Egypt condemns "provocative" settler actions at Al&#8209;Aqsa</span></a></li>
+          <li><a href="#"><time>30 Sep</time><span>Scholars call a "Friday of anger" in support of Al&#8209;Aqsa</span></a></li>
+        </ul>
+        <a class="all" href="#">All Jerusalem<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a>
+      </section>
+
+      <section class="lane" id="lane-world" aria-labelledby="lo">
+        <div class="lane-h"><span class="n">04</span><span class="t" id="lo">Diaspora &amp; World</span>
+          <svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c on" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg></div>
+        <figure><div class="ph"><img src="/_blob/42848575f655b6c11f89d2642091d2c4" width="400" height="300" alt="Marchers with flags and umbrellas on a Paris boulevard"></div>
+        <figcaption>A national march in Paris, November 2025. Wyslijp16 / CC BY 4.0</figcaption></figure>
+        <h3><a href="#">Paris to Sydney: how the weekend marches became a fixed calendar</a></h3>
+        <p class="dek">Three years on, organisers plan months ahead and coordinate dates across cities.</p>
+        <ul>
+          <li><a href="#"><time>Sun 11</time><span>Brighton's "March to Remember" follows London's national march</span></a></li>
+          <li><a href="#"><time>Week</time><span>A singer's "Free Palestine" shirt, and the backlash that followed</span></a></li>
+          <li><a href="#"><time>24 Sep</time><span>Abbas pledges the first legislative vote in 20 years as doubts mount</span></a></li>
+        </ul>
+        <a class="all" href="#">All Diaspora &amp; World<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8.5 3.5 13 8l-4.5 4.5"/></svg></a>
+      </section>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPLAINERS -->
+<section class="sec" id="explainers" aria-labelledby="ex-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="ex-h">Explainers</h2>
+      <p>Background for each corner.</p>
+    </div>
+    <div class="expl">
+      <article class="ex">
+        <div class="ex-loc"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c on" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg><span><b>01</b>Gaza</span></div>
+        <h3><a href="#">What is the Board of Peace, and who sits on it?</a></h3>
+        <p>The body the US-brokered plan created for Gaza, its powers on paper and what it has done in its first year.</p>
+        <div class="meta">7 min read</div>
+      </article>
+      <article class="ex">
+        <div class="ex-loc"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c on" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg><span><b>02</b>West Bank</span></div>
+        <h3><a href="#">What a "general closure" means for a Palestinian with a permit</a></h3>
+        <p>Who may still cross, how exceptions are approved, and what happens to work, hospital and school runs.</p>
+        <div class="meta">4 min read</div>
+      </article>
+      <article class="ex">
+        <div class="ex-loc"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c on" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg><span><b>03</b>Jerusalem</span></div>
+        <h3><a href="#">The status quo at Al&#8209;Aqsa: who runs the compound, and who may pray</a></h3>
+        <p>The Jordanian-run Waqf, the rules on visits, and how the arrangement has shifted since 1967.</p>
+        <div class="meta">6 min read</div>
+      </article>
+      <article class="ex">
+        <div class="ex-loc"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c on" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg><span><b>04</b>Diaspora &amp; World</span></div>
+        <h3><a href="#">28 November: who could vote in the first legislative election in 20 years</a></h3>
+        <p>Gaza, the West Bank, East Jerusalem and the diaspora: where a ballot is possible, and where it is not.</p>
+        <div class="meta">5 min read</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="vid inv" id="video" aria-labelledby="vid-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="vid-h">Video</h2>
+    </div>
+    <div class="vgrid">
+      <article class="vbig">
+        <figure>
+          <img src="/_blob/58b2c55abf07916c0332f3241171ee1a" width="1600" height="1067" alt="A crowd with Palestinian and Malaysian flags at a rally in Kuala Lumpur">
+          <span class="play"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1v12l11-6z" fill="currentColor"/></svg>4:12</span>
+        </figure>
+        <h3><a href="#">From Kuala Lumpur to London: three years of marches, and what they changed</a></h3>
+        <p>How the solidarity movement grew from weekend protests into recognition votes, boycotts and arms-embargo campaigns.</p>
+      </article>
+      <div class="vside">
+        <p class="k">Vertical, with subtitles</p>
+        <div class="vlist">
+          <article class="vsm">
+            <figure><img src="/_blob/4bb5e45f5757e8c5128eb47092502c59" width="360" height="640" alt="A march with Palestinian flags along a pedestrian street in Hull"><span class="play"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1v12l11-6z" fill="currentColor"/></svg>0:58</span></figure>
+            <div><span class="tag">World</span><h3><a href="#">Hull's city-centre march</a></h3></div>
+          </article>
+          <article class="vsm">
+            <figure><img src="/_blob/033df50a9ceaa458bb2a212eff582cc1" width="360" height="640" alt="Protesters in Dublin holding a placard reading Stop Genocide"><span class="play"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1v12l11-6z" fill="currentColor"/></svg>1:24</span></figure>
+            <div><span class="tag">Explainer</span><h3><a href="#">Why Ireland stands apart in Europe</a></h3></div>
+          </article>
+          <article class="vsm">
+            <figure><img src="/_blob/62154c74ae251968d3aaa224ffdf1a5f" width="360" height="640" alt="A small vigil with Palestinian flags on a Berlin square"><span class="play"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1v12l11-6z" fill="currentColor"/></svg>2:05</span></figure>
+            <div><span class="tag">World</span><h3><a href="#">Berlin's vigils and the rules on speech</a></h3></div>
+          </article>
+        </div>
+        <p class="k vk2">Also in Video</p>
+        <ol class="vmore">
+          <li><a href="#"><span>Explainer</span>What a general closure looks like at a checkpoint<time>3:40</time></a></li>
+          <li><a href="#"><span>Jerusalem</span>Friday prayers at Al&#8209;Aqsa, from the gates in<time>2:16</time></a></li>
+          <li><a href="#"><span>Gaza</span>A football match for displaced families in Khan Younis<time>1:48</time></a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO ESSAY -->
+<section class="sec" aria-labelledby="ph-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="ph-h">Photo essay</h2>
+    </div>
+    <div class="essay">
+      <figure class="e1"><img src="/_blob/6fe72ecf39b7e55edb52d7201338a5ed" width="1600" height="900" alt="Terraced hills, olive groves and village houses at Ein Qiniya, west of Ramallah"></figure>
+      <div class="essay-txt">
+        <figure class="e2"><img src="/_blob/8de00ba77fd015a8735f4cfcecb92fbf" width="800" height="600" alt="A herd of cattle drinking at the spring of Ayn al-Tannur in Wadi Qana" style="object-position:40% 60%"></figure>
+        <div class="loc"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c on" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>02 West Bank</div>
+        <h3><a href="#">The hills before the harvest: from Ein Qiniya to Wadi Qana</a></h3>
+        <p>Terraces, springs and the old paths between villages west of Ramallah and Salfit, as farmers prepare for the weeks that decide their year.</p>
+        <p class="cap"><b>Left:</b> Ein Qiniya, west of Ramallah. Yaakov / CC BY-SA 4.0<br><b>Above:</b> the spring at 'Ayn al-Tannur, Wadi Qana. Uyun Kafr Qari' Refugee Emergency Committee / CC BY 4.0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="sec" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="how-h">Machines + editors</h2>
+    </div>
+    <div class="how">
+      <div class="how-step"><div class="k">Gather</div><h3>Software reads the wires</h3><p>Our tools follow [number] sources in Arabic, Hebrew and English and flag what is new in each of the four places.</p></div>
+      <div class="how-plus" aria-hidden="true"><svg viewBox="0 0 22 22"><rect x="8" y="0" width="6" height="22" fill="#C8331A"/><rect x="0" y="8" width="22" height="6" fill="#C8331A"/></svg></div>
+      <div class="how-step"><div class="k">Check</div><h3>An editor confirms it</h3><p>Every item is verified, rewritten and dated by an editor before it is published. Machine output is never posted as is.</p></div>
+      <div class="how-plus" aria-hidden="true"><svg viewBox="0 0 22 22"><rect x="8" y="0" width="6" height="22" fill="#C8331A"/><rect x="0" y="8" width="22" height="6" fill="#C8331A"/></svg></div>
+      <div class="how-step"><div class="k">Credit</div><h3>Sources stay visible</h3><p>Each story names the reports it draws on. Corrections are logged on the story and on our corrections page.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="sec" aria-labelledby="join-h">
+  <div class="wrap">
+    <div class="join">
+      <div>
+        <h2 id="join-h">The Daily Plus: four places and the day's story, at 07:00 GMT</h2>
+        <p>The centre story, one item from each corner and one explainer. Five minutes, every weekday.</p>
+        <form class="form" action="#">
+          <label class="vh" for="em">Email address</label>
+          <input id="em" type="email" placeholder="Your email address">
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+      <ul class="social">
+        <li><a href="#"><b>Instagram</b><span>The day's story as a carousel</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 15 15 5M7 5h8v8"/></svg></a></li>
+        <li><a href="#"><b>TikTok</b><span>Vertical video with subtitles</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 15 15 5M7 5h8v8"/></svg></a></li>
+        <li><a href="#"><b>WhatsApp</b><span>The top story, once a day</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 15 15 5M7 5h8v8"/></svg></a></li>
+        <li><a href="#"><b>X</b><span>Live from all four lanes</span><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 15 15 5M7 5h8v8"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot inv">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="logo" href="#" aria-label="Palestine+ home">
+          <span class="logo-row">
+            <span class="logo-word">Palestine</span>
+            <svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true">
+              <rect x="12" y="0" width="10" height="10" fill="#ECEAE4"/>
+              <rect x="0" y="12" width="10" height="10" fill="#ECEAE4"/>
+              <rect x="12" y="12" width="10" height="10" fill="#C8331A"/>
+              <rect x="24" y="12" width="10" height="10" fill="#ECEAE4"/>
+              <rect x="12" y="24" width="10" height="10" fill="#ECEAE4"/>
+            </svg>
+          </span>
+          <span class="logo-tag">Four places and the story between them</span>
+        </a>
+        <p class="foot-about">An English-language newsroom covering Gaza, the West Bank, Jerusalem and Palestinians around the world. Gathered by software, decided by editors.</p>
+      </div>
+      <div>
+        <h2 class="foot-h">The four places</h2>
+        <ul>
+          <li><a href="#"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c on" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>Gaza</a></li>
+          <li><a href="#"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c on" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>West Bank</a></li>
+          <li><a href="#"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c on" x="0" y="15" width="7" height="7"/><rect class="c" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>Jerusalem</a></li>
+          <li><a href="#"><svg class="mx" viewBox="0 0 22 22" aria-hidden="true"><rect class="c" x="0" y="0" width="7" height="7"/><rect class="c" x="15" y="0" width="7" height="7"/><rect class="c" x="0" y="15" width="7" height="7"/><rect class="c on" x="15" y="15" width="7" height="7"/><rect class="a" x="8" y="0" width="6" height="22"/><rect class="a" x="0" y="8" width="22" height="6"/></svg>Diaspora &amp; World</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="foot-h">Formats</h2>
+        <ul>
+          <li><a href="#">Explainers</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Photo essays</a></li>
+          <li><a href="#">The Daily Plus</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="foot-h">Palestine+</h2>
+        <ul>
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Corrections</a></li>
+          <li><a href="#">Contact the newsroom</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Palestine+. All rights reserved.</span>
+      <span>Photographs from Wikimedia Commons, credited on each image.</span>
+    </div>
+  </div>
+</footer>
+
+<!--
+Image credits (Wikimedia Commons):
+img/keys-london.jpg     -> https://commons.wikimedia.org/wiki/File:October_11th,_National_march_for_Palestine_in_central_London_-_55162952282.jpg | CC BY 4.0 | Clarisse Clemes
+img/kl-rally.jpg        -> https://commons.wikimedia.org/wiki/File:Stand4Sumud_rally_at_Kuala_Lumpur_02102025_13.jpg | CC BY-SA 4.0 | Rulwarih
+img/qiniya-hills.jpg    -> https://commons.wikimedia.org/wiki/File:Ein_Qiniya2246.JPG | CC BY-SA 4.0 | Yaakov (user יעקב)
+img/qana-spring.jpg     -> https://commons.wikimedia.org/wiki/File:Palestinian_Herd_at_%27Ayn_al-Tannur,_Wadi_Qana.jpg | CC BY 4.0 | Uyun Kafr Qari' Refugee Emergency Committee
+img/asira-thumb.jpg     -> https://commons.wikimedia.org/wiki/File:Asira_village.jpg | CC BY-SA 3.0 | Amr Palestine.voyager
+img/jer-roofs-thumb.jpg -> https://commons.wikimedia.org/wiki/File:Old_Jerualem_skyline_(10350956636).jpg | CC BY 2.0 | Jorge Láscar
+img/paris-thumb.jpg     -> https://commons.wikimedia.org/wiki/File:Manifestation_nationale_pour_la_Palestine_%C3%A0_Paris_le_29_novembre_2025_%E2%80%94_13.jpg | CC BY 4.0 | Wyslijp16
+img/hull-thumb.jpg      -> https://commons.wikimedia.org/wiki/File:Pro-Palestine_Protest_on_Whitefriargate,_Kingston_upon_Hull_May26.jpg | CC BY-SA 4.0 | Hullian111 (portrait crop)
+img/dublin-thumb.jpg    -> https://commons.wikimedia.org/wiki/File:Palestine_Solidarity_protest_(53339075477).jpg | CC BY 2.0 | Sinn Féin (portrait crop)
+img/berlin-thumb.jpg    -> https://commons.wikimedia.org/wiki/File:Pro-Palestine_Protest_in_Berlin.jpg | CC BY 2.0 | Sampo Hämäläinen (portrait crop)
+News sources used for headlines: UN News, COGAT via Times of Israel / Jerusalem Post, Arutz Sheva, ITV News, Palestine Solidarity Campaign,
+Al Jazeera, WAFA, FDD, Middle East Monitor, Anadolu, Palinfo, ABNA, Shafaqna, US News, UNRWA.
+-->
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5906}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
