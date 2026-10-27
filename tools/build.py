@@ -131,5 +131,5 @@ def daily_block():
 
 body = lead_block() + lines_block() + desks_block() + feature_block() + numbers_block() + explain_block() + ahead_block() + daily_block()
 write('home.html', page('Today', f'Palestine+ for {long_day(TODAY)}: the news from Gaza, the West Bank, Jerusalem and the world, one line at a time and one layer deeper.',
-                        body, current='home', with_loader=True))
+                        body, current='home'))
 print('home.html', len(S), 'stories; lead', lead['id'])

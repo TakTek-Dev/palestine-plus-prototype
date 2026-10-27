@@ -9,7 +9,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = '3'                                       # bump on any asset change (Chrome caches hard)
+V = '4'                                       # bump on any asset change (Chrome caches hard)
 SITE = 'Palestine+'
 BASE_URL = 'https://taktek-dev.github.io/palestine-plus-prototype/'
 E = json.load(open(os.path.join(ROOT, 'tools', 'edition.json'), encoding='utf-8'))
@@ -179,6 +179,20 @@ def src_link(o):
 
 
 # ---------------------------------------------------------------- the shell
+# Runs in <head> before the first paint, so neither curtain flashes the page first:
+# first page of the session -> the full loader (js-load); arriving from another page of the
+# site -> the page starts closed along the line (pp-arrive) and pp.js opens it.
+EARLY = ("(function(){var d=document.documentElement,s;try{s=sessionStorage}catch(e){return}"
+         "if(matchMedia('(prefers-reduced-motion: reduce)').matches){s.setItem('pp-laid','1');s.removeItem('pp-nav');return}"
+         "if(location.search.indexOf('loader')>-1||s.getItem('pp-laid')!=='1')d.classList.add('js-load');"
+         "else if(s.getItem('pp-nav')==='1')d.classList.add('pp-arrive');s.removeItem('pp-nav')})()")
+
+
+def curtain():
+    """Page-to-page: the two halves close on a line, the next page opens along it."""
+    return '<div class="nav-ldr" aria-hidden="true"><i class="half t"></i><i class="half b"></i><i class="line"></i></div>'
+
+
 def head(title, desc, og=None, canonical=''):
     t = esc(title if title == SITE else f'{title} · {SITE}')
     return f'''<!doctype html>
@@ -200,9 +214,10 @@ def head(title, desc, og=None, canonical=''):
 <meta property="og:image" content="{BASE_URL}{og or 'assets/og.png'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="noindex">
+<script>{EARLY}</script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to the news</a>
+{loader()}{curtain()}<a class="skip" href="#main">Skip to the news</a>
 {SPRITE}'''
 
 
@@ -235,7 +250,6 @@ def mast(current=''):
 
 
 def loader():
-    lead = BY[E['lead']]
     return (f'<div class="ldr" aria-hidden="true"><div class="half t"></div><div class="half b"></div>'
             f'<p class="say say2">One line at a time.</p><i class="line"></i><i class="stand"></i>'
             f'<p class="say"><b>{long_day(TODAY)}</b> · {len(S)} lines, {sum(depth(s) for s in S)} layers under them</p></div>')
@@ -256,8 +270,8 @@ def foot():
 </footer>'''
 
 
-def page(title, desc, body, current='', with_loader=False, og=None):
-    return (head(title, desc, og=og) + (loader() if with_loader else '') + strip() + mast(current) +
+def page(title, desc, body, current='', og=None):
+    return (head(title, desc, og=og) + strip() + mast(current) +
             f'<main id="main">{body}</main>' + foot() +
             f'<script src="{C.R}assets/js/pp.js?v={V}" defer></script>\n</body>\n</html>\n')
 
