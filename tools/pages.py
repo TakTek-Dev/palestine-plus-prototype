@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import shell
 from shell import (when, C, E, S, BY, DESKS, DESK, LAYERS, TODAY, PH, ROOT, esc, pl, badge, link, kick, ago, depth, minutes,
                    picture, caption, photo, day, long_day, D, page, write, icon, src_link)
-from parts import layer_body
+from parts import layer_body, stack, deep_list
 
 newest = sorted(S, key=lambda s: (s['date'], s.get('time') or '00:00'), reverse=True)
 R_ARROW = lambda: icon('i-right')
@@ -45,7 +45,14 @@ def story(s):
                    f'{", " + esc(day(x["date"], year=True)) if x.get("date") else ""}</span></li>' for x in s['sources'])
     same = [x for x in newest if x['desk'] == s['desk'] and x['id'] != s['id']][:4]
     side = ''.join(f'<li><a href="{x["id"]}.html"><span class="hl">{esc(x["headline"])}</span></a></li>' for x in same)
-    more = [x for x in newest if x['desk'] != s['desk'] and x['id'] != s['id']][:3]
+    others = [x for x in newest if x['desk'] != s['desk'] and x['id'] != s['id']]
+    ranked = [x for x in others if x.get('photo')] + [x for x in others if not x.get('photo')]
+    more = [next(x for x in ranked if x['desk'] == k_) for k_, *_ in DESKS if k_ != s['desk'] and any(x['desk'] == k_ for x in ranked)][:3]
+    dl = [x for x in newest if x['desk'] == s['desk']]
+    i_ = dl.index(s)
+    prev_, next_ = (dl[i_ + 1] if i_ + 1 < len(dl) else None), (dl[i_ - 1] if i_ > 0 else None)
+    pn = ''.join(f'<a class="pn {c}" href="{x["id"]}.html"><span class="lbl">{t}</span><span class="h-s">{esc(x["headline"])}</span></a>'
+                 for c, t, x in (('prev', 'The line before', prev_), ('next', 'The line after', next_)) if x)
     cards = ''.join(f'<article class="card"><a href="{x["id"]}.html" style="display:grid;gap:10px">{picture(x, cls="ph r32", sizes="(max-width:560px) 100vw, 30vw")}'
                     f'{kick(x)}<h3 class="h-s"><span class="hl">{esc(x["headline"])}</span></h3></a></article>' for x in more)
     ph = s.get('photo')
@@ -66,6 +73,7 @@ def story(s):
 <p class="factline" id="fact">{esc(s['fact'])}</p>
 <div class="body">{''.join(f'<p>{esc(p)}</p>' for p in s['body'])}</div>
 <div class="layers">{layers}</div>
+<nav class="pnav" aria-label="More from this desk">{pn}</nav>
 <div class="sources"><p class="lbl">Sources</p><ol>{srcs}</ol>
 <p class="src" style="margin-top:6px">Every figure and quote above links to where it was published. Something wrong? <a href="../corrections.html">Corrections</a>.</p></div>
 </div>
@@ -85,30 +93,80 @@ for s in S:
 
 # ---------------------------------------------------------------- desks
 C.R = ''
-for k, label, title, dek in DESKS:
-    ds = [s for s in newest if s['desk'] == k]
+
+
+def desk_figures(ds, n=4):
+    """The first distinct numbers laid under this desk's stories, newest first."""
+    out, seen = [], set()
+    for s in ds:
+        for f in s['layers'].get('numbers') or []:
+            key = (f['figure'], f['label'][:40])
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append((f, s))
+            if len(out) == n:
+                return out
+    return out
+
+
+def lines(n):
+    return f'{n} line' if n == 1 else f'{n} lines'
+
+
+def by_day(ds, ids=False):
     groups, cur = [], None
     for s in ds:
         if s['date'] != cur:
             cur = s['date']
-            groups.append(f'<h2 class="day-h"><span>{esc(long_day(cur))}</span><span>{sum(1 for x in ds if x["date"] == cur)} lines</span></h2>')
+            idattr = f' id="d-{cur}"' if ids else ''
+            groups.append(f'<h2 class="day-h"{idattr}><span>{esc(long_day(cur))}</span><span>{lines(sum(1 for x in ds if x["date"] == cur))}</span></h2>')
         groups.append(row(s))
-    body = page_h(title, dek, (len(ds), f'lines, {sum(depth(s) for s in ds)} layers under them')) + f'<div class="wrap list">{"".join(groups)}</div>'
+    return ''.join(groups)
+
+
+for k, label, title, dek in DESKS:
+    ds = [s for s in newest if s['desk'] == k]
+    top = next((s for s in ds if s.get('photo') and depth(s) >= 3), None) or next((s for s in ds if s.get('photo')), ds[0])
+    rest = [s for s in ds if s['id'] != top['id']]
+    figs = desk_figures(ds)
+    fg = ''.join(f'<li><span class="num">{esc(f["figure"])}</span><p>{esc(f["label"])}</p>'
+                 f'<p class="src"><a href="{link(x["id"])}">{esc(x["headline"])}</a></p></li>' for f, x in figs)
+    nexts = sorted([s for s in ds if (s['layers'].get('next') or {}).get('date')], key=lambda s: s['layers']['next']['date'])
+    nx = ''.join(f'<li><a href="{link(s["id"])}#next"><b>{esc(day(s["layers"]["next"]["date"], wd=True, year=D(s["layers"]["next"]["date"]).year != TODAY.year))}</b>'
+                 f'<span>{esc(s["layers"]["next"]["text"])}</span></a></li>' for s in nexts[:4])
+    lead = f'''<section class="desk-lead"><div class="wrap"><div class="grid">
+<figure>{picture(top, cls="ph r32", sizes="(max-width:900px) 100vw, 54vw", eager=True)}{caption(top["photo"]) if top.get("photo") else ""}</figure>
+<div>{kick(top)}<h2 class="h-l" style="margin-top:10px"><a href="{link(top["id"])}"><span class="hl">{esc(top["headline"])}</span></a></h2>
+<p class="dek" style="margin-top:12px">{esc(top["standfirst"])}</p>{stack(top, "dl-" + k, open_first=False)}</div>
+</div></div></section>'''
+    side = (f'<section class="desk-figs"><div class="wrap"><div class="sec-h"><h2>{pl()}The {esc(label)} desk in numbers</h2><a class="more" href="numbers.html#n-{k}">All its figures {R_ARROW()}</a></div>'
+            f'<ul class="figrow">{fg}</ul>'
+            + (f'<div class="desk-next"><p class="lbl">What next on this desk</p><ul>{nx}</ul></div>' if nx else '') +
+            '</div></section>') if figs else ''
+    body = (page_h(title, dek, (len(ds), f'lines, {sum(depth(s) for s in ds)} layers under them')) + lead + side +
+            f'<div class="wrap list"><div class="sec-h"><h2>Every {esc(label)} line</h2><span class="meta">newest first</span></div>{by_day(rest)}</div>')
     write(f'{k}.html', page(title, dek, body, current=k))
 
-# explainers
+# explainers: each one opened all the way down
 xs = [s for s in newest if s.get('explainer')]
+blocks = []
+for i, s in enumerate(xs):
+    blocks.append(f'''<section class="ex-full{" alt" if i % 2 else ""}"><div class="wrap"><div class="grid">
+<figure>{picture(s, cls="ph r43", sizes="(max-width:900px) 100vw, 46vw")}{caption(s["photo"]) if s.get("photo") else ""}</figure>
+<div><p class="lbl" style="margin-bottom:10px">Explainer {i + 1} of {len(xs)} · {esc(DESK[s["desk"]][1])}</p>
+<h2 class="h-l"><a href="{link(s["id"])}"><span class="hl">{esc(s["headline"])}</span></a></h2>
+<p class="dek" style="margin-top:12px">{esc(s["standfirst"])}</p>{deep_list(s)}
+<p style="margin-top:18px"><a class="btn solid" href="{link(s["id"])}">Read it layer by layer {R_ARROW()}</a></p></div>
+</div></div></section>''')
 write('explainers.html', page('Explainers', 'The long matters under the daily lines, opened all the way down.',
       page_h('Explainers', 'The matters that sit under a week of daily lines: what they are, how they got here and what happens next, each one opened all the way down.', (len(xs), 'explainers')) +
-      f'<div class="wrap list">{"".join(row(s) for s in xs)}</div>', current='explainers'))
+      ''.join(blocks), current='explainers'))
 
 # every line
-groups, cur = [], None
-for s in newest:
-    if s['date'] != cur:
-        cur = s['date']
-        groups.append(f'<h2 class="day-h" id="d-{cur}"><span>{esc(long_day(cur))}</span><span>{sum(1 for x in S if x["date"] == cur)} lines</span></h2>')
-    groups.append(row(s))
+days = sorted({x['date'] for x in S}, reverse=True)
+dayidx = ''.join(f'<li><a href="#d-{d_}"><b>{D(d_).day}</b><span>{D(d_).strftime("%a %b")}</span><i>{lines(sum(1 for x in S if x["date"] == d_))}</i></a></li>' for d_ in days)
+groups = [f'<nav class="days" aria-label="Jump to a day"><ul>{dayidx}</ul></nav>', by_day(newest, ids=True)]
 write('archive.html', page('Every line', 'Every story on Palestine+, newest first, day by day.',
       page_h('Every line', 'Every story this edition carries, newest first, with the number of layers under each.', (len(S), f'lines since {day(newest[-1]["date"])}')) +
       f'<div class="wrap list">{"".join(groups)}</div>'))
@@ -118,30 +176,51 @@ lis = []
 for f in E['figures']:
     lis.append(f'<li><span class="num" style="font-size:clamp(2rem,3.4vw,2.8rem);line-height:1">{esc(f["figure"])}</span><i class="tick" aria-hidden="true"><i data-k="1"></i></i>'
                f'<p>{esc(f["label"])}</p><p class="src">As of {esc(day(f["as_of"], year=True))} · {src_link(f)}</p></li>')
-story_nums = []
-for s in newest:
-    for n in s['layers'].get('numbers') or []:
-        story_nums.append(f'<li><span class="num" style="font-size:1.9rem;line-height:1">{esc(n["figure"])}</span><p>{esc(n["label"])}</p>'
-                          f'<p class="src"><a href="{link(s["id"])}">{esc(s["headline"])}</a> · {src_link(n)}</p></li>')
+ledger, total = [], 0
+for k, label, *_ in DESKS:
+    rows_, seen = [], set()
+    for s in newest:
+        if s['desk'] != k:
+            continue
+        for n in s['layers'].get('numbers') or []:
+            key = (n['figure'], n['label'][:40])
+            if key in seen:
+                continue
+            seen.add(key)
+            rows_.append(f'<tr><td class="num">{esc(n["figure"])}</td><td>{esc(n["label"])}</td>'
+                         f'<td><a href="{link(s["id"])}">{esc(s["headline"])}</a></td><td class="src">{src_link(n)}</td></tr>')
+    total += len(rows_)
+    ledger.append(f'<section class="ledger" id="n-{k}" aria-labelledby="n-{k}-h"><h3 id="n-{k}-h">{esc(label)} <span>{len(rows_)} figures</span></h3>'
+                  f'<div class="tbl"><table><thead><tr><th scope="col">Figure</th><th scope="col">What it counts</th><th scope="col">Under the story</th><th scope="col">Source</th></tr></thead>'
+                  f'<tbody>{"".join(rows_)}</tbody></table></div></section>')
 write('numbers.html', page('Numbers', 'The running figures and every number under this week’s stories, each with its source and date.',
-      page_h('Numbers', 'The running figures, then every number laid under this week’s lines. Each is the latest its source published, with the date it was true.', label='Layer two', with_pl=True) +
-      f'<section class="numbers on-ink" style="margin-top:0"><div class="wrap"><ul class="nums">{"".join(lis)}</ul></div></section>'
-      f'<section class="explain"><div class="wrap"><div class="sec-h"><h2>Under the stories</h2><span class="meta">{len(story_nums)} figures</span></div>'
-      f'<ul class="nums" style="background:var(--rule);--x:0">{"".join(story_nums)}</ul></div></section>', current='numbers'))
+      page_h('Numbers', 'The running figures, then every number laid under this week’s lines, desk by desk. Each is the latest its source published, with the date it was true.', label='Layer two', with_pl=True) +
+      f'<section class="numbers on-ink" style="margin-top:0"><div class="wrap"><ul class="nums n5">{"".join(lis)}</ul></div></section>'
+      f'<section class="explain"><div class="wrap"><div class="sec-h"><h2>Under the stories</h2><span class="meta">{total} figures, repeats folded</span></div>'
+      f'{"".join(ledger)}</div></section>', current='numbers'))
 
-# dates ahead
+# dates ahead: a timeline, with today drawn as the line
 ah = sorted(E['ahead'], key=lambda a: a['date'])
-lis = ''.join(f'''<li><p class="when">{when(a, True)}</p>
-<p>{esc(a['what'])}</p><p class="src">{src_link(a)}</p></li>''' for a in ah)
-nexts = [s for s in newest if s['layers'].get('next')]
+tl, today_done = [], False
+for a in ah:
+    d_ = D(a['date'])
+    if not today_done and d_ > TODAY:
+        tl.append(f'<li class="now"><span>Today · {esc(day(TODAY, wd=True))}</span></li>')
+        today_done = True
+    state = 'is-today' if d_ == TODAY and not a.get('approx') else ''
+    tl.append(f'<li class="{state}"><p class="when">{when(a, True)}</p><div><p>{esc(a["what"])}</p><p class="src">{src_link(a)}</p></div></li>')
+if not today_done:
+    tl.append(f'<li class="now"><span>Today · {esc(day(TODAY, wd=True))}</span></li>')
+nexts = sorted([s for s in newest if s['layers'].get('next')],
+               key=lambda s: (0, s['layers']['next']['date']) if s['layers']['next'].get('date') else (1, s['date']))
 nx = ''.join(f'<article class="row"><div class="meta"><span>{esc(DESK[s["desk"]][1])}</span>'
              f'<span>{esc(day(s["layers"]["next"]["date"], wd=True, year=True)) if s["layers"]["next"].get("date") else "No date set"}</span></div>'
              f'<div><h2 class="h-s"><a href="{link(s["id"])}#next"><span class="hl">{esc(s["layers"]["next"]["text"])}</span></a></h2>'
              f'<p class="dek">From: {esc(s["headline"])}</p></div><div></div></article>' for s in nexts)
 write('ahead.html', page('Dates ahead', 'The dated events coming up, and the “what next” layer of every story.',
       page_h('Dates ahead', 'The dated events coming up, then the last layer of every story: what happens next, and when, if anyone has said.', (len(ah), 'dates')) +
-      f'<section class="ahead" style="border:0"><div class="wrap"><ol>{lis}</ol></div></section>'
-      f'<div class="wrap list"><div class="sec-h"><h2>{pl()}What next, story by story</h2></div>{nx}</div>', current='ahead'))
+      f'<section class="ahead" style="border:0"><div class="wrap"><ol class="tl">{"".join(tl)}</ol></div></section>'
+      f'<div class="wrap list"><div class="sec-h"><h2>{pl()}What next, story by story</h2><span class="meta">dated first, then the rest</span></div>{nx}</div>', current='ahead'))
 
 # how the layers work
 ex = BY[E['lead']]
@@ -213,6 +292,42 @@ write('credits.html', page('Credits', 'Photographs, type and sources used in thi
 <p>Newsreader by Production Type and Schibsted Grotesk by Bakken &amp; Bæck, both under the SIL Open Font License, self-hosted as subsets.</p>
 <h2>Stories</h2>
 <p>Every story is drawn from published reporting, linked at its foot. The writing is ours; the facts are theirs.</p>
+</div>'''))
+
+# about
+desk_lis = ''.join(f'<li data-d="{i}"><b>{esc(l)}</b><p>{esc(d_)} <a href="{k}.html">{sum(1 for x in S if x["desk"] == k)} lines</a></p></li>'
+                   for i, (k, l, _t, d_) in enumerate(DESKS))
+write('about.html', page('About', 'What Palestine+ is, what it covers and how it is made.',
+      page_h('About Palestine+', 'English news from Palestine, one line at a time, with every layer under it sourced.', label='About') +
+      f'''<div class="wrap prose">
+<p class="lead-p">Palestine+ is a news site for readers who want the facts from Gaza, the West Bank and Jerusalem without wading through them: one line for the skim, and as many layers under it as they have time for.</p>
+<h2>What we cover</h2>
+<ol class="howto">{desk_lis}</ol>
+<h2>How a story is made</h2>
+<p>Every story starts as one sentence that must stand on its own: what happened, where, and who says so. Only then is anything laid under it, in the same order every time: context, numbers, voices, and what happens next. <a href="layers.html">How the layers work</a> explains each one.</p>
+<p>We report from published sources and name them on every line and every layer: health authorities, UN agencies, municipalities, rights groups that count, and reporters who were there. Where they disagree we give both figures and say who gives which.</p>
+<h2>Photographs</h2>
+<p>A photograph on Palestine+ shows the place the story names, captioned with where and when it was taken. Where no honest photograph exists, the story carries the place name instead. See the <a href="credits.html">credits</a>.</p>
+<h2>This prototype</h2>
+<p>This is a design prototype built by TakTek for Palestine+. The stories are real and linked to their sources; the newsroom, its staff and its readership are not yet. Contact details will be published when the newsroom launches.</p>
+<p><a href="corrections.html">Corrections</a> · <a href="privacy.html">Privacy</a> · <a href="index.html">The identity</a></p>
+</div>'''))
+
+# privacy
+write('privacy.html', page('Privacy', 'What this site stores about you: almost nothing.',
+      page_h('Privacy', 'What this site keeps about you, which is almost nothing.', label='About') +
+      '''<div class="wrap prose">
+<p class="lead-p">No cookies, no analytics, no advertising, no tracking pixels and no third-party scripts.</p>
+<h2>What your browser keeps</h2>
+<ul class="dots">
+<li><code>pp-laid</code> in session storage, so the opening animation plays once per visit and not on every page.</li>
+<li><code>pp-nav</code> in session storage for a fraction of a second, so the next page knows to open along the line.</li>
+</ul>
+<p>Both are deleted when you close the tab. Neither leaves your browser.</p>
+<h2>What we load</h2>
+<p>Every file this site uses, including its fonts and photographs, is served from the site itself. Links to sources take you to the publisher’s own site, under its own privacy terms.</p>
+<h2>Forms</h2>
+<p>The newsletter forms on this prototype send nothing and store nothing. When the newsletter launches, this page will say what it keeps, why, and how to remove it.</p>
 </div>'''))
 
 # 404 with absolute paths
