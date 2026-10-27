@@ -237,7 +237,7 @@ body = f'''{css}
 <a href="home.html">Today (home) {icon("i-right")}</a><a href="story/{lead['id']}.html">A story, all layers {icon("i-right")}</a>
 <a href="gaza.html">Gaza desk {icon("i-right")}</a><a href="westbank.html">West Bank desk {icon("i-right")}</a><a href="jerusalem.html">Jerusalem desk {icon("i-right")}</a><a href="world.html">Diaspora &amp; World {icon("i-right")}</a>
 <a href="explainers.html">Explainers {icon("i-right")}</a><a href="numbers.html">Numbers {icon("i-right")}</a><a href="ahead.html">Dates ahead {icon("i-right")}</a><a href="archive.html">Every line {icon("i-right")}</a>
-<a href="layers.html">How the layers work {icon("i-right")}</a><a href="daily.html">The daily +1 {icon("i-right")}</a><a href="search.html">Search {icon("i-right")}</a><a href="corrections.html">Corrections {icon("i-right")}</a><a href="credits.html">Credits {icon("i-right")}</a><a href="404.html">404 {icon("i-right")}</a>
+<a href="layers.html">How the layers work {icon("i-right")}</a><a href="about.html">About {icon("i-right")}</a><a href="privacy.html">Privacy {icon("i-right")}</a><a href="daily.html">The daily +1 {icon("i-right")}</a><a href="search.html">Search {icon("i-right")}</a><a href="corrections.html">Corrections {icon("i-right")}</a><a href="credits.html">Credits {icon("i-right")}</a><a href="404.html">404 {icon("i-right")}</a>
 </div>
 <p style="margin-top:22px"><a class="btn solid" href="assets/palestine-plus-identity.zip" download>{pl()}Download the identity files (SVG, fonts)</a></p>""")}
 '''

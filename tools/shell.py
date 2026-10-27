@@ -9,7 +9,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = '4'                                       # bump on any asset change (Chrome caches hard)
+V = '5'                                       # bump on any asset change (Chrome caches hard)
 SITE = 'Palestine+'
 BASE_URL = 'https://taktek-dev.github.io/palestine-plus-prototype/'
 E = json.load(open(os.path.join(ROOT, 'tools', 'edition.json'), encoding='utf-8'))
@@ -264,7 +264,7 @@ def foot():
 <div><p class="lbl">The daily +1</p><p style="margin-top:6px">The day’s lines each morning at 07:00 GMT, and one story opened all the way down.</p>
 <form class="sub" action="#" method="post" data-proto><label for="em-f">Email address</label><input id="em-f" name="email" type="email" placeholder="you@example.com" autocomplete="email" required><button type="submit">{pl()}Subscribe</button><p class="msg" role="status"></p></form></div>
 <div><p class="lbl">Desks</p><ul>{desks}<li><a href="{C.R}explainers.html">Explainers</a></li><li><a href="{C.R}numbers.html">Numbers</a></li></ul></div>
-<div><p class="lbl">Palestine+</p><ul><li><a href="{C.R}ahead.html">Dates ahead</a></li><li><a href="{C.R}archive.html">Every line</a></li><li><a href="{C.R}layers.html">How the layers work</a></li><li><a href="{C.R}corrections.html">Corrections</a></li><li><a href="{C.R}search.html">Search</a></li><li><a href="{C.R}index.html">Identity</a></li></ul></div>
+<div><p class="lbl">Palestine+</p><ul><li><a href="{C.R}ahead.html">Dates ahead</a></li><li><a href="{C.R}archive.html">Every line</a></li><li><a href="{C.R}about.html">About</a></li><li><a href="{C.R}layers.html">How the layers work</a></li><li><a href="{C.R}corrections.html">Corrections</a></li><li><a href="{C.R}privacy.html">Privacy</a></li><li><a href="{C.R}search.html">Search</a></li><li><a href="{C.R}index.html">Identity</a></li></ul></div>
 </div>
 <div class="credits"><div class="wrap"><span>Design prototype by TakTek. Not a live newsroom: the stories are real and sourced, the publication is not yet.</span><span>Type: Newsreader and Schibsted Grotesk (OFL). Photographs: Wikimedia Commons, <a href="{C.R}credits.html">credited here</a>.</span></div></div>
 </footer>'''
