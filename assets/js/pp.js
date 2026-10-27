@@ -154,6 +154,7 @@
       const w = q.value.trim().toLowerCase();
       const hits = all.filter((s) => (!desk || s.desk === desk) && (!w || (s.h + ' ' + s.f + ' ' + s.p).toLowerCase().includes(w)));
       out.innerHTML = `<p class="count" role="status">${hits.length} ${hits.length === 1 ? 'story' : 'stories'}${w ? ` for “${esc(q.value.trim())}”` : ''}</p>` +
+        (hits.length ? '' : `<p class="empty">No line matches${w ? ` “${esc(q.value.trim())}”` : ''}${desk ? ' on this desk' : ''}. Try a place, such as Jenin, Silwan or Khan Younis${desk ? ', or clear the desk filter' : ''}.</p>`) +
         hits.map((s) => `<article class="row"><div class="meta"><span>${esc(s.dl)}</span><span>${esc(s.d)}</span></div><div><h2 class="h-s"><a href="${s.u}"><span class="hl">${hi(s.h, w)}</span></a></h2><p class="dek">${hi(s.f, w)}</p></div><div class="meta"><span><span class="badge"><span class="pl" aria-hidden="true"><i class="pl-h"></i><i class="pl-v"></i></span>${s.n}</span> ${s.n === 1 ? 'layer' : 'layers'}</span><span>${esc(s.p)}</span></div></article>`).join('');
       const u = new URL(location); w ? u.searchParams.set('q', q.value.trim()) : u.searchParams.delete('q'); history.replaceState(null, '', u);
     };
