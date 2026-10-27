@@ -210,7 +210,8 @@ body = f'''{css}
 <li data-d="3"><b>{pl()}Voices</b><p>In their own words.</p></li><li data-d="4"><b>{pl()}What next</b><p>The next date, or the fact that there is none.</p></li></ol></div>""")}
 {ch(8, 'motion', 'Motion: laying the line', 'Movement follows the idea: lines are drawn left to right, standing bars fall, layers open downward. Nothing bounces for its own sake.', f"""
 <ul class="motion">
-<li><b>The loader</b><code>1.8 s · once per session</code><p>A line is drawn across the screen, a green bar stands up through it, then falls to lie beneath it, and the page opens along the line. <a href="home.html?loader" style="text-decoration:underline">Replay it</a>.</p></li>
+<li><b>The loader</b><code>1.8 s · first page of a session</code><p>Whichever page a reader lands on first: a line is drawn across the screen, a green bar stands up through it, then falls to lie beneath it, and the page opens along the line. <a href="home.html?loader" style="text-decoration:underline">Replay it</a>.</p></li>
+<li><b>Page to page</b><code>340 ms close · 600 ms open</code><p>Leaving a page, a line is drawn across it and the two halves close on it; the next page opens along the same line. If it is slow to arrive, a green segment runs along the line. Back and forward never land on a closed page.</p></li>
 <li><b>The fall</b><code>500 ms · cubic-bezier(.5,0,.25,1.25)</code><p>The standing bar rotates down about its foot and settles a hair past flat, like a ruler laid on a desk.</p></li>
 <li><b>Opening a layer</b><code>550 ms · ease-out (.22,1,.36,1)</code><p>The layer’s height grows from nothing, its text arrives 120 ms later. “Open every layer” lays them one after another, 110 ms apart, top to bottom.</p></li>
 <li><b>Lines on scroll</b><code>1 s · from the left</code><p>Each section rule is drawn from its left end as it enters the screen.</p></li>

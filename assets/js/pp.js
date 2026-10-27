@@ -3,21 +3,45 @@
   const d = document, root = d.documentElement;
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ------------------------------------------------ loader «Laying the line», once per session */
+  /* ------------------------------------------------ loader «Laying the line», first page of the session.
+     <head> has already decided (js-load) before the first paint; this only runs it. */
   const ldr = d.querySelector('.ldr');
-  if (ldr) {
-    let seen = false;
-    try { seen = sessionStorage.getItem('pp-laid') === '1'; } catch (e) {}
-    if (location.search.includes('loader')) seen = false;
-    if (seen || still) ldr.remove();
-    else {
-      root.classList.add('js-load');
-      requestAnimationFrame(() => ldr.classList.add('go'));
-      setTimeout(() => ldr.classList.add('open'), 1760);
-      setTimeout(() => { ldr.remove(); root.classList.remove('js-load'); }, 2700);
-      try { sessionStorage.setItem('pp-laid', '1'); } catch (e) {}
-    }
+  if (ldr && root.classList.contains('js-load')) {
+    requestAnimationFrame(() => ldr.classList.add('go'));
+    setTimeout(() => ldr.classList.add('open'), 1760);
+    setTimeout(() => { ldr.remove(); root.classList.remove('js-load'); }, 2700);
+    try { sessionStorage.setItem('pp-laid', '1'); } catch (e) {}
+  } else if (ldr) ldr.remove();
+
+  /* ------------------------------------------------ page to page: close on a line, open along it */
+  const nav = d.querySelector('.nav-ldr');
+  const settle = () => { root.classList.remove('pp-arrive', 'pp-open'); };
+  if (root.classList.contains('pp-arrive')) {
+    /* two frames so the closed state is painted before it opens */
+    requestAnimationFrame(() => requestAnimationFrame(() => root.classList.add('pp-open')));
+    setTimeout(settle, 750);
   }
+  const page = (u) => /(\.html|\/)$/.test(u.pathname);
+  d.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href]');
+    if (!a || !nav || still || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if ((a.target && a.target !== '_self') || a.hasAttribute('download')) return;
+    const u = new URL(a.href, location.href);
+    if (u.origin !== location.origin || !page(u)) return;
+    if (u.pathname === location.pathname && u.search === location.search) return;   /* same page, maybe a #hash */
+    e.preventDefault();
+    try { sessionStorage.setItem('pp-nav', '1'); } catch (er) {}
+    nav.classList.add('leave');
+    setTimeout(() => { location.href = u.href; }, 340);
+    setTimeout(() => nav.classList.add('wait'), 900);
+  });
+  /* back/forward from the page cache: never come back to a closed page */
+  addEventListener('pageshow', (e) => {
+    if (!e.persisted) return;
+    nav && nav.classList.remove('leave', 'wait');
+    settle();
+    try { sessionStorage.removeItem('pp-nav'); } catch (er) {}
+  });
 
   /* ------------------------------------------------ masthead shrinks once the page moves */
   const mast = d.querySelector('.mast');
