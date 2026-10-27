@@ -54,7 +54,7 @@ def stack(s, uid, open_first=True):
     n = len(rows)
     first = s['sources'][0] if s.get('sources') else None
     return (f'<div class="stack" data-stack>'
-            f'<div class="lay" data-d="0"><div class="lay-b" style="cursor:default"><span class="lay-h">The fact<span class="n">line one</span></span></div>'
+            f'<div class="lay" data-d="0"><div class="lay-b" style="cursor:default">{pl("one")}<span class="lay-h">The fact<span class="n">line one</span></span></div>'
             f'<div class="lay-c" style="opacity:1;transform:none;padding-top:0"><p>{esc(s["fact"])}</p>'
             f'{f"<p class=src>Source: {src_link(first)}</p>" if first else ""}</div></div>'
             + ''.join(rows) +

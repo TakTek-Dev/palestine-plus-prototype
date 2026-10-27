@@ -9,7 +9,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = '5'                                       # bump on any asset change (Chrome caches hard)
+V = '6'                                       # bump on any asset change (Chrome caches hard)
 SITE = 'Palestine+'
 BASE_URL = 'https://taktek-dev.github.io/palestine-plus-prototype/'
 E = json.load(open(os.path.join(ROOT, 'tools', 'edition.json'), encoding='utf-8'))
@@ -136,7 +136,9 @@ def photo(slug, sizes='100vw', cls='ph', eager=False):
     dm = DIM.get(slug, {'w': 1000, 'h': 667})
     pos = f' style="object-position:{p["focus"]}"' if p.get('focus') else ''
     load = 'fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
-    return (f'<div class="{cls}"><img src="{C.R}assets/img/photo/{slug}.webp?v={V}" width="{dm["w"]}" height="{dm["h"]}" '
+    base = f'{C.R}assets/img/photo/{slug}'
+    srcset = f'{base}-640.webp?v={V} 640w, {base}.webp?v={V} {dm["w"]}w'
+    return (f'<div class="{cls}"><img src="{base}.webp?v={V}" srcset="{srcset}" width="{dm["w"]}" height="{dm["h"]}" '
             f'alt="{esc(p["alt"])}" sizes="{sizes}" {load}{pos}></div>')
 
 

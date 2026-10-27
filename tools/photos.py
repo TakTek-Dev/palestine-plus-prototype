@@ -59,6 +59,11 @@ def main():
             continue
         im = Image.open(out)
         meta[slug] = {'w': im.size[0], 'h': im.size[1]}
+        small = os.path.join(OUT, slug + '-640.webp')          # phones and card thumbnails
+        if not os.path.exists(small):
+            sm = im.convert('RGB')
+            sm.thumbnail((640, 640))
+            sm.save(small, 'WEBP', quality=74, method=6)
         credits.append(f"- `{slug}.webp` — [{p['file'][5:]}]({p['page_url']}) · {p['author']} · {p['license']} · "
                        f"{p.get('date', '')} · resized, colour as taken")
     os.makedirs(os.path.join(ROOT, 'tools', 'out'), exist_ok=True)

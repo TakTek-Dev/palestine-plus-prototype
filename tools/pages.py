@@ -79,7 +79,7 @@ def story(s):
 </div>
 <aside>
 <div class="side-card"><p class="lbl">Share</p><div class="share"><button type="button" data-copy>Copy link</button></div></div>
-<div class="side-card"><p class="lbl">More from {esc(DESK[s['desk']][1])}</p><ul>{side}</ul><a class="sec-h more" style="border:0;padding:4px 0 0;font:650 .86rem var(--sans);display:flex;gap:.4em;align-items:center" href="../{s['desk']}.html">The {esc(DESK[s['desk']][1])} desk {R_ARROW()}</a></div>
+<div class="side-card"><p class="lbl">More from {esc(DESK[s['desk']][1])}</p><ul>{side}</ul><a class="side-more" href="../{s['desk']}.html">The {esc(DESK[s['desk']][1])} desk {R_ARROW()}</a></div>
 </aside>
 </div>
 </article>
@@ -153,7 +153,7 @@ xs = [s for s in newest if s.get('explainer')]
 blocks = []
 for i, s in enumerate(xs):
     blocks.append(f'''<section class="ex-full{" alt" if i % 2 else ""}"><div class="wrap"><div class="grid">
-<figure>{picture(s, cls="ph r43", sizes="(max-width:900px) 100vw, 46vw")}{caption(s["photo"]) if s.get("photo") else ""}</figure>
+<figure>{picture(s, cls="ph r43", sizes="(max-width:900px) 100vw, 46vw", eager=i == 0)}{caption(s["photo"]) if s.get("photo") else ""}</figure>
 <div><p class="lbl" style="margin-bottom:10px">Explainer {i + 1} of {len(xs)} · {esc(DESK[s["desk"]][1])}</p>
 <h2 class="h-l"><a href="{link(s["id"])}"><span class="hl">{esc(s["headline"])}</span></a></h2>
 <p class="dek" style="margin-top:12px">{esc(s["standfirst"])}</p>{deep_list(s)}

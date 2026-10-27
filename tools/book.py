@@ -150,7 +150,7 @@ def ch(i, k, title, dek, body):
 body = f'''{css}
 <header class="wrap bk-cover">
 <p class="lbl">Identity · {esc(long_day(TODAY))}</p>
-<div class="wm">{wordmark()}</div>
+<h1 class="wm" style="margin:0">{wordmark()}</h1>
 <p class="dek" style="max-width:52ch;font-size:clamp(1.15rem,1.8vw,1.45rem)">News from Palestine, one line at a time. The plus is one more line: standing across the one you read, waiting to be laid down beneath it.</p>
 <p class="sub-t"><span><b>Concept</b> One more line</span><span><b>Type</b> Newsreader · Schibsted Grotesk</span><span><b>Colour</b> Ink, five depths, one green</span><a href="home.html" class="btn solid">See the site {icon("i-right")}</a></p>
 </header>
